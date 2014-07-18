@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Jun 30 19:10:49 2014
+# Process ID: 13596
+# Log file: C:/Data/tmp/dsp_src/module_1_ext/vivado.log
+# Journal file: C:/Data/tmp/dsp_src/module_1_ext\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
