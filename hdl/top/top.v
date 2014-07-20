@@ -23,14 +23,14 @@ module top
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     leds_4bits_tri_o,
-//    clk,
-//    data_in3,
-//    data_in2,
-//    data_in1,
-//    data_in,
-//    data_out,
-//    data_out1,
-//    data_out2,
+    clk,
+    data_in3,
+    data_in2,
+    data_in1,
+    data_in,
+    data_out,
+    data_out1,
+    data_out2,
     s_aclk,
     s_aresetn,
     s_axi_awid,
@@ -101,14 +101,14 @@ module top
   output [3:0]leds_4bits_tri_o;
   
 // System Generator IO  
-//  input clk;
-//  input data_in3;
-//  input [15:0]data_in2;
-//  input [3:0]data_in1;
-//  input [15:0]data_in;
-//  output [24:0]data_out;
-//  output data_out1;
-//  output data_out2;
+  input clk;
+  input data_in3;
+  input [15:0]data_in2;
+  input [3:0]data_in1;
+  input [15:0]data_in;
+  output [24:0]data_out;
+  output data_out1;
+  output data_out2;
 
 // AXI Chip to Chip IO  
   input s_aclk;
@@ -214,16 +214,16 @@ zynq_1 zynqInst
 //            data_out2: out std_logic
 //          );
 //        end module_1;
-//module_1 sysGenInst
-//            (.clk(clk),
-//            .data_in3(data_in3),
-//            .data_in2(data_in2),
-//            .data_in1(data_in1),
-//            .data_in(data_in),
-//            .data_out(data_out),
-//            .data_out1(data_out1),
-//            .data_out2(data_out2)
-//          );
+module_1 sysGenInst
+            (.clk(clk),
+            .data_in3(data_in3),
+            .data_in2(data_in2),
+            .data_in1(data_in1),
+            .data_in(data_in),
+            .data_out(data_out),
+            .data_out1(data_out1),
+            .data_out2(data_out2)
+          );
           
 axi_chip2chip_0 axiChipInst (
             .s_aclk(s_aclk),                                            // input wire s_aclk
