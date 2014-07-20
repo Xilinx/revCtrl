@@ -25,4 +25,4 @@ if {![file exists ./cip]} {
 ipx::package_project -root_dir ./cip
 
 # if everything is successful "touch" a file so make will not it's done
-touch {.packageCustomIP.done}
+touch {.cip.done}
