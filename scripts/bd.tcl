@@ -1,6 +1,6 @@
 
 ################################################################
-# This is a generated script based on design: zynq_1
+# This is a generated script based on design: zynq_bd
 #
 # Though there are limitations about the generated script,
 # the main purpose of this utility is to make learning
@@ -25,7 +25,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 ################################################################
 
 # To test this script, run the following commands from Vivado Tcl console:
-# source zynq_1_script.tcl
+# source zynq_bd.tcl
 
 # If you do not already have a project created,
 # you can create a project using the following command:
@@ -34,7 +34,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 
 # CHANGE DESIGN NAME HERE
-set design_name zynq_1
+set design_name zynq_bd
 
 # If you do not already have an existing IP Integrator design open,
 # you can create a design using the following command:
