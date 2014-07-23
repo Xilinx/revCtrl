@@ -1,4 +1,4 @@
-RTL=../hdl/threeFlop/threeFlop.v
+RTL=../hdl/top/top.v ../hdl/threeFlop/threeFlop.v
 XDC=../xdc/top.xdc
 IP=../ip/axi_iic_0/axi_iic_0.xci
 DSP=../dsp/module_1_ext/module_1.slx
