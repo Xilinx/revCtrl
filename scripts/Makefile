@@ -1,8 +1,8 @@
 RTL=../hdl/threeFlop/threeFlop.v
 XDC=../xdc/top.xdc
-IP=../ip/axi_chip2chip_0/axi_chip2chip_0.xci
+IP=../ip/axi_iic_0/axi_iic_0.xci
 DSP=../dsp/module_1_ext/module_1.slx
-BD=../bd/zynq_1/zynq_1.bd
+BD=../bd/zynq_bd/zynq_bd.bd
 CIP=../hdl/bft/bft.vhdl
 HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
 

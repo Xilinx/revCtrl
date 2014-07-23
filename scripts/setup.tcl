@@ -15,7 +15,7 @@ set_property "target_language" "Verilog" $obj
 add_files -norecurse ../hdl/top/top.v
 add_files -norecurse ../hdl/threeFlop/threeFlop.v
 add_files -norecurse ../xdc/top.xdc
-add_files -norecurse ../ip/axi_chip2chip_0/axi_chip2chip_0.xci
+add_files -norecurse ../ip/axi_iic_0/axi_iic_0.xci
 add_files -norecurse ../dsp/module_1_ext/module_1.slx
 add_files -norecurse ../bd/zynq_bd/zynq_bd.bd
 update_compile_order -fileset sources_1
