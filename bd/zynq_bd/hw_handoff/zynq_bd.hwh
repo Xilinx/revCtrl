@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jul 21 16:37:46 2014" VIVADOVERSION="2014.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jul 23 14:27:50 2014" VIVADOVERSION="2014.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="xilinx.com:zc702:part0:1.0" DEVICE="7z020" NAME="zynq_bd_imp" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
