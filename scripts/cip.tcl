@@ -13,14 +13,18 @@ if {![file exists ./cip/bft]} {
 if {![file exists ./cip/bft/bftLib]} {
    file mkdir ./cip/bft/bftLib
 }
-file copy [glob ../hdl/bft/*.v*] ./cip/bft/
-file copy [glob ../hdl/bft/bftLib/*.vhdl] ./cip/bft/bftLib/
+foreach f [glob ../hdl/bft/*.v*] {
+   file copy -force $f ./cip/bft/
+}
+foreach f [glob ../hdl/bft/bftLib/*.vhdl] {
+   file copy -force $f ./cip/bft/bftLib/
+}
 
 # Create project
 create_project bft ./bft/ -part xc7z020clg484-1
 
-add_files -norecurse [glob ../hdl/bft/*.v*]
-add_files -norecurse [glob ../hdl/bft/bftLib/*.vhdl]
+add_files -norecurse [glob ./cip/bft/*.v*]
+add_files -norecurse [glob ./cip/bft/bftLib/*.vhdl]
 set_property library bftLib [get_files */round_*.vhdl]
 set_property library bftLib [get_files */bft_package.vhdl]
 set_property library bftLib [get_files */core_transform.vhdl]
