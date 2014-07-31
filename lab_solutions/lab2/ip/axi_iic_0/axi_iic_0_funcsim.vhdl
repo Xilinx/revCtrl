@@ -1,9 +1,9 @@
 -- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
--- Date        : Thu Jul 24 15:12:56 2014
+-- Date        : Wed Jul 30 17:22:55 2014
 -- Host        : xsjrplyler30 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim c:/tsc14/tsc14_scratch/work4/ip/axi_iic_0/axi_iic_0_funcsim.vhdl
+-- Command     : write_vhdl -force -mode funcsim c:/tsc14/tsc14_scratch/test/work/ip/axi_iic_0/axi_iic_0_funcsim.vhdl
 -- Design      : axi_iic_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -65,7 +65,7 @@ architecture STRUCTURE of axi_iic_0_SRL_FIFO is
   attribute XILINX_LEGACY_PRIM of Data_Exists_DFF : label is "FDR";
   attribute box_type of Data_Exists_DFF : label is "PRIMITIVE";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Data_Exists_DFF_i_2__0\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \Data_Exists_DFF_i_2__0\ : label is "soft_lutpair34";
   attribute box_type of \FIFO_RAM[0].SRL16E_I\ : label is "PRIMITIVE";
   attribute srl_bus_name : string;
   attribute srl_bus_name of \FIFO_RAM[0].SRL16E_I\ : label is "\U0/X_IIC/READ_FIFO_I/FIFO_RAM ";
@@ -92,7 +92,7 @@ architecture STRUCTURE of axi_iic_0_SRL_FIFO is
   attribute box_type of \FIFO_RAM[7].SRL16E_I\ : label is "PRIMITIVE";
   attribute srl_bus_name of \FIFO_RAM[7].SRL16E_I\ : label is "\U0/X_IIC/READ_FIFO_I/FIFO_RAM ";
   attribute srl_name of \FIFO_RAM[7].SRL16E_I\ : label is "\U0/X_IIC/READ_FIFO_I/FIFO_RAM[7].SRL16E_I ";
-  attribute SOFT_HLUTNM of \sr_i[2]_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \sr_i[2]_i_1\ : label is "soft_lutpair34";
 begin
   Rc_Data_Exists <= \^rc_data_exists\;
   Rc_addr(0 to 3) <= \^rc_addr\(0 to 3);
@@ -469,7 +469,7 @@ architecture STRUCTURE of axi_iic_0_SRL_FIFO_0 is
   attribute XILINX_LEGACY_PRIM of Data_Exists_DFF : label is "FDR";
   attribute box_type of Data_Exists_DFF : label is "PRIMITIVE";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of Data_Exists_DFF_i_2 : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of Data_Exists_DFF_i_2 : label is "soft_lutpair40";
   attribute box_type of \FIFO_RAM[0].SRL16E_I\ : label is "PRIMITIVE";
   attribute srl_bus_name : string;
   attribute srl_bus_name of \FIFO_RAM[0].SRL16E_I\ : label is "\U0/X_IIC/WRITE_FIFO_I/FIFO_RAM ";
@@ -496,11 +496,11 @@ architecture STRUCTURE of axi_iic_0_SRL_FIFO_0 is
   attribute box_type of \FIFO_RAM[7].SRL16E_I\ : label is "PRIMITIVE";
   attribute srl_bus_name of \FIFO_RAM[7].SRL16E_I\ : label is "\U0/X_IIC/WRITE_FIFO_I/FIFO_RAM ";
   attribute srl_name of \FIFO_RAM[7].SRL16E_I\ : label is "\U0/X_IIC/WRITE_FIFO_I/FIFO_RAM[7].SRL16E_I ";
-  attribute SOFT_HLUTNM of callingReadAccess_i_1 : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of callingReadAccess_i_1 : label is "soft_lutpair39";
   attribute RETAIN_INVERTER : boolean;
   attribute RETAIN_INVERTER of \sr_i[0]_i_1\ : label is std.standard.true;
-  attribute SOFT_HLUTNM of \sr_i[0]_i_1\ : label is "soft_lutpair41";
-  attribute SOFT_HLUTNM of \sr_i[3]_i_1\ : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \sr_i[0]_i_1\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \sr_i[3]_i_1\ : label is "soft_lutpair40";
 begin
   Tx_addr(0 to 3) <= \^tx_addr\(0 to 3);
   Tx_data_exists <= \^tx_data_exists\;
@@ -901,13 +901,13 @@ architecture STRUCTURE of \axi_iic_0_SRL_FIFO__parameterized0\ is
   attribute XILINX_TRANSFORM_PINMAP of \Addr_Counters[0].MUXCY_L_I_CARRY4\ : label is "LO:O";
   attribute box_type of \Addr_Counters[0].MUXCY_L_I_CARRY4\ : label is "PRIMITIVE";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Addr_Counters[0].MUXCY_L_I_i_3__1\ : label is "soft_lutpair40";
+  attribute SOFT_HLUTNM of \Addr_Counters[0].MUXCY_L_I_i_3__1\ : label is "soft_lutpair38";
   attribute box_type of \Addr_Counters[1].FDRE_I\ : label is "PRIMITIVE";
   attribute box_type of \Addr_Counters[2].FDRE_I\ : label is "PRIMITIVE";
   attribute box_type of \Addr_Counters[3].FDRE_I\ : label is "PRIMITIVE";
   attribute XILINX_LEGACY_PRIM of Data_Exists_DFF : label is "FDR";
   attribute box_type of Data_Exists_DFF : label is "PRIMITIVE";
-  attribute SOFT_HLUTNM of \Data_Exists_DFF_i_3__0\ : label is "soft_lutpair40";
+  attribute SOFT_HLUTNM of \Data_Exists_DFF_i_3__0\ : label is "soft_lutpair38";
   attribute box_type of \FIFO_RAM[0].SRL16E_I\ : label is "PRIMITIVE";
   attribute srl_bus_name : string;
   attribute srl_bus_name of \FIFO_RAM[0].SRL16E_I\ : label is "\U0/X_IIC/WRITE_FIFO_CTRL_I/FIFO_RAM ";
@@ -1288,38 +1288,38 @@ architecture STRUCTURE of axi_iic_0_address_decoder is
   signal \^reset2bus_error\ : STD_LOGIC;
   signal start : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of AXI_IP2Bus_RdAck_i_1 : label is "soft_lutpair48";
-  attribute SOFT_HLUTNM of AXI_IP2Bus_WrAck_i_1 : label is "soft_lutpair48";
-  attribute SOFT_HLUTNM of \FIFO_GEN_DTR.Tx_fifo_wr_i_1\ : label is "soft_lutpair58";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[10].ce_out_i[10]_i_1\ : label is "soft_lutpair45";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[34].ce_out_i[34]_i_5\ : label is "soft_lutpair53";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[34].ce_out_i[34]_i_6\ : label is "soft_lutpair46";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[34].ce_out_i[34]_i_7\ : label is "soft_lutpair53";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[7].ce_out_i[7]_i_1\ : label is "soft_lutpair45";
-  attribute SOFT_HLUTNM of \GPO_GEN.gpo_i[31]_i_2\ : label is "soft_lutpair52";
-  attribute SOFT_HLUTNM of \MEM_DECODE_GEN[1].cs_out_i[1]_i_2\ : label is "soft_lutpair49";
-  attribute SOFT_HLUTNM of \MEM_DECODE_GEN[1].cs_out_i[1]_i_3\ : label is "soft_lutpair50";
-  attribute SOFT_HLUTNM of \MEM_DECODE_GEN[1].cs_out_i[1]_i_4\ : label is "soft_lutpair46";
-  attribute SOFT_HLUTNM of \MEM_DECODE_GEN[2].cs_out_i[2]_i_1\ : label is "soft_lutpair50";
-  attribute SOFT_HLUTNM of \RD_FIFO_CNTRL.Rc_fifo_rd_i_1\ : label is "soft_lutpair54";
-  attribute SOFT_HLUTNM of \RD_FIFO_CNTRL.rc_fifo_pirq_i[4]_i_1\ : label is "soft_lutpair58";
-  attribute SOFT_HLUTNM of \adr_i[0]_i_1\ : label is "soft_lutpair56";
-  attribute SOFT_HLUTNM of \cr_i[0]_i_1\ : label is "soft_lutpair57";
-  attribute SOFT_HLUTNM of \ip_irpt_enable_reg[7]_i_1\ : label is "soft_lutpair43";
-  attribute SOFT_HLUTNM of ipif_glbl_irpt_enable_reg_i_1 : label is "soft_lutpair51";
-  attribute SOFT_HLUTNM of irpt_wrack_d1_i_1 : label is "soft_lutpair44";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[2]_i_2\ : label is "soft_lutpair43";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[31]_i_2\ : label is "soft_lutpair44";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[7]_i_5\ : label is "soft_lutpair49";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[9]_i_8\ : label is "soft_lutpair47";
-  attribute SOFT_HLUTNM of \timing_param_tbuf_i[9]_i_1\ : label is "soft_lutpair55";
-  attribute SOFT_HLUTNM of \timing_param_thddat_i[9]_i_1\ : label is "soft_lutpair51";
-  attribute SOFT_HLUTNM of \timing_param_thdsta_i[9]_i_1\ : label is "soft_lutpair47";
-  attribute SOFT_HLUTNM of \timing_param_thigh_i[9]_i_1\ : label is "soft_lutpair54";
-  attribute SOFT_HLUTNM of \timing_param_tlow_i[9]_i_1\ : label is "soft_lutpair52";
-  attribute SOFT_HLUTNM of \timing_param_tsudat_i[9]_i_1\ : label is "soft_lutpair55";
-  attribute SOFT_HLUTNM of \timing_param_tsusta_i[9]_i_1\ : label is "soft_lutpair57";
-  attribute SOFT_HLUTNM of \timing_param_tsusto_i[9]_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of AXI_IP2Bus_RdAck_i_1 : label is "soft_lutpair46";
+  attribute SOFT_HLUTNM of AXI_IP2Bus_WrAck_i_1 : label is "soft_lutpair46";
+  attribute SOFT_HLUTNM of \FIFO_GEN_DTR.Tx_fifo_wr_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[10].ce_out_i[10]_i_1\ : label is "soft_lutpair43";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[34].ce_out_i[34]_i_5\ : label is "soft_lutpair51";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[34].ce_out_i[34]_i_6\ : label is "soft_lutpair44";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[34].ce_out_i[34]_i_7\ : label is "soft_lutpair51";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[7].ce_out_i[7]_i_1\ : label is "soft_lutpair43";
+  attribute SOFT_HLUTNM of \GPO_GEN.gpo_i[31]_i_2\ : label is "soft_lutpair50";
+  attribute SOFT_HLUTNM of \MEM_DECODE_GEN[1].cs_out_i[1]_i_2\ : label is "soft_lutpair47";
+  attribute SOFT_HLUTNM of \MEM_DECODE_GEN[1].cs_out_i[1]_i_3\ : label is "soft_lutpair48";
+  attribute SOFT_HLUTNM of \MEM_DECODE_GEN[1].cs_out_i[1]_i_4\ : label is "soft_lutpair44";
+  attribute SOFT_HLUTNM of \MEM_DECODE_GEN[2].cs_out_i[2]_i_1\ : label is "soft_lutpair48";
+  attribute SOFT_HLUTNM of \RD_FIFO_CNTRL.Rc_fifo_rd_i_1\ : label is "soft_lutpair52";
+  attribute SOFT_HLUTNM of \RD_FIFO_CNTRL.rc_fifo_pirq_i[4]_i_1\ : label is "soft_lutpair56";
+  attribute SOFT_HLUTNM of \adr_i[0]_i_1\ : label is "soft_lutpair54";
+  attribute SOFT_HLUTNM of \cr_i[0]_i_1\ : label is "soft_lutpair55";
+  attribute SOFT_HLUTNM of \ip_irpt_enable_reg[7]_i_1\ : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of ipif_glbl_irpt_enable_reg_i_1 : label is "soft_lutpair49";
+  attribute SOFT_HLUTNM of irpt_wrack_d1_i_1 : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[2]_i_2\ : label is "soft_lutpair41";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[31]_i_2\ : label is "soft_lutpair42";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[7]_i_5\ : label is "soft_lutpair47";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[9]_i_8\ : label is "soft_lutpair45";
+  attribute SOFT_HLUTNM of \timing_param_tbuf_i[9]_i_1\ : label is "soft_lutpair53";
+  attribute SOFT_HLUTNM of \timing_param_thddat_i[9]_i_1\ : label is "soft_lutpair49";
+  attribute SOFT_HLUTNM of \timing_param_thdsta_i[9]_i_1\ : label is "soft_lutpair45";
+  attribute SOFT_HLUTNM of \timing_param_thigh_i[9]_i_1\ : label is "soft_lutpair52";
+  attribute SOFT_HLUTNM of \timing_param_tlow_i[9]_i_1\ : label is "soft_lutpair50";
+  attribute SOFT_HLUTNM of \timing_param_tsudat_i[9]_i_1\ : label is "soft_lutpair53";
+  attribute SOFT_HLUTNM of \timing_param_tsusta_i[9]_i_1\ : label is "soft_lutpair55";
+  attribute SOFT_HLUTNM of \timing_param_tsusto_i[9]_i_1\ : label is "soft_lutpair54";
 begin
   IIC2Bus_Data1 <= \^iic2bus_data1\;
   O1 <= \^o1\;
@@ -2490,11 +2490,8 @@ use UNISIM.VCOMPONENTS.ALL;
 entity axi_iic_0_cdc_sync is
   port (
     O1 : out STD_LOGIC;
-    O2 : out STD_LOGIC;
-    I1 : in STD_LOGIC;
-    I2 : in STD_LOGIC;
-    scl_unstable_n : in STD_LOGIC;
-    \GEN_INERTIAL.debounce_ct_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 );
+    Sda_clean : out STD_LOGIC;
+    sda_rin_d1 : in STD_LOGIC;
     sda_i : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
@@ -2503,8 +2500,8 @@ entity axi_iic_0_cdc_sync is
 end axi_iic_0_cdc_sync;
 
 architecture STRUCTURE of axi_iic_0_cdc_sync is
-  signal Noisy_d2 : STD_LOGIC;
   signal Q : STD_LOGIC;
+  signal \^sda_clean\ : STD_LOGIC;
   signal s_level_out_d2 : STD_LOGIC;
   signal s_level_out_d3 : STD_LOGIC;
   attribute ASYNC_REG : boolean;
@@ -2522,10 +2519,8 @@ architecture STRUCTURE of axi_iic_0_cdc_sync is
   attribute ASYNC_REG of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is std.standard.true;
   attribute XILINX_LEGACY_PRIM of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is "FDR";
   attribute box_type of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is "PRIMITIVE";
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \GEN_INERTIAL.clean_cs_i_1__0\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \GEN_INERTIAL.debounce_ct[0]_i_1__0\ : label is "soft_lutpair4";
 begin
+  Sda_clean <= \^sda_clean\;
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -2567,30 +2562,16 @@ begin
       C => s_axi_aclk,
       CE => '1',
       D => s_level_out_d3,
-      Q => Noisy_d2,
+      Q => \^sda_clean\,
       R => '0'
     );
-\GEN_INERTIAL.clean_cs_i_1__0\: unisim.vcomponents.LUT4
+detect_stop_i_3: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"F4B0"
+      INIT => X"2"
     )
     port map (
-      I0 => \GEN_INERTIAL.debounce_ct_reg\(0),
-      I1 => scl_unstable_n,
-      I2 => I1,
-      I3 => Noisy_d2,
-      O => O2
-    );
-\GEN_INERTIAL.debounce_ct[0]_i_1__0\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"F9F9FFF9"
-    )
-    port map (
-      I0 => I1,
-      I1 => Noisy_d2,
-      I2 => I2,
-      I3 => scl_unstable_n,
-      I4 => \GEN_INERTIAL.debounce_ct_reg\(0),
+      I0 => \^sda_clean\,
+      I1 => sda_rin_d1,
       O => O1
     );
 end STRUCTURE;
@@ -2600,11 +2581,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity axi_iic_0_cdc_sync_4 is
   port (
-    O1 : out STD_LOGIC;
     O2 : out STD_LOGIC;
-    I1 : in STD_LOGIC;
-    \GEN_INERTIAL.debounce_ct_reg\ : in STD_LOGIC_VECTOR ( 0 to 0 );
-    I2 : in STD_LOGIC;
+    Scl_clean : out STD_LOGIC;
+    scl_rin_d1 : in STD_LOGIC;
     scl_i : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
@@ -2613,8 +2592,8 @@ entity axi_iic_0_cdc_sync_4 is
 end axi_iic_0_cdc_sync_4;
 
 architecture STRUCTURE of axi_iic_0_cdc_sync_4 is
-  signal Noisy_d2 : STD_LOGIC;
   signal Q : STD_LOGIC;
+  signal \^scl_clean\ : STD_LOGIC;
   signal s_level_out_d2 : STD_LOGIC;
   signal s_level_out_d3 : STD_LOGIC;
   attribute ASYNC_REG : boolean;
@@ -2632,10 +2611,8 @@ architecture STRUCTURE of axi_iic_0_cdc_sync_4 is
   attribute ASYNC_REG of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is std.standard.true;
   attribute XILINX_LEGACY_PRIM of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is "FDR";
   attribute box_type of \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4\ : label is "PRIMITIVE";
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \GEN_INERTIAL.clean_cs_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \GEN_INERTIAL.debounce_ct[0]_i_1\ : label is "soft_lutpair3";
 begin
+  Scl_clean <= \^scl_clean\;
 \GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to\: unisim.vcomponents.FDRE
     generic map(
       INIT => '0'
@@ -2677,29 +2654,17 @@ begin
       C => s_axi_aclk,
       CE => '1',
       D => s_level_out_d3,
-      Q => Noisy_d2,
+      Q => \^scl_clean\,
       R => '0'
     );
-\GEN_INERTIAL.clean_cs_i_1\: unisim.vcomponents.LUT3
+scl_rising_edge_i_1: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"AC"
+      INIT => X"2"
     )
     port map (
-      I0 => I1,
-      I1 => Noisy_d2,
-      I2 => \GEN_INERTIAL.debounce_ct_reg\(0),
+      I0 => \^scl_clean\,
+      I1 => scl_rin_d1,
       O => O2
-    );
-\GEN_INERTIAL.debounce_ct[0]_i_1\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FF9F"
-    )
-    port map (
-      I0 => I1,
-      I1 => Noisy_d2,
-      I2 => \GEN_INERTIAL.debounce_ct_reg\(0),
-      I3 => I2,
-      O => O1
     );
 end STRUCTURE;
 library IEEE;
@@ -2759,14 +2724,14 @@ architecture STRUCTURE of axi_iic_0_dynamic_master is
   attribute SOFT_HLUTNM of \rdByteCntr[6]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \rdByteCntr[7]_i_1\ : label is "soft_lutpair1";
   attribute counter : integer;
-  attribute counter of \rdByteCntr_reg[0]\ : label is 11;
-  attribute counter of \rdByteCntr_reg[1]\ : label is 11;
-  attribute counter of \rdByteCntr_reg[2]\ : label is 11;
-  attribute counter of \rdByteCntr_reg[3]\ : label is 11;
-  attribute counter of \rdByteCntr_reg[4]\ : label is 11;
-  attribute counter of \rdByteCntr_reg[5]\ : label is 11;
-  attribute counter of \rdByteCntr_reg[6]\ : label is 11;
-  attribute counter of \rdByteCntr_reg[7]\ : label is 11;
+  attribute counter of \rdByteCntr_reg[0]\ : label is 8;
+  attribute counter of \rdByteCntr_reg[1]\ : label is 8;
+  attribute counter of \rdByteCntr_reg[2]\ : label is 8;
+  attribute counter of \rdByteCntr_reg[3]\ : label is 8;
+  attribute counter of \rdByteCntr_reg[4]\ : label is 8;
+  attribute counter of \rdByteCntr_reg[5]\ : label is 8;
+  attribute counter of \rdByteCntr_reg[6]\ : label is 8;
+  attribute counter of \rdByteCntr_reg[7]\ : label is 8;
 begin
   callingReadAccess <= \^callingreadaccess\;
   firstDynStartSeen <= \^firstdynstartseen\;
@@ -3711,12 +3676,12 @@ architecture STRUCTURE of axi_iic_0_reg_interface is
   signal timing_param_tsusto_i : STD_LOGIC_VECTOR ( 9 to 9 );
   signal \^txfiford\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \Addr_Counters[0].MUXCY_L_I_i_4\ : label is "soft_lutpair37";
-  attribute SOFT_HLUTNM of \Data_Exists_DFF_i_1__0\ : label is "soft_lutpair37";
-  attribute SOFT_HLUTNM of \Data_Exists_DFF_i_2__1\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of Data_Exists_DFF_i_3 : label is "soft_lutpair39";
-  attribute SOFT_HLUTNM of \FIFO_RAM[1].SRL16E_I_i_1\ : label is "soft_lutpair38";
-  attribute SOFT_HLUTNM of \cr_i[5]_i_4\ : label is "soft_lutpair39";
+  attribute SOFT_HLUTNM of \Addr_Counters[0].MUXCY_L_I_i_4\ : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of \Data_Exists_DFF_i_1__0\ : label is "soft_lutpair35";
+  attribute SOFT_HLUTNM of \Data_Exists_DFF_i_2__1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of Data_Exists_DFF_i_3 : label is "soft_lutpair37";
+  attribute SOFT_HLUTNM of \FIFO_RAM[1].SRL16E_I_i_1\ : label is "soft_lutpair36";
+  attribute SOFT_HLUTNM of \cr_i[5]_i_4\ : label is "soft_lutpair37";
 begin
   D(0) <= \^d\(0);
   IIC2Bus_IntrEvent(0 to 7) <= \^iic2bus_intrevent\(0 to 7);
@@ -5420,13 +5385,13 @@ sda_setup_i_3: unisim.vcomponents.LUT2
       Q => timing_param_thdsta_i(9),
       R => I1
     );
-\timing_param_thigh_i_reg[0]\: unisim.vcomponents.FDRE
+\timing_param_thigh_i_reg[0]\: unisim.vcomponents.FDSE
     port map (
       C => s_axi_aclk,
       CE => I24(0),
       D => s_axi_wdata(0),
       Q => \^o6\(0),
-      R => I1
+      S => I1
     );
 \timing_param_thigh_i_reg[1]\: unisim.vcomponents.FDRE
     port map (
@@ -5500,13 +5465,13 @@ sda_setup_i_3: unisim.vcomponents.LUT2
       Q => timing_param_thigh_i(9),
       R => I1
     );
-\timing_param_tlow_i_reg[0]\: unisim.vcomponents.FDRE
+\timing_param_tlow_i_reg[0]\: unisim.vcomponents.FDSE
     port map (
       C => s_axi_aclk,
       CE => I25(0),
       D => s_axi_wdata(0),
       Q => \^o10\(0),
-      R => I1
+      S => I1
     );
 \timing_param_tlow_i_reg[1]\: unisim.vcomponents.FDRE
     port map (
@@ -5858,12 +5823,12 @@ architecture STRUCTURE of axi_iic_0_shift8 is
   signal \n_0_data_int[7]_i_1\ : STD_LOGIC;
   signal \n_0_data_int[7]_i_2\ : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \data_int[1]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \data_int[2]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \data_int[3]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \data_int[4]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \data_int[5]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \data_int[6]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \data_int[1]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \data_int[2]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \data_int[3]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \data_int[4]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \data_int[5]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \data_int[6]_i_1\ : label is "soft_lutpair14";
 begin
   Q(7 downto 0) <= \^q\(7 downto 0);
 \LEVEL_1_GEN.master_sda_i_1\: unisim.vcomponents.LUT6
@@ -6433,11 +6398,11 @@ architecture STRUCTURE of axi_iic_0_soft_reset is
   attribute IS_S_INVERTED of \RESET_FLOPS[1].RST_FLOPS\ : label is "1'b0";
   attribute box_type of \RESET_FLOPS[1].RST_FLOPS\ : label is "PRIMITIVE";
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \RESET_FLOPS[1].RST_FLOPS_i_1\ : label is "soft_lutpair63";
+  attribute SOFT_HLUTNM of \RESET_FLOPS[1].RST_FLOPS_i_1\ : label is "soft_lutpair61";
   attribute IS_CE_INVERTED of \RESET_FLOPS[2].RST_FLOPS\ : label is "1'b0";
   attribute IS_S_INVERTED of \RESET_FLOPS[2].RST_FLOPS\ : label is "1'b0";
   attribute box_type of \RESET_FLOPS[2].RST_FLOPS\ : label is "PRIMITIVE";
-  attribute SOFT_HLUTNM of \RESET_FLOPS[2].RST_FLOPS_i_1\ : label is "soft_lutpair63";
+  attribute SOFT_HLUTNM of \RESET_FLOPS[2].RST_FLOPS_i_1\ : label is "soft_lutpair61";
   attribute IS_CE_INVERTED of \RESET_FLOPS[3].RST_FLOPS\ : label is "1'b0";
   attribute IS_S_INVERTED of \RESET_FLOPS[3].RST_FLOPS\ : label is "1'b0";
   attribute box_type of \RESET_FLOPS[3].RST_FLOPS\ : label is "PRIMITIVE";
@@ -6710,29 +6675,29 @@ architecture STRUCTURE of axi_iic_0_upcnt_n is
   signal \NLW_FSM_onehot_scl_state_reg[9]_i_8_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_FSM_onehot_scl_state_reg[9]_i_9_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \q_int[0]_i_10\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \q_int[0]_i_14\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \q_int[0]_i_15\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \q_int[0]_i_16\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \q_int[1]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \q_int[2]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \q_int[3]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \q_int[4]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \q_int[6]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \q_int[7]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \q_int[8]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \q_int[9]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \q_int[0]_i_10\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \q_int[0]_i_14\ : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \q_int[0]_i_15\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \q_int[0]_i_16\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \q_int[1]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \q_int[2]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \q_int[3]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \q_int[4]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \q_int[6]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \q_int[7]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \q_int[8]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \q_int[9]_i_1\ : label is "soft_lutpair11";
   attribute counter : integer;
-  attribute counter of \q_int_reg[0]\ : label is 9;
-  attribute counter of \q_int_reg[1]\ : label is 9;
-  attribute counter of \q_int_reg[2]\ : label is 9;
-  attribute counter of \q_int_reg[3]\ : label is 9;
-  attribute counter of \q_int_reg[4]\ : label is 9;
-  attribute counter of \q_int_reg[5]\ : label is 9;
-  attribute counter of \q_int_reg[6]\ : label is 9;
-  attribute counter of \q_int_reg[7]\ : label is 9;
-  attribute counter of \q_int_reg[8]\ : label is 9;
-  attribute counter of \q_int_reg[9]\ : label is 9;
+  attribute counter of \q_int_reg[0]\ : label is 6;
+  attribute counter of \q_int_reg[1]\ : label is 6;
+  attribute counter of \q_int_reg[2]\ : label is 6;
+  attribute counter of \q_int_reg[3]\ : label is 6;
+  attribute counter of \q_int_reg[4]\ : label is 6;
+  attribute counter of \q_int_reg[5]\ : label is 6;
+  attribute counter of \q_int_reg[6]\ : label is 6;
+  attribute counter of \q_int_reg[7]\ : label is 6;
+  attribute counter of \q_int_reg[8]\ : label is 6;
+  attribute counter of \q_int_reg[9]\ : label is 6;
 begin
   O1 <= \^o1\;
   O3(0) <= \^o3\(0);
@@ -7798,25 +7763,25 @@ architecture STRUCTURE of axi_iic_0_upcnt_n_2 is
   signal \q_int_reg__0\ : STD_LOGIC_VECTOR ( 1 to 9 );
   signal NLW_sda_setup_reg_i_2_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \q_int[1]_i_1__0\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \q_int[2]_i_1__0\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \q_int[3]_i_1__0\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \q_int[4]_i_1__0\ : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of \q_int[6]_i_1__0\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \q_int[7]_i_1__0\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \q_int[8]_i_1__0\ : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of \q_int[9]_i_1__0\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \q_int[1]_i_1__0\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \q_int[2]_i_1__0\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \q_int[3]_i_1__0\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \q_int[4]_i_1__0\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \q_int[6]_i_1__0\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \q_int[7]_i_1__0\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \q_int[8]_i_1__0\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \q_int[9]_i_1__0\ : label is "soft_lutpair18";
   attribute counter : integer;
-  attribute counter of \q_int_reg[0]\ : label is 10;
-  attribute counter of \q_int_reg[1]\ : label is 10;
-  attribute counter of \q_int_reg[2]\ : label is 10;
-  attribute counter of \q_int_reg[3]\ : label is 10;
-  attribute counter of \q_int_reg[4]\ : label is 10;
-  attribute counter of \q_int_reg[5]\ : label is 10;
-  attribute counter of \q_int_reg[6]\ : label is 10;
-  attribute counter of \q_int_reg[7]\ : label is 10;
-  attribute counter of \q_int_reg[8]\ : label is 10;
-  attribute counter of \q_int_reg[9]\ : label is 10;
+  attribute counter of \q_int_reg[0]\ : label is 7;
+  attribute counter of \q_int_reg[1]\ : label is 7;
+  attribute counter of \q_int_reg[2]\ : label is 7;
+  attribute counter of \q_int_reg[3]\ : label is 7;
+  attribute counter of \q_int_reg[4]\ : label is 7;
+  attribute counter of \q_int_reg[5]\ : label is 7;
+  attribute counter of \q_int_reg[6]\ : label is 7;
+  attribute counter of \q_int_reg[7]\ : label is 7;
+  attribute counter of \q_int_reg[8]\ : label is 7;
+  attribute counter of \q_int_reg[9]\ : label is 7;
 begin
   O4(0) <= \^o4\(0);
 \q_int[0]_i_1\: unisim.vcomponents.LUT2
@@ -8183,17 +8148,17 @@ architecture STRUCTURE of \axi_iic_0_upcnt_n__parameterized0\ is
   signal \n_0_q_int_reg[3]\ : STD_LOGIC;
   signal \^state_reg\ : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \FSM_onehot_state[7]_i_7\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \FSM_onehot_state[7]_i_8\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of dtc_i_i_2 : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \q_int[1]_i_1__1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \q_int[2]_i_1__1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \q_int[3]_i_1__1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[7]_i_7\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[7]_i_8\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of dtc_i_i_2 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \q_int[1]_i_1__1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \q_int[2]_i_1__1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \q_int[3]_i_1__1\ : label is "soft_lutpair5";
   attribute counter : integer;
-  attribute counter of \q_int_reg[0]\ : label is 8;
-  attribute counter of \q_int_reg[1]\ : label is 8;
-  attribute counter of \q_int_reg[2]\ : label is 8;
-  attribute counter of \q_int_reg[3]\ : label is 8;
+  attribute counter of \q_int_reg[0]\ : label is 5;
+  attribute counter of \q_int_reg[1]\ : label is 5;
+  attribute counter of \q_int_reg[2]\ : label is 5;
+  attribute counter of \q_int_reg[3]\ : label is 5;
 begin
   state_reg(0) <= \^state_reg\(0);
 EarlyAckDataState_i_1: unisim.vcomponents.LUT6
@@ -8397,72 +8362,25 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity axi_iic_0_debounce is
   port (
-    O1 : out STD_LOGIC;
-    scl_unstable_n : out STD_LOGIC;
     O2 : out STD_LOGIC;
-    s_axi_aclk : in STD_LOGIC;
-    I1 : in STD_LOGIC;
+    Scl_clean : out STD_LOGIC;
     scl_rin_d1 : in STD_LOGIC;
-    scl_i : in STD_LOGIC
+    scl_i : in STD_LOGIC;
+    s_axi_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of axi_iic_0_debounce : entity is "debounce";
 end axi_iic_0_debounce;
 
 architecture STRUCTURE of axi_iic_0_debounce is
-  signal \GEN_INERTIAL.debounce_ct_reg\ : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \^o1\ : STD_LOGIC;
-  signal n_0_INPUT_DOUBLE_REGS : STD_LOGIC;
-  signal n_1_INPUT_DOUBLE_REGS : STD_LOGIC;
-  attribute counter : integer;
-  attribute counter of \GEN_INERTIAL.debounce_ct_reg[0]\ : label is 6;
 begin
-  O1 <= \^o1\;
-\GEN_INERTIAL.Unstable_n_reg\: unisim.vcomponents.FDRE
-    port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => n_0_INPUT_DOUBLE_REGS,
-      Q => scl_unstable_n,
-      R => '0'
-    );
-\GEN_INERTIAL.clean_cs_reg\: unisim.vcomponents.FDSE
-    generic map(
-      INIT => '1'
-    )
-    port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => n_1_INPUT_DOUBLE_REGS,
-      Q => \^o1\,
-      S => I1
-    );
-\GEN_INERTIAL.debounce_ct_reg[0]\: unisim.vcomponents.FDRE
-    port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => n_0_INPUT_DOUBLE_REGS,
-      Q => \GEN_INERTIAL.debounce_ct_reg\(0),
-      R => '0'
-    );
 INPUT_DOUBLE_REGS: entity work.axi_iic_0_cdc_sync_4
     port map (
-      \GEN_INERTIAL.debounce_ct_reg\(0) => \GEN_INERTIAL.debounce_ct_reg\(0),
-      I1 => \^o1\,
-      I2 => I1,
-      O1 => n_0_INPUT_DOUBLE_REGS,
-      O2 => n_1_INPUT_DOUBLE_REGS,
+      O2 => O2,
+      Scl_clean => Scl_clean,
       s_axi_aclk => s_axi_aclk,
-      scl_i => scl_i
-    );
-scl_rising_edge_i_1: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => \^o1\,
-      I1 => scl_rin_d1,
-      O => O2
+      scl_i => scl_i,
+      scl_rin_d1 => scl_rin_d1
     );
 end STRUCTURE;
 library IEEE;
@@ -8472,64 +8390,24 @@ use UNISIM.VCOMPONENTS.ALL;
 entity axi_iic_0_debounce_3 is
   port (
     O1 : out STD_LOGIC;
-    O2 : out STD_LOGIC;
-    s_axi_aclk : in STD_LOGIC;
-    I1 : in STD_LOGIC;
+    Sda_clean : out STD_LOGIC;
     sda_rin_d1 : in STD_LOGIC;
-    scl_unstable_n : in STD_LOGIC;
-    sda_i : in STD_LOGIC
+    sda_i : in STD_LOGIC;
+    s_axi_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of axi_iic_0_debounce_3 : entity is "debounce";
 end axi_iic_0_debounce_3;
 
 architecture STRUCTURE of axi_iic_0_debounce_3 is
-  signal \GEN_INERTIAL.debounce_ct_reg\ : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \^o1\ : STD_LOGIC;
-  signal n_0_INPUT_DOUBLE_REGS : STD_LOGIC;
-  signal n_1_INPUT_DOUBLE_REGS : STD_LOGIC;
-  attribute counter : integer;
-  attribute counter of \GEN_INERTIAL.debounce_ct_reg[0]\ : label is 7;
 begin
-  O1 <= \^o1\;
-\GEN_INERTIAL.clean_cs_reg\: unisim.vcomponents.FDSE
-    generic map(
-      INIT => '1'
-    )
-    port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => n_1_INPUT_DOUBLE_REGS,
-      Q => \^o1\,
-      S => I1
-    );
-\GEN_INERTIAL.debounce_ct_reg[0]\: unisim.vcomponents.FDRE
-    port map (
-      C => s_axi_aclk,
-      CE => '1',
-      D => n_0_INPUT_DOUBLE_REGS,
-      Q => \GEN_INERTIAL.debounce_ct_reg\(0),
-      R => '0'
-    );
 INPUT_DOUBLE_REGS: entity work.axi_iic_0_cdc_sync
     port map (
-      \GEN_INERTIAL.debounce_ct_reg\(0) => \GEN_INERTIAL.debounce_ct_reg\(0),
-      I1 => \^o1\,
-      I2 => I1,
-      O1 => n_0_INPUT_DOUBLE_REGS,
-      O2 => n_1_INPUT_DOUBLE_REGS,
+      O1 => O1,
+      Sda_clean => Sda_clean,
       s_axi_aclk => s_axi_aclk,
-      scl_unstable_n => scl_unstable_n,
-      sda_i => sda_i
-    );
-detect_stop_i_3: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"2"
-    )
-    port map (
-      I0 => \^o1\,
-      I1 => sda_rin_d1,
-      O => O2
+      sda_i => sda_i,
+      sda_rin_d1 => sda_rin_d1
     );
 end STRUCTURE;
 library IEEE;
@@ -8797,38 +8675,38 @@ architecture STRUCTURE of axi_iic_0_iic_control is
   signal tx_under_prev_i4 : STD_LOGIC;
   signal txer_i : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of AckDataState_i_2 : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[1]_i_2\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[2]_i_3\ : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[2]_i_4\ : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[6]_i_8\ : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[7]_i_1\ : label is "soft_lutpair23";
-  attribute SOFT_HLUTNM of \FSM_onehot_state[1]_i_4\ : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of \FSM_onehot_state[2]_i_1\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \FSM_onehot_state[3]_i_2\ : label is "soft_lutpair28";
-  attribute SOFT_HLUTNM of \FSM_onehot_state[4]_i_4\ : label is "soft_lutpair27";
-  attribute SOFT_HLUTNM of \FSM_onehot_state[5]_i_2\ : label is "soft_lutpair32";
-  attribute SOFT_HLUTNM of \FSM_onehot_state[6]_i_3\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of AckDataState_i_2 : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[1]_i_2\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[2]_i_3\ : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[2]_i_4\ : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[6]_i_8\ : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of \FSM_onehot_scl_state[7]_i_1\ : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[1]_i_4\ : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[2]_i_1\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[3]_i_2\ : label is "soft_lutpair26";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[4]_i_4\ : label is "soft_lutpair25";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[5]_i_2\ : label is "soft_lutpair30";
+  attribute SOFT_HLUTNM of \FSM_onehot_state[6]_i_3\ : label is "soft_lutpair22";
   attribute RETAIN_INVERTER : boolean;
   attribute RETAIN_INVERTER of \IIC2Bus_IntrEvent[4]_i_1\ : label is std.standard.true;
-  attribute SOFT_HLUTNM of \IIC2Bus_IntrEvent[4]_i_1\ : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of al_i_i_1 : label is "soft_lutpair33";
-  attribute SOFT_HLUTNM of \cr_i[2]_i_2\ : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of detect_stop_i_2 : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of gen_start_i_1 : label is "soft_lutpair25";
-  attribute SOFT_HLUTNM of i2c_header_en_i_1 : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of master_slave_i_1 : label is "soft_lutpair26";
-  attribute SOFT_HLUTNM of msms_rst_i_i_4 : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of sda_cout_reg_i_6 : label is "soft_lutpair30";
-  attribute SOFT_HLUTNM of sda_cout_reg_i_7 : label is "soft_lutpair21";
-  attribute SOFT_HLUTNM of sda_sample_i_1 : label is "soft_lutpair34";
-  attribute SOFT_HLUTNM of shift_reg_en_i_1 : label is "soft_lutpair29";
-  attribute SOFT_HLUTNM of shift_reg_ld_i_3 : label is "soft_lutpair24";
-  attribute SOFT_HLUTNM of shift_reg_ld_i_4 : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of stop_scl_reg_i_4 : label is "soft_lutpair22";
-  attribute SOFT_HLUTNM of stop_scl_reg_i_5 : label is "soft_lutpair31";
-  attribute SOFT_HLUTNM of stop_scl_reg_i_7 : label is "soft_lutpair35";
-  attribute SOFT_HLUTNM of txer_i_i_2 : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of \IIC2Bus_IntrEvent[4]_i_1\ : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of al_i_i_1 : label is "soft_lutpair31";
+  attribute SOFT_HLUTNM of \cr_i[2]_i_2\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of detect_stop_i_2 : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of gen_start_i_1 : label is "soft_lutpair23";
+  attribute SOFT_HLUTNM of i2c_header_en_i_1 : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of master_slave_i_1 : label is "soft_lutpair24";
+  attribute SOFT_HLUTNM of msms_rst_i_i_4 : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of sda_cout_reg_i_6 : label is "soft_lutpair28";
+  attribute SOFT_HLUTNM of sda_cout_reg_i_7 : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of sda_sample_i_1 : label is "soft_lutpair32";
+  attribute SOFT_HLUTNM of shift_reg_en_i_1 : label is "soft_lutpair27";
+  attribute SOFT_HLUTNM of shift_reg_ld_i_3 : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of shift_reg_ld_i_4 : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of stop_scl_reg_i_4 : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of stop_scl_reg_i_5 : label is "soft_lutpair29";
+  attribute SOFT_HLUTNM of stop_scl_reg_i_7 : label is "soft_lutpair33";
+  attribute SOFT_HLUTNM of txer_i_i_2 : label is "soft_lutpair25";
 begin
   Aas <= \^aas\;
   Bb <= \^bb\;
@@ -10937,19 +10815,19 @@ architecture STRUCTURE of axi_iic_0_slave_attachment is
   attribute RETAIN_INVERTER : boolean;
   attribute RETAIN_INVERTER of \INCLUDE_DPHASE_TIMER.dpto_cnt[0]_i_1\ : label is std.standard.true;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[0]_i_1\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[1]_i_1\ : label is "soft_lutpair61";
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[2]_i_1\ : label is "soft_lutpair60";
-  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[3]_i_2\ : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[0]_i_1\ : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[1]_i_1\ : label is "soft_lutpair59";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[2]_i_1\ : label is "soft_lutpair58";
+  attribute SOFT_HLUTNM of \INCLUDE_DPHASE_TIMER.dpto_cnt[3]_i_2\ : label is "soft_lutpair58";
   attribute counter : integer;
-  attribute counter of \INCLUDE_DPHASE_TIMER.dpto_cnt_reg[0]\ : label is 5;
-  attribute counter of \INCLUDE_DPHASE_TIMER.dpto_cnt_reg[1]\ : label is 5;
-  attribute counter of \INCLUDE_DPHASE_TIMER.dpto_cnt_reg[2]\ : label is 5;
-  attribute counter of \INCLUDE_DPHASE_TIMER.dpto_cnt_reg[3]\ : label is 5;
-  attribute SOFT_HLUTNM of s_axi_arready_INST_0 : label is "soft_lutpair62";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[0]_i_3\ : label is "soft_lutpair59";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[9]_i_12\ : label is "soft_lutpair59";
-  attribute SOFT_HLUTNM of s_axi_wready_INST_0 : label is "soft_lutpair62";
+  attribute counter of \INCLUDE_DPHASE_TIMER.dpto_cnt_reg[0]\ : label is 4;
+  attribute counter of \INCLUDE_DPHASE_TIMER.dpto_cnt_reg[1]\ : label is 4;
+  attribute counter of \INCLUDE_DPHASE_TIMER.dpto_cnt_reg[2]\ : label is 4;
+  attribute counter of \INCLUDE_DPHASE_TIMER.dpto_cnt_reg[3]\ : label is 4;
+  attribute SOFT_HLUTNM of s_axi_arready_INST_0 : label is "soft_lutpair60";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[0]_i_3\ : label is "soft_lutpair57";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[9]_i_12\ : label is "soft_lutpair57";
+  attribute SOFT_HLUTNM of s_axi_wready_INST_0 : label is "soft_lutpair60";
 begin
   O12 <= \^o12\;
   O13 <= \^o13\;
@@ -11664,15 +11542,14 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity axi_iic_0_filter is
   port (
-    scl_clean : out STD_LOGIC;
-    sda_clean : out STD_LOGIC;
     O1 : out STD_LOGIC;
+    Sda_clean : out STD_LOGIC;
     O2 : out STD_LOGIC;
-    s_axi_aclk : in STD_LOGIC;
-    I1 : in STD_LOGIC;
+    Scl_clean : out STD_LOGIC;
     sda_rin_d1 : in STD_LOGIC;
     scl_rin_d1 : in STD_LOGIC;
     scl_i : in STD_LOGIC;
+    s_axi_aclk : in STD_LOGIC;
     sda_i : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -11680,25 +11557,20 @@ entity axi_iic_0_filter is
 end axi_iic_0_filter;
 
 architecture STRUCTURE of axi_iic_0_filter is
-  signal scl_unstable_n : STD_LOGIC;
 begin
 SCL_DEBOUNCE: entity work.axi_iic_0_debounce
     port map (
-      I1 => I1,
-      O1 => scl_clean,
       O2 => O2,
+      Scl_clean => Scl_clean,
       s_axi_aclk => s_axi_aclk,
       scl_i => scl_i,
-      scl_rin_d1 => scl_rin_d1,
-      scl_unstable_n => scl_unstable_n
+      scl_rin_d1 => scl_rin_d1
     );
 SDA_DEBOUNCE: entity work.axi_iic_0_debounce_3
     port map (
-      I1 => I1,
-      O1 => sda_clean,
-      O2 => O1,
+      O1 => O1,
+      Sda_clean => Sda_clean,
       s_axi_aclk => s_axi_aclk,
-      scl_unstable_n => scl_unstable_n,
       sda_i => sda_i,
       sda_rin_d1 => sda_rin_d1
     );
@@ -12042,6 +11914,7 @@ architecture STRUCTURE of axi_iic_0_iic is
   signal earlyAckHdr : STD_LOGIC;
   signal firstDynStartSeen : STD_LOGIC;
   signal \^gpo\ : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal n_0_FILTER_I : STD_LOGIC;
   signal n_0_WRITE_FIFO_CTRL_I : STD_LOGIC;
   signal n_108_REG_INTERFACE_I : STD_LOGIC;
   signal n_109_REG_INTERFACE_I : STD_LOGIC;
@@ -12106,7 +11979,6 @@ architecture STRUCTURE of axi_iic_0_iic is
   signal n_2_X_AXI_IPIF_SSP1 : STD_LOGIC;
   signal n_31_X_AXI_IPIF_SSP1 : STD_LOGIC;
   signal n_32_X_AXI_IPIF_SSP1 : STD_LOGIC;
-  signal n_3_FILTER_I : STD_LOGIC;
   signal n_4_DYN_MASTER_I : STD_LOGIC;
   signal n_82_REG_INTERFACE_I : STD_LOGIC;
   signal n_83_REG_INTERFACE_I : STD_LOGIC;
@@ -12169,14 +12041,13 @@ DYN_MASTER_I: entity work.axi_iic_0_dynamic_master
     );
 FILTER_I: entity work.axi_iic_0_filter
     port map (
-      I1 => n_2_X_AXI_IPIF_SSP1,
-      O1 => n_2_FILTER_I,
-      O2 => n_3_FILTER_I,
+      O1 => n_0_FILTER_I,
+      O2 => n_2_FILTER_I,
+      Scl_clean => scl_clean,
+      Sda_clean => sda_clean,
       s_axi_aclk => s_axi_aclk,
-      scl_clean => scl_clean,
       scl_i => scl_i,
       scl_rin_d1 => scl_rin_d1,
-      sda_clean => sda_clean,
       sda_i => sda_i,
       sda_rin_d1 => sda_rin_d1
     );
@@ -12189,7 +12060,7 @@ IIC_CONTROL_I: entity work.axi_iic_0_iic_control
       D(1) => n_10_IIC_CONTROL_I,
       D(0) => p_0_out(0),
       E(0) => n_26_X_AXI_IPIF_SSP1,
-      I1 => n_3_FILTER_I,
+      I1 => n_2_FILTER_I,
       I10(0) => n_98_REG_INTERFACE_I,
       I11 => n_108_REG_INTERFACE_I,
       I12(8 downto 0) => timing_param_tsusto_i(8 downto 0),
@@ -12202,7 +12073,7 @@ IIC_CONTROL_I: entity work.axi_iic_0_iic_control
       I19(8 downto 0) => timing_param_tsudat_i(8 downto 0),
       I2 => n_142_REG_INTERFACE_I,
       I20 => n_117_REG_INTERFACE_I,
-      I21 => n_2_FILTER_I,
+      I21 => n_0_FILTER_I,
       I22(0) => n_18_WRITE_FIFO_I,
       I3(6) => n_135_REG_INTERFACE_I,
       I3(5) => n_136_REG_INTERFACE_I,
@@ -12705,7 +12576,7 @@ entity axi_iic_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of axi_iic_0 : entity is "axi_iic_0,axi_iic,{}";
   attribute core_generation_info : string;
-  attribute core_generation_info of axi_iic_0 : entity is "axi_iic_0,axi_iic,{x_ipProduct=Vivado 2014.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_iic,x_ipVersion=2.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,C_FAMILY=zynq,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_IIC_FREQ=100000,C_TEN_BIT_ADR=0,C_GPO_WIDTH=1,C_S_AXI_ACLK_FREQ_HZ=100000000,C_SCL_INERTIAL_DELAY=1,C_SDA_INERTIAL_DELAY=1,C_SDA_LEVEL=1,C_SMBUS_PMBUS_HOST=0}";
+  attribute core_generation_info of axi_iic_0 : entity is "axi_iic_0,axi_iic,{x_ipProduct=Vivado 2014.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_iic,x_ipVersion=2.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,C_FAMILY=zynq,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_IIC_FREQ=100000,C_TEN_BIT_ADR=0,C_GPO_WIDTH=1,C_S_AXI_ACLK_FREQ_HZ=100000000,C_SCL_INERTIAL_DELAY=0,C_SDA_INERTIAL_DELAY=0,C_SDA_LEVEL=1,C_SMBUS_PMBUS_HOST=0}";
 end axi_iic_0;
 
 architecture STRUCTURE of axi_iic_0 is

@@ -305,7 +305,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>483c30c8</spirit:value>
+            <spirit:value>10c981da</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -313,7 +313,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 24 22:11:21 UTC 2014</spirit:value>
+            <spirit:value>Thu Jul 31 00:21:30 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -347,7 +347,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>483c30c8</spirit:value>
+            <spirit:value>10c981da</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -355,7 +355,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 24 22:11:22 UTC 2014</spirit:value>
+            <spirit:value>Thu Jul 31 00:21:30 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -373,7 +373,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>483c30c8</spirit:value>
+            <spirit:value>10c981da</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -381,7 +381,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 24 22:11:23 UTC 2014</spirit:value>
+            <spirit:value>Thu Jul 31 00:21:31 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -400,7 +400,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>483c30c8</spirit:value>
+            <spirit:value>10c981da</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -408,7 +408,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 24 22:11:23 UTC 2014</spirit:value>
+            <spirit:value>Thu Jul 31 00:21:31 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -442,7 +442,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>c2166d0c</spirit:value>
+            <spirit:value>573ddccb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -450,7 +450,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 24 22:11:23 UTC 2014</spirit:value>
+            <spirit:value>Thu Jul 31 00:21:31 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -469,7 +469,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>c2166d0c</spirit:value>
+            <spirit:value>573ddccb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -477,7 +477,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 24 22:11:23 UTC 2014</spirit:value>
+            <spirit:value>Thu Jul 31 00:21:31 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -495,7 +495,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>483c30c8</spirit:value>
+            <spirit:value>10c981da</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -503,7 +503,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 24 22:11:24 UTC 2014</spirit:value>
+            <spirit:value>Thu Jul 31 00:21:31 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -521,7 +521,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>483c30c8</spirit:value>
+            <spirit:value>10c981da</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1146,12 +1146,12 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SCL_INERTIAL_DELAY</spirit:name>
         <spirit:displayName>SCL Inertial delay filter value (in AXI clocks)</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SCL_INERTIAL_DELAY" spirit:minimum="0" spirit:maximum="255">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SCL_INERTIAL_DELAY" spirit:minimum="0" spirit:maximum="255">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SDA_INERTIAL_DELAY</spirit:name>
         <spirit:displayName>SDA Inertial delay value (in AXI clocks)</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SDA_INERTIAL_DELAY" spirit:minimum="0" spirit:maximum="255">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SDA_INERTIAL_DELAY" spirit:minimum="0" spirit:maximum="255">0</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SDA_LEVEL</spirit:name>
@@ -1174,7 +1174,6 @@
     <spirit:choice>
       <spirit:name>choices_1</spirit:name>
       <spirit:enumeration spirit:text="Custom">Custom</spirit:enumeration>
-      <spirit:enumeration spirit:text="iic_main">iic_main</spirit:enumeration>
     </spirit:choice>
   </spirit:choices>
   <spirit:fileSets>
@@ -2777,7 +2776,7 @@
       <spirit:name>C_SCL_INERTIAL_DELAY</spirit:name>
       <spirit:displayName>SCL Inertial delay (in AXI clocks)</spirit:displayName>
       <spirit:description>This parameter specifies the number of S_AXI_ACLK cycles used to define the width of the pulse rejection on SCL signals</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SCL_INERTIAL_DELAY" spirit:order="1140" spirit:minimum="0" spirit:maximum="255">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SCL_INERTIAL_DELAY" spirit:order="1140" spirit:minimum="0" spirit:maximum="255">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -2791,7 +2790,7 @@
       <spirit:name>C_SDA_INERTIAL_DELAY</spirit:name>
       <spirit:displayName>SDA Inertial delay (in AXI clocks)</spirit:displayName>
       <spirit:description>This parameter specify the number of S_AXI_ACLK cycles used to define the width of the pulse rejection on SDA signals</spirit:description>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SDA_INERTIAL_DELAY" spirit:order="1160" spirit:minimum="0" spirit:maximum="255">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_SDA_INERTIAL_DELAY" spirit:order="1160" spirit:minimum="0" spirit:maximum="255">0</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>

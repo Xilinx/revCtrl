@@ -173,8 +173,8 @@ BEGIN
       C_TEN_BIT_ADR => 0,
       C_GPO_WIDTH => 1,
       C_S_AXI_ACLK_FREQ_HZ => 100000000,
-      C_SCL_INERTIAL_DELAY => 1,
-      C_SDA_INERTIAL_DELAY => 1,
+      C_SCL_INERTIAL_DELAY => 0,
+      C_SDA_INERTIAL_DELAY => 0,
       C_SDA_LEVEL => 1,
       C_SMBUS_PMBUS_HOST => 0
     )
