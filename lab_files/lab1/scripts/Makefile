@@ -1,5 +1,4 @@
 RTL=../hdl/threeFlop/threeFlop.v
-
 XDC=../xdc/top.xdc
 
 
