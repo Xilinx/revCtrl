@@ -18,8 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module threeFlop (clk, rst, in, out);
-   input clk,rst,in;
+module threeFlop (clk, in, out);
+   input clk,in;
    output out;
 
    wire data;
@@ -29,17 +29,8 @@ module threeFlop (clk, rst, in, out);
 
    always @(posedge clk)
    begin
-      if(rst==1)
-      begin
-         dataIn <= 1'b0;
-         middle <= 1'b0;
-         dataOut <= 1'b0;
-      end
-      else
-      begin
-         dataIn <= in;
-         middle <= dataIn;
-         dataOut <= middle;
-      end
+      dataIn <= in;
+      middle <= dataIn;
+      dataOut <= middle;
    end
 endmodule
