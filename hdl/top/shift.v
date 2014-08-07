@@ -22,6 +22,7 @@
 
 module shift(
     input in,
+    input s_in,
     output out,
     input clk,
     input shift
@@ -37,7 +38,7 @@ module shift(
        end
        else
        begin
-          out <= out;
+          out <= s_in;
        end
     end
 endmodule
