@@ -12,6 +12,10 @@ set_property "board_part" "xilinx.com:zc702:part0:1.0" $obj
 set_property "simulator_language" "Mixed" $obj
 set_property "target_language" "Verilog" $obj
 
+# setup up custom ip repository location
+set_property ip_repo_paths  ../cip/bft [current_fileset]
+update_ip_catalog
+
 add_files -norecurse ../hdl/top/top.v
 add_files -norecurse ../hdl/top/iicWrapper.v
 add_files -norecurse ../hdl/top/shift.v
