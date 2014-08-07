@@ -13,6 +13,8 @@ set_property "simulator_language" "Mixed" $obj
 set_property "target_language" "Verilog" $obj
 
 add_files -norecurse ../hdl/top/top.v
+add_files -norecurse ../hdl/top/iicWrapper.v
+add_files -norecurse ../hdl/top/shift.v
 add_files -norecurse ../hdl/threeFlop/threeFlop.v
 add_files -norecurse ../xdc/top.xdc
 add_files -norecurse ../ip/axi_iic_0/axi_iic_0.xci
