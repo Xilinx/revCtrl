@@ -23,46 +23,53 @@
 module iicWrapper(
     input in,
     input clk,
-    input out
+    output out, 
+    input shift
     );
+    
+    parameter size = 110;
+    wire [size-1:0] f;
     
     genvar n;
     generate
-       for (n=0; n < 128; n=n+1) 
-       begin:
-          shift s ();
+       for (n=0; n < size; n=n+1) 
+       begin : flops
+          if (n == 0) begin
+             shift s (.in(in), .out(f[0]), .clk(clk), .shift(shift) );
+          end else begin
+             shift s (.in(f[n-1]), .out(f[n]), .clk(clk), .shift(shift) );
+          end
        end
     endgenerate
              
-    
     axi_iic_0 iic (
       .s_axi_aclk(clk),        // input wire s_axi_aclk
-      .s_axi_aresetn(in),  // input wire s_axi_aresetn
-      .iic2intc_irpt(),  // output wire iic2intc_irpt
-      .s_axi_awaddr(),    // input wire [8 : 0] s_axi_awaddr
-      .s_axi_awvalid(),  // input wire s_axi_awvalid
-      .s_axi_awready(),  // output wire s_axi_awready
-      .s_axi_wdata(),      // input wire [31 : 0] s_axi_wdata
-      .s_axi_wstrb(),      // input wire [3 : 0] s_axi_wstrb
-      .s_axi_wvalid(),    // input wire s_axi_wvalid
-      .s_axi_wready(),    // output wire s_axi_wready
-      .s_axi_bresp(),      // output wire [1 : 0] s_axi_bresp
-      .s_axi_bvalid(),    // output wire s_axi_bvalid
-      .s_axi_bready(),    // input wire s_axi_bready
-      .s_axi_araddr(),    // input wire [8 : 0] s_axi_araddr
-      .s_axi_arvalid(),  // input wire s_axi_arvalid
-      .s_axi_arready(),  // output wire s_axi_arready
-      .s_axi_rdata(),      // output wire [31 : 0] s_axi_rdata
-      .s_axi_rresp(),      // output wire [1 : 0] s_axi_rresp
-      .s_axi_rvalid(),    // output wire s_axi_rvalid
-      .s_axi_rready(),    // input wire s_axi_rready
-      .sda_i(),                  // input wire sda_i
-      .sda_o(),                  // output wire sda_o
-      .sda_t(),                  // output wire sda_t
-      .scl_i(),                  // input wire scl_i
-      .scl_o(),                  // output wire scl_o
-      .scl_t(),                  // output wire scl_t
-      .gpo(out)                      // output wire [0 : 0] gpo
+      .s_axi_aresetn(f[0]),  // input wire s_axi_aresetn
+      .iic2intc_irpt(f[1]),  // output wire iic2intc_irpt
+      .s_axi_awaddr(f[10:2]),    // input wire [8 : 0] s_axi_awaddr
+      .s_axi_awvalid(f[11]),  // input wire s_axi_awvalid
+      .s_axi_awready(f[12]),  // output wire s_axi_awready
+      .s_axi_wdata(f[45:13]),      // input wire [31 : 0] s_axi_wdata
+      .s_axi_wstrb(f[50:46]),      // input wire [3 : 0] s_axi_wstrb
+      .s_axi_wvalid(f[51]),    // input wire s_axi_wvalid
+      .s_axi_wready(f[52]),    // output wire s_axi_wready
+      .s_axi_bresp(f[54:53]),      // output wire [1 : 0] s_axi_bresp
+      .s_axi_bvalid(f[55]),    // output wire s_axi_bvalid
+      .s_axi_bready(f[56]),    // input wire s_axi_bready
+      .s_axi_araddr(f[65:57]),    // input wire [8 : 0] s_axi_araddr
+      .s_axi_arvalid(f[66]),  // input wire s_axi_arvalid
+      .s_axi_arready(f[67]),  // output wire s_axi_arready
+      .s_axi_rdata(f[99:68]),      // output wire [31 : 0] s_axi_rdata
+      .s_axi_rresp(f[101:100]),      // output wire [1 : 0] s_axi_rresp
+      .s_axi_rvalid(f[102]),    // output wire s_axi_rvalid
+      .s_axi_rready(f[103]),    // input wire s_axi_rready
+      .sda_i(f[104]),                  // input wire sda_i
+      .sda_o(f[105]),                  // output wire sda_o
+      .sda_t(f[106]),                  // output wire sda_t
+      .scl_i(f[107]),                  // input wire scl_i
+      .scl_o(f[108]),                  // output wire scl_o
+      .scl_t(f[109]),                  // output wire scl_t
+      .gpo(f[110])                      // output wire [0 : 0] gpo
     );
 
 endmodule

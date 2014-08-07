@@ -24,12 +24,14 @@ module shift(
     input in,
     output out,
     input clk,
-    input sel
+    input shift
     );
+    
+    reg out = 1'b1;
     
     always @(posedge clk)
     begin
-       if (sel == 1)
+       if (shift == 0)
        begin
           out <= in;
        end
