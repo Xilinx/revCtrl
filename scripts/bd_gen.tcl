@@ -6,6 +6,10 @@ source $thisDir/utils.tcl
 # Create project
 create_project zynq ./zynq -part xc7z020clg484-1
 
+# setup up custom ip repository location
+set_property ip_repo_paths  ../cip/bft [current_fileset]
+update_ip_catalog
+
 # Set the directory path for the new project
 set proj_dir [get_property directory [current_project]]
 
