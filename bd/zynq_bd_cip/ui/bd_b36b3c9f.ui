@@ -1,0 +1,45 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port error -pg 1 -y 790 -defaultsOSRD
+preplace port wbClk -pg 1 -y 720 -defaultsOSRD
+preplace port LEDs_4Bits -pg 1 -y 190 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 450 -defaultsOSRD
+preplace port wbWriteOut -pg 1 -y 800 -defaultsOSRD
+preplace port DDR -pg 1 -y 430 -defaultsOSRD
+preplace port reset -pg 1 -y 760 -defaultsOSRD
+preplace port bftClk -pg 1 -y 740 -defaultsOSRD
+preplace port wbDataForOutput -pg 1 -y 750 -defaultsOSRD
+preplace port wbDataForInput -pg 1 -y 780 -defaultsOSRD
+preplace portBus wbInputData -pg 1 -y 820 -defaultsOSRD
+preplace portBus wbOutputData -pg 1 -y 770 -defaultsOSRD
+preplace inst bft_0 -pg 1 -lvl 2 -y 770 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -y 190 -defaultsOSRD
+preplace inst rst_processing_system7_0_50M -pg 1 -lvl 1 -y 200 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -y 80 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -y 190 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 510 -defaultsOSRD
+preplace netloc processing_system7_0_ddr 1 1 4 NJ 430 NJ 430 NJ 430 N
+preplace netloc wbClk_1 1 0 2 NJ 720 N
+preplace netloc proc_sys_reset_interconnect_aresetn 1 1 1 540
+preplace netloc axi_gpio_0_gpio 1 4 1 N
+preplace netloc proc_sys_reset_peripheral_aresetn 1 1 3 560 270 890 110 NJ
+preplace netloc bft_0_wbOutputData 1 2 3 N 770 NJ 770 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 1140
+preplace netloc wbInputData_1 1 0 2 NJ 820 N
+preplace netloc processing_system7_0_axi_periph_m01_axi 1 2 1 900
+preplace netloc wbDataForInput_1 1 0 2 NJ 780 N
+preplace netloc bft_0_wbDataForOutput 1 2 3 N 750 NJ 750 NJ
+preplace netloc processing_system7_0_fclk_reset0_n 1 0 2 190 650 540
+preplace netloc bft_0_error 1 2 3 N 790 NJ 790 NJ
+preplace netloc processing_system7_0_fixed_io 1 1 4 NJ 450 NJ 450 NJ 450 N
+preplace netloc processing_system7_0_fclk_clk0 1 0 4 180 300 550 460 900 270 NJ
+preplace netloc processing_system7_0_axi_periph_m00_axi 1 2 2 N 120 NJ
+preplace netloc wbWriteOut_1 1 0 2 NJ 800 N
+preplace netloc reset_1 1 0 2 NJ 760 N
+preplace netloc processing_system7_0_m_axi_gp0 1 1 1 530
+preplace netloc bftClk_1 1 0 2 NJ 740 N
+levelinfo -pg 1 160 360 730 1020 1300 1430
+",
+}
