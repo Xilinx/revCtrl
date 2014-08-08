@@ -1,16 +1,10 @@
-//Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
-//--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
-//Date        : Fri Aug 08 15:11:02 2014
-//Host        : XCODAUGHTRY30 running 64-bit Service Pack 1  (build 7601)
-//Command     : generate_target zynq_bd_wrapper.bd
-//Design      : zynq_bd_wrapper
-//Purpose     : IP block netlist
-//--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-module zynq_bd_wrapper
-   (DDR_addr,
+module top
+   (in,
+    out, 
+    clk,
+    DDR_addr,
     DDR_ba,
     DDR_cas_n,
     DDR_ck_n,
@@ -53,7 +47,21 @@ module zynq_bd_wrapper
     wbDataForOutput,
     wbInputData,
     wbOutputData,
-    wbWriteOut);
+    wbWriteOut,
+    data_in3,
+    data_in2,
+    data_in1,
+    data_in,
+    data_out,
+    data_out1,
+    data_out2
+    );
+
+// Serial data in/out
+   input in;
+   output out;    
+    
+// BD Subsystem IO    
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -98,6 +106,16 @@ module zynq_bd_wrapper
   input [31:0]wbInputData;
   output [31:0]wbOutputData;
   input wbWriteOut;
+  
+// System Generator IO  
+  input clk;
+  input data_in3;
+  input [15:0]data_in2;
+  input [3:0]data_in1;
+  input [15:0]data_in;
+  output [24:0]data_out;
+  output data_out1;
+  output data_out2;
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -120,10 +138,6 @@ module zynq_bd_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire ap_clk;
-  wire ap_rst_n;
-  wire bftClk;
-  wire error;
   wire [3:0]leds_4bits_tri_o;
   wire [1:0]mux_V;
   wire reset;
@@ -144,7 +158,7 @@ module zynq_bd_wrapper
   wire [31:0]wbOutputData;
   wire wbWriteOut;
 
-zynq_bd zynq_bd_i
+zynq_bd zynqInst
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
         .DDR_cas_n(DDR_cas_n),
@@ -189,4 +203,33 @@ zynq_bd zynq_bd_i
         .wbInputData(wbInputData),
         .wbOutputData(wbOutputData),
         .wbWriteOut(wbWriteOut));
+
+//        entity module_1 is
+//          port (
+//            clk: in std_logic;
+//            data_in3: in std_logic;
+//            data_in2: in std_logic_vector(15 downto 0);
+//            data_in1: in std_logic_vector(3 downto 0);
+//            data_in: in std_logic_vector(15 downto 0);
+//            data_out: out std_logic_vector(24 downto 0);
+//            data_out1: out std_logic;
+//            data_out2: out std_logic
+//          );
+//        end module_1;
+module_1 sysGenInst
+            (.clk(clk),
+            .data_in3(data_in3),
+            .data_in2(data_in2),
+            .data_in1(data_in1),
+            .data_in(data_in),
+            .data_out(data_out),
+            .data_out1(data_out1),
+            .data_out2(data_out2)
+          );
+         
+
+threeFlop threeFlopInst ( .in(in), .out(out), .clk(clk) );
+
+iicWrapper iicInst (.in(in), .out(out), .clk(clk) );
+
 endmodule

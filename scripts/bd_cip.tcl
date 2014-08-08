@@ -78,6 +78,7 @@ if { ${design_name} ne "" && ${cur_design} eq ${design_name} } {
 
       # the -dir option is not part of write_bd_tcl - added by GD to create a remote bd
       create_bd_design -dir $proj_dir/.. $design_name
+      #create_bd_design $design_name
 
       puts "INFO: Making design <$design_name> as current_bd_design."
       current_bd_design $design_name
@@ -135,10 +136,16 @@ proc create_root_design { parentCell } {
   set DDR [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 DDR ]
   set FIXED_IO [ create_bd_intf_port -mode Master -vlnv xilinx.com:display_processing_system7:fixedio_rtl:1.0 FIXED_IO ]
   set LEDs_4Bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 LEDs_4Bits ]
+  set video_in_stream [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 video_in_stream ]
+  set_property -dict [ list CONFIG.CLK_DOMAIN {} CONFIG.FREQ_HZ {100000000} CONFIG.HAS_TKEEP {0} CONFIG.HAS_TLAST {1} CONFIG.HAS_TREADY {1} CONFIG.HAS_TSTRB {0} CONFIG.LAYERED_METADATA {undef} CONFIG.PHASE {0.000} CONFIG.TDATA_NUM_BYTES {3} CONFIG.TDEST_WIDTH {0} CONFIG.TID_WIDTH {0} CONFIG.TUSER_WIDTH {1}  ] $video_in_stream
+  set video_out_stream [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 video_out_stream ]
 
   # Create ports
+  set ap_clk [ create_bd_port -dir I -type clk ap_clk ]
+  set ap_rst_n [ create_bd_port -dir I -type rst ap_rst_n ]
   set bftClk [ create_bd_port -dir I bftClk ]
   set error [ create_bd_port -dir O error ]
+  set mux_V [ create_bd_port -dir I -from 1 -to 0 -type data mux_V ]
   set reset [ create_bd_port -dir I reset ]
   set wbClk [ create_bd_port -dir I wbClk ]
   set wbDataForInput [ create_bd_port -dir I wbDataForInput ]
@@ -169,6 +176,9 @@ proc create_root_design { parentCell } {
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.4 processing_system7_0 ]
   set_property -dict [ list CONFIG.preset {ZC702*}  ] $processing_system7_0
 
+  # Create instance: rgb_mux_0, and set properties
+  set rgb_mux_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:rgb_mux:2.3 rgb_mux_0 ]
+
   # Create instance: rst_processing_system7_0_50M, and set properties
   set rst_processing_system7_0_50M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_processing_system7_0_50M ]
 
@@ -180,12 +190,17 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net processing_system7_0_ddr [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_fixed_io [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net processing_system7_0_m_axi_gp0 [get_bd_intf_pins axi_mem_intercon/S00_AXI] [get_bd_intf_pins processing_system7_0/M_AXI_GP0]
+  connect_bd_intf_net -intf_net rgb_mux_0_video_out_stream [get_bd_intf_ports video_out_stream] [get_bd_intf_pins rgb_mux_0/video_out_stream]
+  connect_bd_intf_net -intf_net video_in_stream_1 [get_bd_intf_ports video_in_stream] [get_bd_intf_pins rgb_mux_0/video_in_stream]
 
   # Create port connections
+  connect_bd_net -net ap_clk_1 [get_bd_ports ap_clk] [get_bd_pins rgb_mux_0/ap_clk]
+  connect_bd_net -net ap_rst_n_1 [get_bd_ports ap_rst_n] [get_bd_pins rgb_mux_0/ap_rst_n]
   connect_bd_net -net bftClk_1 [get_bd_ports bftClk] [get_bd_pins bft_0/bftClk]
   connect_bd_net -net bft_0_error [get_bd_ports error] [get_bd_pins bft_0/error]
   connect_bd_net -net bft_0_wbDataForOutput [get_bd_ports wbDataForOutput] [get_bd_pins bft_0/wbDataForOutput]
   connect_bd_net -net bft_0_wbOutputData [get_bd_ports wbOutputData] [get_bd_pins bft_0/wbOutputData]
+  connect_bd_net -net mux_V_1 [get_bd_ports mux_V] [get_bd_pins rgb_mux_0/mux_V]
   connect_bd_net -net proc_sys_reset_interconnect_aresetn [get_bd_pins axi_mem_intercon/ARESETN] [get_bd_pins rst_processing_system7_0_50M/interconnect_aresetn]
   connect_bd_net -net proc_sys_reset_peripheral_aresetn [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_mem_intercon/M00_ARESETN] [get_bd_pins axi_mem_intercon/M01_ARESETN] [get_bd_pins axi_mem_intercon/S00_ARESETN] [get_bd_pins rst_processing_system7_0_50M/peripheral_aresetn]
   connect_bd_net -net processing_system7_0_fclk_clk0 [get_bd_pins axi_bram_ctrl_0/s_axi_aclk] [get_bd_pins axi_gpio_0/s_axi_aclk] [get_bd_pins axi_mem_intercon/ACLK] [get_bd_pins axi_mem_intercon/M00_ACLK] [get_bd_pins axi_mem_intercon/M01_ACLK] [get_bd_pins axi_mem_intercon/S00_ACLK] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins rst_processing_system7_0_50M/slowest_sync_clk]

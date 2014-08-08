@@ -62,6 +62,14 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
+      <File Name="ip\zynq_bd_rgb_mux_0_0\zynq_bd_rgb_mux_0_0.xci" Type="IP">
+        <Instance HierarchyPath="rgb_mux_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
       <File Name="ip\zynq_bd_rst_processing_system7_0_50M_0\zynq_bd_rst_processing_system7_0_50M_0.xci" Type="IP">
         <Instance HierarchyPath="rst_processing_system7_0_50M"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>

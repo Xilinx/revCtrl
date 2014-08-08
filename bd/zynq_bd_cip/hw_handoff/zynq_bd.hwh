@@ -1,9 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Aug 08 12:28:18 2014" VIVADOVERSION="2014.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Aug 08 15:10:55 2014" VIVADOVERSION="2014.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="xilinx.com:zc702:part0:1.0" DEVICE="7z020" NAME="zynq_bd_imp" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb_mux_0" PORT="ap_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ap_rst_n" SIGIS="rst" SIGNAME="External_Ports_ap_rst_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb_mux_0" PORT="ap_rst_n"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="I" NAME="bftClk" SIGIS="undef" SIGNAME="External_Ports_bftClk">
       <CONNECTIONS>
         <CONNECTION INSTANCE="bft_0" PORT="bftClk"/>
@@ -12,6 +22,11 @@
     <PORT DIR="O" NAME="error" SIGIS="undef" SIGNAME="bft_0_error">
       <CONNECTIONS>
         <CONNECTION INSTANCE="bft_0" PORT="error"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mux_V" SIGIS="data" SIGNAME="External_Ports_mux_V">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb_mux_0" PORT="mux_V"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="reset" SIGIS="undef" SIGNAME="External_Ports_reset">
@@ -71,6 +86,16 @@
     <PORT DIR="IO" NAME="FIXED_IO_ps_srstb" SIGIS="undef"/>
     <PORT DIR="IO" NAME="FIXED_IO_ps_clk" SIGIS="undef"/>
     <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef"/>
+    <PORT DIR="O" NAME="video_out_stream_tvalid" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_out_stream_tready" SIGIS="undef"/>
+    <PORT DIR="O" NAME="video_out_stream_tdata" SIGIS="undef"/>
+    <PORT DIR="O" NAME="video_out_stream_tlast" SIGIS="undef"/>
+    <PORT DIR="O" NAME="video_out_stream_tuser" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_in_stream_tvalid" SIGIS="undef"/>
+    <PORT DIR="O" NAME="video_in_stream_tready" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_in_stream_tdata" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_in_stream_tlast" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_in_stream_tuser" SIGIS="undef"/>
   </EXTERNALPORTS>
 
   <MODULES>
@@ -3449,6 +3474,60 @@
             <PORTMAP PHYSICAL="ena"/>
             <PORTMAP PHYSICAL="rsta"/>
             <PORTMAP PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/rgb_mux_0" HWVERSION="2.3" INSTANCE="rgb_mux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb_mux" VLNV="xilinx.com:hls:rgb_mux:2.3">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="zynq_bd_rgb_mux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk" SIGIS="clk" SIGNAME="External_Ports_ap_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ap_rst_n" SIGIS="rst" SIGNAME="External_Ports_ap_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="video_in_stream_TVALID" SIGIS="undef"/>
+        <PORT DIR="O" NAME="video_in_stream_TREADY" SIGIS="undef"/>
+        <PORT DIR="I" NAME="video_in_stream_TDATA" SIGIS="undef"/>
+        <PORT DIR="I" NAME="video_in_stream_TLAST" SIGIS="undef"/>
+        <PORT DIR="I" NAME="video_in_stream_TUSER" SIGIS="undef"/>
+        <PORT DIR="O" NAME="video_out_stream_TVALID" SIGIS="undef"/>
+        <PORT DIR="I" NAME="video_out_stream_TREADY" SIGIS="undef"/>
+        <PORT DIR="O" NAME="video_out_stream_TDATA" SIGIS="undef"/>
+        <PORT DIR="O" NAME="video_out_stream_TLAST" SIGIS="undef"/>
+        <PORT DIR="O" NAME="video_out_stream_TUSER" SIGIS="undef"/>
+        <PORT DIR="I" NAME="mux_V" SIGIS="data" SIGNAME="External_Ports_mux_V">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mux_V"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE NAME="video_in_stream">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="video_in_stream_TVALID"/>
+            <PORTMAP PHYSICAL="video_in_stream_TREADY"/>
+            <PORTMAP PHYSICAL="video_in_stream_TDATA"/>
+            <PORTMAP PHYSICAL="video_in_stream_TLAST"/>
+            <PORTMAP PHYSICAL="video_in_stream_TUSER"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE NAME="video_out_stream">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="video_out_stream_TVALID"/>
+            <PORTMAP PHYSICAL="video_out_stream_TREADY"/>
+            <PORTMAP PHYSICAL="video_out_stream_TDATA"/>
+            <PORTMAP PHYSICAL="video_out_stream_TLAST"/>
+            <PORTMAP PHYSICAL="video_out_stream_TUSER"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>

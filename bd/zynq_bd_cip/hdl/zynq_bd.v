@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
-//Date        : Fri Aug 08 12:28:26 2014
+//Date        : Fri Aug 08 15:11:02 2014
 //Host        : XCODAUGHTRY30 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target zynq_bd.bd
 //Design      : zynq_bd
@@ -962,7 +962,7 @@ zynq_bd_auto_pc_1 auto_pc
         .s_axi_wvalid(s00_couplers_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "zynq_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0}" *) 
+(* CORE_GENERATION_INFO = "zynq_bd,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0}" *) 
 module zynq_bd
    (DDR_addr,
     DDR_ba,
@@ -986,9 +986,22 @@ module zynq_bd
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     LEDs_4Bits_tri_o,
+    ap_clk,
+    ap_rst_n,
     bftClk,
     error,
+    mux_V,
     reset,
+    video_in_stream_tdata,
+    video_in_stream_tlast,
+    video_in_stream_tready,
+    video_in_stream_tuser,
+    video_in_stream_tvalid,
+    video_out_stream_tdata,
+    video_out_stream_tlast,
+    video_out_stream_tready,
+    video_out_stream_tuser,
+    video_out_stream_tvalid,
     wbClk,
     wbDataForInput,
     wbDataForOutput,
@@ -1017,9 +1030,22 @@ module zynq_bd
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   output [3:0]LEDs_4Bits_tri_o;
+  input ap_clk;
+  input ap_rst_n;
   input bftClk;
   output error;
+  input [1:0]mux_V;
   input reset;
+  input [23:0]video_in_stream_tdata;
+  input [0:0]video_in_stream_tlast;
+  output video_in_stream_tready;
+  input [0:0]video_in_stream_tuser;
+  input video_in_stream_tvalid;
+  output [23:0]video_out_stream_tdata;
+  output [0:0]video_out_stream_tlast;
+  input video_out_stream_tready;
+  output [0:0]video_out_stream_tuser;
+  output video_out_stream_tvalid;
   input wbClk;
   input wbDataForInput;
   output wbDataForOutput;
@@ -1029,6 +1055,8 @@ module zynq_bd
 
   wire GND_1;
   wire VCC_1;
+  wire ap_clk_1;
+  wire ap_rst_n_1;
   wire [11:0]axi_bram_ctrl_0_BRAM_PORTA_ADDR;
   wire axi_bram_ctrl_0_BRAM_PORTA_CLK;
   wire [31:0]axi_bram_ctrl_0_BRAM_PORTA_DIN;
@@ -1041,6 +1069,7 @@ module zynq_bd
   wire bft_0_error;
   wire bft_0_wbDataForOutput;
   wire [31:0]bft_0_wbOutputData;
+  wire [1:0]mux_V_1;
   wire [0:0]proc_sys_reset_interconnect_aresetn;
   wire [0:0]proc_sys_reset_peripheral_aresetn;
   wire [8:0]processing_system7_0_axi_periph_m00_axi_ARADDR;
@@ -1157,15 +1186,38 @@ module zynq_bd
   wire [3:0]processing_system7_0_m_axi_gp0_WSTRB;
   wire processing_system7_0_m_axi_gp0_WVALID;
   wire reset_1;
+  wire [23:0]rgb_mux_0_video_out_stream_TDATA;
+  wire [0:0]rgb_mux_0_video_out_stream_TLAST;
+  wire rgb_mux_0_video_out_stream_TREADY;
+  wire [0:0]rgb_mux_0_video_out_stream_TUSER;
+  wire rgb_mux_0_video_out_stream_TVALID;
+  wire [23:0]video_in_stream_1_TDATA;
+  wire [0:0]video_in_stream_1_TLAST;
+  wire video_in_stream_1_TREADY;
+  wire [0:0]video_in_stream_1_TUSER;
+  wire video_in_stream_1_TVALID;
   wire wbClk_1;
   wire wbDataForInput_1;
   wire [31:0]wbInputData_1;
   wire wbWriteOut_1;
 
   assign LEDs_4Bits_tri_o[3:0] = axi_gpio_0_gpio_TRI_O;
+  assign ap_clk_1 = ap_clk;
+  assign ap_rst_n_1 = ap_rst_n;
   assign bftClk_1 = bftClk;
   assign error = bft_0_error;
+  assign mux_V_1 = mux_V[1:0];
   assign reset_1 = reset;
+  assign rgb_mux_0_video_out_stream_TREADY = video_out_stream_tready;
+  assign video_in_stream_1_TDATA = video_in_stream_tdata[23:0];
+  assign video_in_stream_1_TLAST = video_in_stream_tlast[0];
+  assign video_in_stream_1_TUSER = video_in_stream_tuser[0];
+  assign video_in_stream_1_TVALID = video_in_stream_tvalid;
+  assign video_in_stream_tready = video_in_stream_1_TREADY;
+  assign video_out_stream_tdata[23:0] = rgb_mux_0_video_out_stream_TDATA;
+  assign video_out_stream_tlast[0] = rgb_mux_0_video_out_stream_TLAST;
+  assign video_out_stream_tuser[0] = rgb_mux_0_video_out_stream_TUSER;
+  assign video_out_stream_tvalid = rgb_mux_0_video_out_stream_TVALID;
   assign wbClk_1 = wbClk;
   assign wbDataForInput_1 = wbDataForInput;
   assign wbDataForOutput = bft_0_wbDataForOutput;
@@ -1427,6 +1479,20 @@ zynq_bd_blk_mem_gen_0_0 blk_mem_gen_0
         .PS_PORB(FIXED_IO_ps_porb),
         .PS_SRSTB(FIXED_IO_ps_srstb),
         .USB0_VBUS_PWRFAULT(GND_1));
+zynq_bd_rgb_mux_0_0 rgb_mux_0
+       (.ap_clk(ap_clk_1),
+        .ap_rst_n(ap_rst_n_1),
+        .mux_V(mux_V_1),
+        .video_in_stream_TDATA(video_in_stream_1_TDATA),
+        .video_in_stream_TLAST(video_in_stream_1_TLAST),
+        .video_in_stream_TREADY(video_in_stream_1_TREADY),
+        .video_in_stream_TUSER(video_in_stream_1_TUSER),
+        .video_in_stream_TVALID(video_in_stream_1_TVALID),
+        .video_out_stream_TDATA(rgb_mux_0_video_out_stream_TDATA),
+        .video_out_stream_TLAST(rgb_mux_0_video_out_stream_TLAST),
+        .video_out_stream_TREADY(rgb_mux_0_video_out_stream_TREADY),
+        .video_out_stream_TUSER(rgb_mux_0_video_out_stream_TUSER),
+        .video_out_stream_TVALID(rgb_mux_0_video_out_stream_TVALID));
 zynq_bd_rst_processing_system7_0_50M_0 rst_processing_system7_0_50M
        (.aux_reset_in(VCC_1),
         .dcm_locked(VCC_1),

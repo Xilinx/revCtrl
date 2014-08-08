@@ -16,7 +16,7 @@ set_property "target_language" "Verilog" $obj
 set_property ip_repo_paths {../cip/bft ../cip/rgb_mux} [current_fileset]
 update_ip_catalog
 
-add_files -norecurse ../hdl/top/top.v
+add_files -norecurse ../hdl/top/top_cip.v
 add_files -norecurse ../hdl/top/iicWrapper.v
 add_files -norecurse ../hdl/top/shift.v
 add_files -norecurse ../hdl/threeFlop/threeFlop.v

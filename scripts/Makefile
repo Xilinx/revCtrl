@@ -1,4 +1,4 @@
-RTL=../hdl/top/top.v ../hdl/threeFlop/threeFlop.v ../hdl/top/shift.v ../hdl/top/iicWrapper.v
+RTL=../hdl/top/top_cip.v ../hdl/threeFlop/threeFlop.v ../hdl/top/shift.v ../hdl/top/iicWrapper.v
 XDC=../xdc/top.xdc
 IP=../ip/axi_iic_0/axi_iic_0.xci
 DSP=../dsp/module_1_ext/module_1.slx
