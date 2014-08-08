@@ -25,9 +25,7 @@ module top
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    ap_clk,
     ap_rst_n,
-    bftClk,
     error,
     leds_4bits_tri_o,
     mux_V,
@@ -42,7 +40,6 @@ module top
     video_out_stream_tready,
     video_out_stream_tuser,
     video_out_stream_tvalid,
-    wbClk,
     wbDataForInput,
     wbDataForOutput,
     wbInputData,
@@ -58,8 +55,9 @@ module top
     );
 
 // Serial data in/out
-   input in;
-   output out;    
+  input clk;
+  input in;
+  output out;    
     
 // BD Subsystem IO    
   inout [14:0]DDR_addr;
@@ -83,9 +81,7 @@ module top
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  input ap_clk;
   input ap_rst_n;
-  input bftClk;
   output error;
   output [3:0]leds_4bits_tri_o;
   input [1:0]mux_V;
@@ -100,7 +96,6 @@ module top
   input video_out_stream_tready;
   output [0:0]video_out_stream_tuser;
   output video_out_stream_tvalid;
-  input wbClk;
   input wbDataForInput;
   output wbDataForOutput;
   input [31:0]wbInputData;
@@ -108,7 +103,6 @@ module top
   input wbWriteOut;
   
 // System Generator IO  
-  input clk;
   input data_in3;
   input [15:0]data_in2;
   input [3:0]data_in1;
@@ -151,7 +145,6 @@ module top
   wire video_out_stream_tready;
   wire [0:0]video_out_stream_tuser;
   wire video_out_stream_tvalid;
-  wire wbClk;
   wire wbDataForInput;
   wire wbDataForOutput;
   wire [31:0]wbInputData;
@@ -181,9 +174,9 @@ zynq_bd zynqInst
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .LEDs_4Bits_tri_o(leds_4bits_tri_o),
-        .ap_clk(ap_clk),
+        .ap_clk(clk),
         .ap_rst_n(ap_rst_n),
-        .bftClk(bftClk),
+        .bftClk(clk),
         .error(error),
         .mux_V(mux_V),
         .reset(reset),
@@ -197,7 +190,7 @@ zynq_bd zynqInst
         .video_out_stream_tready(video_out_stream_tready),
         .video_out_stream_tuser(video_out_stream_tuser),
         .video_out_stream_tvalid(video_out_stream_tvalid),
-        .wbClk(wbClk),
+        .wbClk(clk),
         .wbDataForInput(wbDataForInput),
         .wbDataForOutput(wbDataForOutput),
         .wbInputData(wbInputData),

@@ -1,10 +1,4 @@
-# User Generated IO constraints 
-
-set_property IOSTANDARD LVCMOS18 [get_ports ap_clk]
-
 # User Generated physical constraints 
-
-set_property PACKAGE_PIN B19 [get_ports ap_clk]
 set_property PACKAGE_PIN A19 [get_ports ap_rst_n]
 set_property PACKAGE_PIN F18 [get_ports {data_in[12]}]
 set_property PACKAGE_PIN E18 [get_ports {data_in[6]}]
@@ -267,14 +261,12 @@ set_property PACKAGE_PIN P21 [get_ports {wbOutputData[0]}]
 
 # User Generated IO constraints 
 
-set_property IOSTANDARD LVCMOS25 [get_ports bftClk]
 set_property IOSTANDARD LVCMOS25 [get_ports clk]
 set_property IOSTANDARD LVCMOS25 [get_ports data_out1]
 set_property IOSTANDARD LVCMOS25 [get_ports error]
 set_property IOSTANDARD LVCMOS25 [get_ports in]
 set_property IOSTANDARD LVCMOS25 [get_ports out]
 set_property IOSTANDARD LVCMOS25 [get_ports reset]
-set_property IOSTANDARD LVCMOS25 [get_ports wbClk]
 set_property IOSTANDARD LVCMOS25 [get_ports wbDataForInput]
 set_property IOSTANDARD LVCMOS25 [get_ports wbDataForOutput]
 set_property IOSTANDARD LVCMOS25 [get_ports wbWriteOut]
@@ -288,7 +280,5 @@ set_property PACKAGE_PIN K20 [get_ports data_out1]
 set_property PACKAGE_PIN N19 [get_ports reset]
 set_property PACKAGE_PIN N20 [get_ports wbDataForOutput]
 set_property PACKAGE_PIN J20 [get_ports in]
-set_property PACKAGE_PIN L21 [get_ports bftClk]
 set_property PACKAGE_PIN M19 [get_ports wbDataForInput]
-set_property PACKAGE_PIN L18 [get_ports wbClk]
 set_property PACKAGE_PIN M20 [get_ports out]
