@@ -18,7 +18,9 @@ set_property "target_language" "Verilog" $obj
 puts "INFO: Project created:zynq"
 
 # Source the bd.tcl file to create the bd
-source $thisDir/bd.tcl
+#source $thisDir/bd.tcl
+# Source the bd.tcl file to create the bd with custom ip module
+source $thisDir/bd_cip.tcl
 validate_bd_design
 save_bd_design
 
