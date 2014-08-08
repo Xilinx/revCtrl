@@ -21,6 +21,7 @@ add_files -norecurse ../hdl/top/iicWrapper.v
 add_files -norecurse ../hdl/top/shift.v
 add_files -norecurse ../hdl/threeFlop/threeFlop.v
 add_files -norecurse ../xdc/top.xdc
+add_files -norecurse ../xdc/top_io.xdc
 add_files -norecurse ../ip/axi_iic_0/axi_iic_0.xci
 add_files -norecurse ../dsp/module_1_ext/module_1.slx
 add_files -norecurse ../bd/zynq_bd_cip/zynq_bd.bd
