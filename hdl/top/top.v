@@ -144,7 +144,8 @@ module_1 sysGenInst
           );
          
 
-threeFlop tf ( .in(in), .out(out), .clk(clk) );
-iicWrapper iic (.in(in), .out(out), .clk(clk) );
+threeFlop threeFlopInst ( .in(in), .out(out), .clk(clk) );
+
+iicWrapper iicInst (.in(in), .out(out), .clk(clk) );
 
 endmodule
