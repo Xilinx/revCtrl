@@ -1,0 +1,16 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Fri Aug 08 18:44:03 2014
+| Host         : XCODAUGHTRY30 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+-----------------------------------------------------------------------------------
+
+Upgrade Log for IP 'zynq_bd_bft_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of zynq_bd_bft_0_0 from xilinx.com:ip:bft:1.0 (Rev. 1) to xilinx.com:ip:bft:1.1 (Rev. 1)
+
