@@ -24,7 +24,7 @@ module iicWrapper(
     input in,
     input clk,
     output out, 
-    input shift
+    input shiftr
     );
     
     parameter size = 111;
@@ -36,9 +36,9 @@ module iicWrapper(
        for (n=0; n < size; n=n+1) 
        begin : flops
           if (n == 0) begin
-             shift s (.in(s_f[n]), .s_in(in), .out(f[n]), .clk(clk), .shift(shift) );
+             shift s (.in(s_f[n]), .s_in(in), .out(f[n]), .clk(clk), .shiftr(shiftr) );
           end else begin
-             shift s (.in(s_f[n]), .s_in(f[n-1]), .out(f[n]), .clk(clk), .shift(shift) );
+             shift s (.in(s_f[n]), .s_in(f[n-1]), .out(f[n]), .clk(clk), .shiftr(shiftr) );
           end
        end
     endgenerate

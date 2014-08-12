@@ -25,14 +25,15 @@ module shift(
     input s_in,
     output out,
     input clk,
-    input shift
+    input shiftr
     );
     
-    reg out = 1'b1;
+//    reg out = 1'b1;
+    reg out;
     
     always @(posedge clk)
     begin
-       if (shift == 0)
+       if (shiftr == 0)
        begin
           out <= in;
        end
