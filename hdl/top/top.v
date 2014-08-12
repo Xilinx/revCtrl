@@ -4,6 +4,7 @@ module top
    (in,
     out, 
     clk,
+    shiftr,
     DDR_addr,
     DDR_ba,
     DDR_cas_n,
@@ -57,6 +58,7 @@ module top
 // Serial data in/out
   input clk;
   input in;
+  input shiftr;
   output out;    
     
 // BD Subsystem IO    
@@ -223,6 +225,6 @@ module_1 sysGenInst
 
 threeFlop threeFlopInst ( .in(in), .out(out), .clk(clk) );
 
-iicWrapper iicInst (.in(in), .out(out), .clk(clk) );
+iicWrapper iicInst (.in(in), .out(out), .clk(clk), .shiftr(shiftr) );
 
 endmodule
