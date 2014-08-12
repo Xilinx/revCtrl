@@ -1,3 +1,9 @@
+# Note: this script is for the first part of the lab where the goal is
+# to generate the IP and check in the output products
+#
+# The ip.tcl file includes the IP revision mentioned in the later part
+# of the lab, changing the clock frequency to 100 MHz.
+
 # get the directory where this script resides
 set thisDir [file dirname [info script]]
 # source common utilities
@@ -7,14 +13,23 @@ source $thisDir/utils.tcl
 # output created in ip directory
 set ipDir ./ip
 
-create_project managed_ip_project $ipDir/managed_ip_project -part xc7z020clg484-1 -ip -force
+# The following commands were pasted from the command history in the Tcl Console.
+# Absolute paths were replaced by the reference to ipDir
 
-create_ip -name axi_iic -vendor xilinx.com -library ip -module_name axi_iic_0 -dir $ipDir -force
+create_project managed_ip_project $ipDir -part xc7z020clg484-1 -ip
+set_property board_part xilinx.com:zc702:part0:1.0 [current_project]
+set_property target_simulator XSim [current_project]
+create_ip -name axi_iic -vendor xilinx.com -library ip -module_name axi_iic_0 -dir $ipDir
 
-generate_target all [get_files  */axi_iic_0.xci]
-create_ip_run [get_files -of_objects [get_fileset sources_1] [get_files */axi_iic_0.xci]]
-launch_run  axi_iic_0_synth_1
+generate_target {instantiation_template} [get_files $ipDir/axi_iic_0/axi_iic_0.xci]
+generate_target all [get_files  $ipDir/axi_iic_0/axi_iic_0.xci]
+
+create_ip_run [get_files -of_objects [get_fileset sources_1] $ipDir/axi_iic_0/axi_iic_0.xci]
+launch_run axi_iic_0_synth_1
+
+# This is added to make the synthesis run a blocking step
+# It is required to prevent downstream steps from beginning before synthesis is complete
 wait_on_run axi_iic_0_synth_1
 
-# if everything is successful "touch" a file so make will note it's done
+# This is for the Makefile to indicate the target is complete.
 touch {.ip.done}

@@ -1,9 +1,9 @@
 -- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
--- Date        : Wed Jul 30 17:22:55 2014
+-- Date        : Tue Aug 12 12:36:25 2014
 -- Host        : xsjrplyler30 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode synth_stub c:/tsc14/tsc14_scratch/test/work/ip/axi_iic_0/axi_iic_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub c:/tsc14/test/soln/work/ip/axi_iic_0/axi_iic_0_stub.vhdl
 -- Design      : axi_iic_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

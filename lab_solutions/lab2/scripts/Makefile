@@ -13,9 +13,5 @@ compile : .compile.done
 .compile.done : setup
 	cmd /c "vivado -mode batch -source ../scripts/compile.tcl"
 
-ip : .ip.done
-.ip.done :
-	cmd /c "vivado -mode batch -source ../scripts/ip.tcl -log ip.log -jou ip.jou"
-
 clean :	
 	find . -not -name "Makefile" -not -name "." | xargs rm -rf
