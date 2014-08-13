@@ -13,14 +13,17 @@ if {![file exists ./cip]} {
 if {![file exists ./cip/bft]} {
    file mkdir ./cip/bft
 }
-if {![file exists ./cip/bft/bftLib]} {
-   file mkdir ./cip/bft/bftLib
+if {![file exists ./cip/bft/hdl]} {
+   file mkdir ./cip/bft/hdl
+}
+if {![file exists ./cip/bft/hdl/bftLib]} {
+   file mkdir ./cip/bft/hdl/bftLib
 }
 foreach f [glob ../hdl/bft/*.v*] {
-   file copy -force $f ./cip/bft/
+   file copy -force $f ./cip/bft/hdl
 }
 foreach f [glob ../hdl/bft/bftLib/*.vhdl] {
-   file copy -force $f ./cip/bft/bftLib/
+   file copy -force $f ./cip/bft/hdl/bftLib/
 }
 
 # Create project
@@ -29,5 +32,5 @@ foreach f [glob ../hdl/bft/bftLib/*.vhdl] {
 # Fill in project creation here
 # add command to package IP
 
-# if everything is successful "touch" a file so make will not it's done
-touch {.cip.done}
+# if everything is successful "touch" a file so make will note it's done
+touch {.bft_cip.done}

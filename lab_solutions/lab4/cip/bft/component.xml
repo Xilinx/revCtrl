@@ -3,7 +3,7 @@
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>ip</spirit:library>
   <spirit:name>bft</spirit:name>
-  <spirit:version>1.1</spirit:version>
+  <spirit:version>1.0</spirit:version>
   <spirit:model>
     <spirit:views>
       <spirit:view>
@@ -14,12 +14,6 @@
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ad493797</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
       </spirit:view>
       <spirit:view>
         <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
@@ -29,12 +23,6 @@
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ad493797</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
       </spirit:view>
       <spirit:view>
         <spirit:name>xilinx_xpgui</spirit:name>
@@ -43,12 +31,6 @@
         <spirit:fileSetRef>
           <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
         </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f3590911</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
       </spirit:view>
     </spirit:views>
     <spirit:ports>
@@ -80,19 +62,6 @@
       </spirit:port>
       <spirit:port>
         <spirit:name>reset</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic</spirit:typeName>
-              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>test_in</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -196,90 +165,90 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>bft/bftLib/core_transform.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/core_transform.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/bft_package.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/bft_package.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/async_fifo.v</spirit:name>
+        <spirit:name>hdl/async_fifo.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/FifoBuffer.v</spirit:name>
+        <spirit:name>hdl/FifoBuffer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/round_4.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/round_4.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/round_3.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/round_3.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/round_2.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/round_2.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/round_1.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/round_1.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bft.vhdl</spirit:name>
+        <spirit:name>hdl/bft.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>bft/bftLib/core_transform.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/core_transform.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/bft_package.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/bft_package.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/async_fifo.v</spirit:name>
+        <spirit:name>hdl/async_fifo.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/FifoBuffer.v</spirit:name>
+        <spirit:name>hdl/FifoBuffer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/round_4.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/round_4.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/round_3.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/round_3.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/round_2.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/round_2.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bftLib/round_1.vhdl</spirit:name>
+        <spirit:name>hdl/bftLib/round_1.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>bftLib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>bft/bft.vhdl</spirit:name>
+        <spirit:name>hdl/bft.vhdl</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -293,7 +262,7 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>bft_v1_1</spirit:description>
+  <spirit:description>bft_v1_0</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
@@ -308,22 +277,12 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/BaseIP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>bft_v1_1</xilinx:displayName>
+      <xilinx:displayName>bft_v1_0</xilinx:displayName>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:upgrades>
-        <xilinx:canUpgradeFrom>xilinx.com:ip:bft:1.0</xilinx:canUpgradeFrom>
-      </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2014-08-13T04:26:43Z</xilinx:coreCreationDateTime>
-      <xilinx:tags>
-        <xilinx:tag xilinx:name="xilinx.com:ip:bft:1.0_ARCHIVE_LOCATION">C:/tsc14/test/soln/cip</xilinx:tag>
-        <xilinx:tag xilinx:name="xilinx.com:ip:bft:1.1_ARCHIVE_LOCATION">C:/tsc14/test/soln/cip</xilinx:tag>
-      </xilinx:tags>
+      <xilinx:coreCreationDateTime>2014-08-13T18:52:05Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2014.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c844ef71"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="a5bc1c38"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="b9ffdc5d"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

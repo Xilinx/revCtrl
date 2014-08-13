@@ -1,6 +1,6 @@
 RTL=../hdl/threeFlop/threeFlop.v
 XDC=../xdc/top.xdc
-CIP=../hdl/bft/* ../hdl/bft/bftLib/*
+BFT_SRC=../hdl/bft/* ../hdl/bft/bftLib/*
 
 
 setup : .setup.done

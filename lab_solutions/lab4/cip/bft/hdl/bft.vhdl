@@ -36,7 +36,7 @@ use bftLib.bftPackage.all;
 
 entity bft is 	  
     port ( 
-        wbClk, bftClk, reset, test_in : in std_logic;
+        wbClk, bftClk, reset : in std_logic;
         wbDataForInput :in std_logic;
         wbWriteOut: in std_logic;
         wbDataForOutput : out std_logic; 
