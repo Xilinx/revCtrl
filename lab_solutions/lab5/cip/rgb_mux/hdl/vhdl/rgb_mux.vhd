@@ -53,10 +53,10 @@ architecture behav of rgb_mux is
     signal ap_CS_fsm2 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     signal ap_sig_ioackin_video_out_stream_TREADY : STD_LOGIC;
     signal ap_reg_ppstg_video_in_stream_data_V_tmp_reg_213_pp0_it1 : STD_LOGIC_VECTOR (23 downto 0);
-    signal video_in_stream_tuser_tmp_reg_219 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_video_in_stream_tuser_tmp_reg_219_pp0_it1 : STD_LOGIC_VECTOR (0 downto 0);
-    signal video_in_stream_tlast_tmp_reg_224 : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_reg_ppstg_video_in_stream_tlast_tmp_reg_224_pp0_it1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal video_out_stream_tuser_tmp_reg_219 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_video_out_stream_tuser_tmp_reg_219_pp0_it1 : STD_LOGIC_VECTOR (0 downto 0);
+    signal video_out_stream_tlast_tmp_reg_224 : STD_LOGIC_VECTOR (0 downto 0);
+    signal ap_reg_ppstg_video_out_stream_tlast_tmp_reg_224_pp0_it1 : STD_LOGIC_VECTOR (0 downto 0);
     signal R_fu_106_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal R_reg_229 : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_reg_ppstg_R_reg_229_pp0_it1 : STD_LOGIC_VECTOR (7 downto 0);
@@ -155,8 +155,8 @@ begin
                 G_reg_235 <= video_in_stream_TDATA(15 downto 8);
                 R_reg_229 <= R_fu_106_p1;
                 video_in_stream_data_V_tmp_reg_213 <= video_in_stream_TDATA;
-                video_in_stream_tlast_tmp_reg_224 <= empty_read_fu_70_p4_2;
-                video_in_stream_tuser_tmp_reg_219 <= empty_read_fu_70_p4_1;
+                video_out_stream_tlast_tmp_reg_224 <= empty_read_fu_70_p4_2;
+                video_out_stream_tuser_tmp_reg_219 <= empty_read_fu_70_p4_1;
             end if;
         end if;
     end process;
@@ -170,44 +170,10 @@ begin
                 ap_reg_ppstg_G_reg_235_pp0_it1 <= G_reg_235;
                 ap_reg_ppstg_R_reg_229_pp0_it1 <= R_reg_229;
                 ap_reg_ppstg_video_in_stream_data_V_tmp_reg_213_pp0_it1 <= video_in_stream_data_V_tmp_reg_213;
-                ap_reg_ppstg_video_in_stream_tlast_tmp_reg_224_pp0_it1 <= video_in_stream_tlast_tmp_reg_224;
-                ap_reg_ppstg_video_in_stream_tuser_tmp_reg_219_pp0_it1 <= video_in_stream_tuser_tmp_reg_219;
+                ap_reg_ppstg_video_out_stream_tlast_tmp_reg_224_pp0_it1 <= video_out_stream_tlast_tmp_reg_224;
+                ap_reg_ppstg_video_out_stream_tuser_tmp_reg_219_pp0_it1 <= video_out_stream_tuser_tmp_reg_219;
             end if;
         end if;
-    end process;
-
-    -- the next state (ap_NS_fsm2) of the state machine. --
-    ap_NS_fsm2_assign_proc : process (ap_CS_fsm1, ap_CS_fsm2, ap_sig_ioackin_video_out_stream_TREADY)
-    begin
-        case ap_CS_fsm2 is
-            when ap_ST_st3_fsm2_1 => 
-                if (((ap_ST_st2_fsm1_1 = ap_CS_fsm1) and not((ap_const_logic_0 = ap_sig_ioackin_video_out_stream_TREADY)))) then
-                    ap_NS_fsm2 <= ap_ST_st3_fsm2_1;
-                elsif ((not((ap_const_logic_0 = ap_sig_ioackin_video_out_stream_TREADY)) and not((ap_ST_st2_fsm1_1 = ap_CS_fsm1)))) then
-                    ap_NS_fsm2 <= ap_ST_st0_fsm2_0;
-                else
-                    ap_NS_fsm2 <= ap_ST_st3_fsm2_1;
-                end if;
-            when ap_ST_st0_fsm2_0 => 
-                if (((ap_ST_st2_fsm1_1 = ap_CS_fsm1) and not(((ap_const_logic_0 = ap_sig_ioackin_video_out_stream_TREADY) and (ap_ST_st3_fsm2_1 = ap_CS_fsm2))))) then
-                    ap_NS_fsm2 <= ap_ST_st3_fsm2_1;
-                else
-                    ap_NS_fsm2 <= ap_ST_st0_fsm2_0;
-                end if;
-            when others =>  
-                ap_NS_fsm2 <= "X";
-        end case;
-    end process;
-
-    -- the next state (ap_NS_fsm0) of the state machine. --
-    ap_NS_fsm0_assign_proc : process (video_in_stream_TVALID, ap_CS_fsm0, ap_CS_fsm2, ap_sig_ioackin_video_out_stream_TREADY)
-    begin
-        case ap_CS_fsm0 is
-            when ap_ST_st1_fsm0_0 => 
-                ap_NS_fsm0 <= ap_ST_st1_fsm0_0;
-            when others =>  
-                ap_NS_fsm0 <= "X";
-        end case;
     end process;
 
     -- the next state (ap_NS_fsm1) of the state machine. --
@@ -230,6 +196,40 @@ begin
                 end if;
             when others =>  
                 ap_NS_fsm1 <= "X";
+        end case;
+    end process;
+
+    -- the next state (ap_NS_fsm0) of the state machine. --
+    ap_NS_fsm0_assign_proc : process (video_in_stream_TVALID, ap_CS_fsm0, ap_CS_fsm2, ap_sig_ioackin_video_out_stream_TREADY)
+    begin
+        case ap_CS_fsm0 is
+            when ap_ST_st1_fsm0_0 => 
+                ap_NS_fsm0 <= ap_ST_st1_fsm0_0;
+            when others =>  
+                ap_NS_fsm0 <= "X";
+        end case;
+    end process;
+
+    -- the next state (ap_NS_fsm2) of the state machine. --
+    ap_NS_fsm2_assign_proc : process (ap_CS_fsm1, ap_CS_fsm2, ap_sig_ioackin_video_out_stream_TREADY)
+    begin
+        case ap_CS_fsm2 is
+            when ap_ST_st3_fsm2_1 => 
+                if (((ap_ST_st2_fsm1_1 = ap_CS_fsm1) and not((ap_const_logic_0 = ap_sig_ioackin_video_out_stream_TREADY)))) then
+                    ap_NS_fsm2 <= ap_ST_st3_fsm2_1;
+                elsif ((not((ap_const_logic_0 = ap_sig_ioackin_video_out_stream_TREADY)) and not((ap_ST_st2_fsm1_1 = ap_CS_fsm1)))) then
+                    ap_NS_fsm2 <= ap_ST_st0_fsm2_0;
+                else
+                    ap_NS_fsm2 <= ap_ST_st3_fsm2_1;
+                end if;
+            when ap_ST_st0_fsm2_0 => 
+                if (((ap_ST_st2_fsm1_1 = ap_CS_fsm1) and not(((ap_const_logic_0 = ap_sig_ioackin_video_out_stream_TREADY) and (ap_ST_st3_fsm2_1 = ap_CS_fsm2))))) then
+                    ap_NS_fsm2 <= ap_ST_st3_fsm2_1;
+                else
+                    ap_NS_fsm2 <= ap_ST_st0_fsm2_0;
+                end if;
+            when others =>  
+                ap_NS_fsm2 <= "X";
         end case;
     end process;
     R_fu_106_p1 <= video_in_stream_TDATA(8 - 1 downto 0);
@@ -277,8 +277,8 @@ begin
     video_out_stream_TDATA <= 
         newSel_fu_188_p3 when (or_cond_fu_194_p2(0) = '1') else 
         newSel9_fu_198_p3;
-    video_out_stream_TLAST <= ap_reg_ppstg_video_in_stream_tlast_tmp_reg_224_pp0_it1(0);
-    video_out_stream_TUSER <= ap_reg_ppstg_video_in_stream_tuser_tmp_reg_219_pp0_it1(0);
+    video_out_stream_TLAST <= ap_reg_ppstg_video_out_stream_tlast_tmp_reg_224_pp0_it1(0);
+    video_out_stream_TUSER <= ap_reg_ppstg_video_out_stream_tuser_tmp_reg_219_pp0_it1(0);
 
     -- video_out_stream_TVALID assign process. --
     video_out_stream_TVALID_assign_proc : process(ap_CS_fsm2, ap_reg_ioackin_video_out_stream_TREADY)

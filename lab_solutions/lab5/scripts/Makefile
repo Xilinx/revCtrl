@@ -1,6 +1,6 @@
 RTL=../hdl/threeFlop/threeFlop.v
 XDC=../xdc/top.xdc
-CIP=../hdl/bft/* ../hdl/bft/bftLib/*
+BFT_SRC=../hdl/bft/* ../hdl/bft/bftLib/*
 HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
 
 
@@ -23,8 +23,8 @@ bd_gen : .bd_done
 .bd_done :
 	cmd /c "vivado -mode batch -source ../scripts/bd_gen.tcl -log bd_gen.log -jou bd_gen.jou"
 
-cip : .cip.done
-.cip.done : $(CIP)
+cip : .bft_cip.done
+.cip.done : $(BFT_SRC)
 	cmd /c "vivado -mode batch -source ../scripts/cip.tcl -log cip.log -jou cip.jou"
 
 hls : .hls.done
