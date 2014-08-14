@@ -1,0 +1,3 @@
+The ip output can be copied from ../common/ip
+The bd output can be copied from ../common/bd
+The cip/bft output can be copied from ../common/cip
