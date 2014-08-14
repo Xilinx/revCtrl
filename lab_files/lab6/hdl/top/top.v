@@ -45,14 +45,9 @@ module top
     wbDataForOutput,
     wbInputData,
     wbOutputData,
-    wbWriteOut,
-    data_in3,
-    data_in2,
-    data_in1,
-    data_in,
-    data_out,
-    data_out1,
-    data_out2
+    wbWriteOut
+    //SysGen Ports to be added here
+    
     );
 
 // Serial data in/out
@@ -104,14 +99,9 @@ module top
   output [31:0]wbOutputData;
   input wbWriteOut;
   
-// System Generator IO  
-  input data_in3;
-  input [15:0]data_in2;
-  input [3:0]data_in1;
-  input [15:0]data_in;
-  output [24:0]data_out;
-  output data_out1;
-  output data_out2;
+//Need to add System Generator IO  
+
+
 
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
@@ -202,15 +192,9 @@ zynq_bd zynqInst
         .wbWriteOut(wbWriteOut));
 
 module_1 sysGenInst
-            (.clk(clk),
-            .data_in3(data_in3),
-            .data_in2(data_in2),
-            .data_in1(data_in1),
-            .data_in(data_in),
-            .data_out(data_out),
-            .data_out1(data_out1),
-            .data_out2(data_out2)
-          );
+            (
+          
+	     );
          
 
 threeFlop threeFlopInst ( .in(in), .out(chain), .clk(clk) );
