@@ -424,4 +424,5 @@ set_property IOSTANDARD LVCMOS18 [get_ports {video_out_stream_tdata[23]}]
 set_property IOSTANDARD LVCMOS18 [get_ports {video_out_stream_tlast[0]}]
 set_property IOSTANDARD LVCMOS18 [get_ports {video_out_stream_tuser[0]}]
 set_property IOSTANDARD LVCMOS18 [get_ports video_out_stream_tvalid]
-
+set_property iostandard LVCMOS18 [get_ports shiftr]
+set_property PACKAGE_PIN B19 [get_ports shiftr]
