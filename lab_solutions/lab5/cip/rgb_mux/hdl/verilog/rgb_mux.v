@@ -64,10 +64,10 @@ reg   [0:0] ap_CS_fsm1 = 1'b1;
 reg   [0:0] ap_CS_fsm2 = 1'b1;
 reg    ap_sig_ioackin_video_out_stream_TREADY;
 reg   [23:0] ap_reg_ppstg_video_in_stream_data_V_tmp_reg_213_pp0_it1;
-reg   [0:0] video_out_stream_tuser_tmp_reg_219;
-reg   [0:0] ap_reg_ppstg_video_out_stream_tuser_tmp_reg_219_pp0_it1;
-reg   [0:0] video_out_stream_tlast_tmp_reg_224;
-reg   [0:0] ap_reg_ppstg_video_out_stream_tlast_tmp_reg_224_pp0_it1;
+reg   [0:0] video_in_stream_tuser_tmp_reg_219;
+reg   [0:0] ap_reg_ppstg_video_in_stream_tuser_tmp_reg_219_pp0_it1;
+reg   [0:0] video_in_stream_tlast_tmp_reg_224;
+reg   [0:0] ap_reg_ppstg_video_in_stream_tlast_tmp_reg_224_pp0_it1;
 wire   [7:0] R_fu_106_p1;
 reg   [7:0] R_reg_229;
 reg   [7:0] ap_reg_ppstg_R_reg_229_pp0_it1;
@@ -150,8 +150,8 @@ begin
         G_reg_235 <= {{video_in_stream_TDATA[ap_const_lv32_F : ap_const_lv32_8]}};
         R_reg_229 <= R_fu_106_p1;
         video_in_stream_data_V_tmp_reg_213 <= video_in_stream_TDATA;
-        video_out_stream_tlast_tmp_reg_224 <= empty_read_fu_70_p4_2;
-        video_out_stream_tuser_tmp_reg_219 <= empty_read_fu_70_p4_1;
+        video_in_stream_tlast_tmp_reg_224 <= empty_read_fu_70_p4_2;
+        video_in_stream_tuser_tmp_reg_219 <= empty_read_fu_70_p4_1;
     end
 end
 
@@ -163,8 +163,8 @@ begin
         ap_reg_ppstg_G_reg_235_pp0_it1 <= G_reg_235;
         ap_reg_ppstg_R_reg_229_pp0_it1 <= R_reg_229;
         ap_reg_ppstg_video_in_stream_data_V_tmp_reg_213_pp0_it1 <= video_in_stream_data_V_tmp_reg_213;
-        ap_reg_ppstg_video_out_stream_tlast_tmp_reg_224_pp0_it1 <= video_out_stream_tlast_tmp_reg_224;
-        ap_reg_ppstg_video_out_stream_tuser_tmp_reg_219_pp0_it1 <= video_out_stream_tuser_tmp_reg_219;
+        ap_reg_ppstg_video_in_stream_tlast_tmp_reg_224_pp0_it1 <= video_in_stream_tlast_tmp_reg_224;
+        ap_reg_ppstg_video_in_stream_tuser_tmp_reg_219_pp0_it1 <= video_in_stream_tuser_tmp_reg_219;
     end
 end
 
@@ -197,6 +197,35 @@ begin
         video_out_stream_TVALID = ap_const_logic_0;
     end
 end
+/// the next state (ap_NS_fsm2) of the state machine. ///
+always @ (ap_CS_fsm1 or ap_CS_fsm2 or ap_sig_ioackin_video_out_stream_TREADY)
+begin
+    case (ap_CS_fsm2)
+        ap_ST_st3_fsm2_1 : 
+        begin
+            if (((ap_ST_st2_fsm1_1 == ap_CS_fsm1) & ~(ap_const_logic_0 == ap_sig_ioackin_video_out_stream_TREADY))) begin
+                ap_NS_fsm2 = ap_ST_st3_fsm2_1;
+            end else if ((~(ap_const_logic_0 == ap_sig_ioackin_video_out_stream_TREADY) & ~(ap_ST_st2_fsm1_1 == ap_CS_fsm1))) begin
+                ap_NS_fsm2 = ap_ST_st0_fsm2_0;
+            end else begin
+                ap_NS_fsm2 = ap_ST_st3_fsm2_1;
+            end
+        end
+        ap_ST_st0_fsm2_0 : 
+        begin
+            if (((ap_ST_st2_fsm1_1 == ap_CS_fsm1) & ~((ap_const_logic_0 == ap_sig_ioackin_video_out_stream_TREADY) & (ap_ST_st3_fsm2_1 == ap_CS_fsm2)))) begin
+                ap_NS_fsm2 = ap_ST_st3_fsm2_1;
+            end else begin
+                ap_NS_fsm2 = ap_ST_st0_fsm2_0;
+            end
+        end
+        default : 
+        begin
+            ap_NS_fsm2 = 'bx;
+        end
+    endcase
+end
+
 /// the next state (ap_NS_fsm1) of the state machine. ///
 always @ (video_in_stream_TVALID or ap_CS_fsm0 or ap_CS_fsm1 or ap_CS_fsm2 or ap_sig_ioackin_video_out_stream_TREADY)
 begin
@@ -241,35 +270,6 @@ begin
     endcase
 end
 
-/// the next state (ap_NS_fsm2) of the state machine. ///
-always @ (ap_CS_fsm1 or ap_CS_fsm2 or ap_sig_ioackin_video_out_stream_TREADY)
-begin
-    case (ap_CS_fsm2)
-        ap_ST_st3_fsm2_1 : 
-        begin
-            if (((ap_ST_st2_fsm1_1 == ap_CS_fsm1) & ~(ap_const_logic_0 == ap_sig_ioackin_video_out_stream_TREADY))) begin
-                ap_NS_fsm2 = ap_ST_st3_fsm2_1;
-            end else if ((~(ap_const_logic_0 == ap_sig_ioackin_video_out_stream_TREADY) & ~(ap_ST_st2_fsm1_1 == ap_CS_fsm1))) begin
-                ap_NS_fsm2 = ap_ST_st0_fsm2_0;
-            end else begin
-                ap_NS_fsm2 = ap_ST_st3_fsm2_1;
-            end
-        end
-        ap_ST_st0_fsm2_0 : 
-        begin
-            if (((ap_ST_st2_fsm1_1 == ap_CS_fsm1) & ~((ap_const_logic_0 == ap_sig_ioackin_video_out_stream_TREADY) & (ap_ST_st3_fsm2_1 == ap_CS_fsm2)))) begin
-                ap_NS_fsm2 = ap_ST_st3_fsm2_1;
-            end else begin
-                ap_NS_fsm2 = ap_ST_st0_fsm2_0;
-            end
-        end
-        default : 
-        begin
-            ap_NS_fsm2 = 'bx;
-        end
-    endcase
-end
-
 assign R_fu_106_p1 = video_in_stream_TDATA[7:0];
 assign empty_read_fu_70_p4_1 = video_in_stream_TUSER;
 assign empty_read_fu_70_p4_2 = video_in_stream_TLAST;
@@ -287,8 +287,8 @@ assign tmp_2_fu_130_p2 = (mux_V == ap_const_lv2_1? 1'b1: 1'b0);
 assign tmp_5_fu_142_p2 = (mux_V == ap_const_lv2_3? 1'b1: 1'b0);
 assign tmp_9_fu_136_p2 = (mux_V == ap_const_lv2_2? 1'b1: 1'b0);
 assign video_out_stream_TDATA = ((or_cond_fu_194_p2)? newSel_fu_188_p3: newSel9_fu_198_p3);
-assign video_out_stream_TLAST = ap_reg_ppstg_video_out_stream_tlast_tmp_reg_224_pp0_it1;
-assign video_out_stream_TUSER = ap_reg_ppstg_video_out_stream_tuser_tmp_reg_219_pp0_it1;
+assign video_out_stream_TLAST = ap_reg_ppstg_video_in_stream_tlast_tmp_reg_224_pp0_it1;
+assign video_out_stream_TUSER = ap_reg_ppstg_video_in_stream_tuser_tmp_reg_219_pp0_it1;
 
 
 endmodule //rgb_mux

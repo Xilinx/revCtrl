@@ -9927,7 +9927,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3a948108</spirit:value>
+            <spirit:value>5b5fafd9</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -9935,7 +9935,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 12 21:59:13 UTC 2014</spirit:value>
+            <spirit:value>Thu Aug 14 06:24:54 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -9953,7 +9953,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3a948108</spirit:value>
+            <spirit:value>5b5fafd9</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -9961,7 +9961,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 12 21:59:46 UTC 2014</spirit:value>
+            <spirit:value>Thu Aug 14 06:25:28 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -9980,7 +9980,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3a948108</spirit:value>
+            <spirit:value>5b5fafd9</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -9988,7 +9988,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 12 21:59:46 UTC 2014</spirit:value>
+            <spirit:value>Thu Aug 14 06:25:28 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -10009,7 +10009,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>8ac8e7e0</spirit:value>
+            <spirit:value>4e5a5ec6</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -10027,7 +10027,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>8ac8e7e0</spirit:value>
+            <spirit:value>4e5a5ec6</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -10035,7 +10035,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 12 21:59:47 UTC 2014</spirit:value>
+            <spirit:value>Thu Aug 14 06:25:29 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -10053,7 +10053,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3a948108</spirit:value>
+            <spirit:value>5b5fafd9</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -10061,7 +10061,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 12 21:59:47 UTC 2014</spirit:value>
+            <spirit:value>Thu Aug 14 06:25:30 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -10079,7 +10079,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>3a948108</spirit:value>
+            <spirit:value>5b5fafd9</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -10087,7 +10087,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 12 21:59:48 UTC 2014</spirit:value>
+            <spirit:value>Thu Aug 14 06:25:30 UTC 2014</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -30693,23 +30693,23 @@
         <spirit:userFileType>USED_IN_hw_handoff</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/hdl/verilog/processing_system7_v5_4_aw_atc.v</spirit:name>
+        <spirit:name>hdl/verilog/processing_system7_v5_4_aw_atc.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/hdl/verilog/processing_system7_v5_4_b_atc.v</spirit:name>
+        <spirit:name>hdl/verilog/processing_system7_v5_4_b_atc.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/hdl/verilog/processing_system7_v5_4_w_atc.v</spirit:name>
+        <spirit:name>hdl/verilog/processing_system7_v5_4_w_atc.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/hdl/verilog/processing_system7_v5_4_atc.v</spirit:name>
+        <spirit:name>hdl/verilog/processing_system7_v5_4_atc.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/hdl/verilog/processing_system7_v5_4_trace_buffer.v</spirit:name>
+        <spirit:name>hdl/verilog/processing_system7_v5_4_trace_buffer.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -30731,135 +30731,135 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_processing_system7_bfm_2_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_local_params.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_local_params.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_arb_wr.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_arb_wr.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_arb_rd.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_arb_rd.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_arb_wr_4.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_arb_wr_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_arb_rd_4.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_arb_rd_4.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_arb_hp2_3.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_arb_hp2_3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_arb_hp0_1.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_arb_hp0_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_ssw_hp.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_ssw_hp.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_sparse_mem.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_sparse_mem.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_reg_params.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:isIncludeFile>true</spirit:isIncludeFile>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_reg_init.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_reg_params.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_reg_map.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_ocm_mem.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_intr_wr_mem.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_intr_rd_mem.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_fmsw_gp.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_regc.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_ocmc.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_interconnect_model.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_gen_reset.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_gen_clock.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_ddrc.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_axi_slave.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_axi_master.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_afi_slave.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_apis.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_reg_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_unused_ports.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_reg_map.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_ocm_mem.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_intr_wr_mem.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_intr_rd_mem.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_fmsw_gp.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_regc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_ocmc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_interconnect_model.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_gen_reset.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_gen_clock.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_ddrc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_axi_slave.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_axi_master.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_afi_slave.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_apis.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_axi_gp.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_unused_ports.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_axi_acp.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_axi_gp.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_axi_hp.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_axi_acp.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_bfm_v2_0/738df366/hdl/processing_system7_bfm_v2_0_processing_system7_bfm.v</spirit:name>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_axi_hp.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:isIncludeFile>true</spirit:isIncludeFile>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/processing_system7_bfm_v2_0_processing_system7_bfm.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:vendorExtensions>
@@ -30880,655 +30880,655 @@
     <spirit:fileSet>
       <spirit:name>xilinx_miscfiles_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/board/xc7z020.xml</spirit:name>
+        <spirit:name>data/zynqconfig/board/xc7z020.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/board/xc7z706.xml</spirit:name>
+        <spirit:name>data/zynqconfig/board/xc7z706.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/board/ZedBoard.xml</spirit:name>
+        <spirit:name>data/zynqconfig/board/ZedBoard.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/can/can0_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/can/can0_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/can/can0_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/can/can0_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/can/can1_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/can/can1_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/can/can1_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/can/can1_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/clkgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/clkgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/codegen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/codegen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/ddrgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/ddrgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/ddrgen.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/code/ddrgen.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/miogen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/miogen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/peripheralsgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/peripheralsgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/peripheralsgen.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/code/peripheralsgen.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/pllgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/pllgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/ucfgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/ucfgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/ucfgen.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/code/ucfgen.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/sdkgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/sdkgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/ps7_init.c</spirit:name>
+        <spirit:name>data/zynqconfig/code/ps7_init.c</spirit:name>
         <spirit:userFileType>unknown</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/ps7_init.h</spirit:name>
+        <spirit:name>data/zynqconfig/code/ps7_init.h</spirit:name>
         <spirit:userFileType>unknown</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/ps7_init.tcl</spirit:name>
+        <spirit:name>data/zynqconfig/code/ps7_init.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/ps7_post_config.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/ps7_post_config.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/ps7_debug.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/ps7_debug.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/code/powergen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/code/powergen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ddr/ddr_iostandards.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ddr/ddr_iostandards.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ddr/ddr_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ddr/ddr_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ddr/ddr_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/ddr/ddr_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ddr/ddr_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ddr/ddr_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ddr/ddr_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/ddr/ddr_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/enet/enet0_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/enet/enet0_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/enet/enet0_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/enet/enet0_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/enet/enet0_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/enet/enet0_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/enet/enet0_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/enet/enet0_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/enet/enet1_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/enet/enet1_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/enet/enet1_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/enet/enet1_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/enet/enet1_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/enet/enet1_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/enet/enet1_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/enet/enet1_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/global/global_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/global/global_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/global/global_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/global/global_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/global/global_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/global/global_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/global/global_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/global/global_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/global/clkdata.xml</spirit:name>
+        <spirit:name>data/zynqconfig/global/clkdata.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/gpio/gpio_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/gpio/gpio_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/gpio/gpio_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/gpio/gpio_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/gpio/gpio_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/gpio/gpio_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/i2c/i2c0_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/i2c/i2c0_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/i2c/i2c0_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/i2c/i2c0_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/i2c/i2c0_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/i2c/i2c0_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/i2c/i2c0_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/i2c/i2c0_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/i2c/i2c1_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/i2c/i2c1_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/i2c/i2c1_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/i2c/i2c1_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/i2c/i2c1_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/i2c/i2c1_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/i2c/i2c1_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/i2c/i2c1_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/mio/mio_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/mio/mio_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/mio/mio_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/mio/mio_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/mpd/hw_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/mpd/hw_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/nand/nand_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/nand/nand_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/nand/nand_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/nand/nand_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/nand/nand_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/nand/nand_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/nand/nand_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/nand/nand_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/nor/nor_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/nor/nor_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/nor/nor_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/nor/nor_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/nor/nor_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/nor/nor_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/part/package_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/part/package_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/part/package_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/part/package_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/part/partno_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/part/partno_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/part/partno_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/part/partno_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/pjtag/pjtag_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/pjtag/pjtag_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/pjtag/pjtag_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/pjtag/pjtag_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ps7regs/sw_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ps7regs/sw_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ps7regs/sw_regs.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ps7regs/sw_regs.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/qspi/qspi_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/qspi/qspi_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/qspi/qspi_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/qspi/qspi_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/sd/sd0_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/sd/sd0_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/sd/sd0_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/sd/sd0_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/sd/sd1_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/sd/sd1_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/sd/sd1_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/sd/sd1_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/sd/sdio_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/sd/sdio_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/sd/sdio_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/sd/sdio_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/spi/spi0_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/spi/spi0_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/spi/spi0_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/spi/spi0_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/spi/spi1_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/spi/spi1_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/spi/spi1_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/spi/spi1_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/trace/trace_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/trace/trace_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/trace/trace_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/trace/trace_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ttc/ttc0_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ttc/ttc0_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ttc/ttc0_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ttc/ttc0_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ttc/ttc1_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ttc/ttc1_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ttc/ttc1_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ttc/ttc1_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/uart/uart0_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/uart/uart0_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/uart/uart0_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/uart/uart0_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/uart/uart1_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/uart/uart1_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/uart/uart1_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/uart/uart1_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/uart/uart_hw_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/uart/uart_hw_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/uart/uart_io_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/uart/uart_io_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/uart/uart_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/uart/uart_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/uart/uart_ui_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/uart/uart_ui_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ui/param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ui/param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ui/preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ui/preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ui/ui_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ui/ui_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/ui/ui_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/ui/ui_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/usb/usb0_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/usb/usb0_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/usb/usb0_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/usb/usb0_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/usb/usb0_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/usb/usb0_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/usb/usb0_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/usb/usb0_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/usb/usb1_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/usb/usb1_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/usb/usb1_param.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/usb/usb1_param.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/usb/usb1_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/usb/usb1_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/usb/usb1_preset.xml.orig</spirit:name>
+        <spirit:name>data/zynqconfig/usb/usb1_preset.xml.orig</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/vivado_dataxml.pl</spirit:name>
+        <spirit:name>data/zynqconfig/vivado_dataxml.pl</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/xpsmaps.xml</spirit:name>
+        <spirit:name>data/zynqconfig/xpsmaps.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/wdt/wdt_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/wdt/wdt_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/wdt/wdt_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/wdt/wdt_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/guidata.xml</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/guidata.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/MIOData.xml</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/MIOData.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/zynq.svg</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/zynq.svg</spirit:name>
         <spirit:userFileType>unknown</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/mio.svg</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/mio.svg</spirit:name>
         <spirit:userFileType>unknown</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nand_t_ar.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nand_t_ar.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nand_t_clr.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nand_t_clr.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nand_t_rc.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nand_t_rc.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nand_t_rea.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nand_t_rea.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nand_t_rr.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nand_t_rr.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nand_t_wc.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nand_t_wc.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nand_t_wp.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nand_t_wp.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nor_t_ceoe.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nor_t_ceoe.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nor_t_pc.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nor_t_pc.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nor_t_rc.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nor_t_rc.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nor_t_tr.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nor_t_tr.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nor_t_wc.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nor_t_wc.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nor_t_wp.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nor_t_wp.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/nor_we_time.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/nor_we_time.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/guidata/zynq_100x30.png</spirit:name>
+        <spirit:name>data/zynqconfig/guidata/zynq_100x30.png</spirit:name>
         <spirit:userFileType>image</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/code/clkgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/code/clkgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/code/ddrgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/code/ddrgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/code/miogen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/code/miogen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/code/peripheralsgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/code/peripheralsgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/code/pllgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/code/pllgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/code/powergen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/code/powergen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/ps7regs/sw_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/ps7regs/sw_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/ps7regs/sw_regs.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/ps7regs/sw_regs.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/code/ps7_post_config.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/code/ps7_post_config.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/1.0/code/ps7_debug.xml</spirit:name>
+        <spirit:name>data/zynqconfig/1.0/code/ps7_debug.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/code/clkgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/code/clkgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/code/ddrgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/code/ddrgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/code/miogen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/code/miogen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/code/peripheralsgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/code/peripheralsgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/code/pllgen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/code/pllgen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/code/powergen.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/code/powergen.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/ps7regs/sw_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/ps7regs/sw_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/ps7regs/sw_regs.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/ps7regs/sw_regs.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/code/ps7_post_config.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/code/ps7_post_config.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/2.0/code/ps7_debug.xml</spirit:name>
+        <spirit:name>data/zynqconfig/2.0/code/ps7_debug.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/cti/cti_param.xml</spirit:name>
+        <spirit:name>data/zynqconfig/cti/cti_param.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/cti/cti_preset.xml</spirit:name>
+        <spirit:name>data/zynqconfig/cti/cti_preset.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/html/javascripts</spirit:name>
+        <spirit:name>data/zynqconfig/html/javascripts</spirit:name>
         <spirit:userFileType>text</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/data/zynqconfig/html/ps_summary.css</spirit:name>
+        <spirit:name>data/zynqconfig/html/ps_summary.css</spirit:name>
         <spirit:userFileType>text</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/component.xml</spirit:name>
+        <spirit:name>component.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/fixedio.xml</spirit:name>
+        <spirit:name>fixedio.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/fixedio_rtl.xml</spirit:name>
+        <spirit:name>fixedio_rtl.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/hpstatusctrl.xml</spirit:name>
+        <spirit:name>hpstatusctrl.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/hpstatusctrl_rtl.xml</spirit:name>
+        <spirit:name>hpstatusctrl_rtl.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/usbctrl.xml</spirit:name>
+        <spirit:name>usbctrl.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../ipshared/xilinx.com/processing_system7_v5_4/fe772633/usbctrl_rtl.xml</spirit:name>
+        <spirit:name>usbctrl_rtl.xml</spirit:name>
         <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>

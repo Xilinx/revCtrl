@@ -1,7 +1,1 @@
-create_clock  -name clk -period 2 [get_ports clk]
-set_property IOSTANDARD LVCMOS18 [get_ports *]
-set_property PACKAGE_PIN AA9 [get_ports clk]
-set_property PACKAGE_PIN U7 [get_ports in]
-set_property PACKAGE_PIN W6 [get_ports out]
-set_property PACKAGE_PIN W5 [get_ports rst]
-set_property IS_LOC_FIXED [get_ports *]
+create_clock  -name clk -period 10 [get_ports clk]
