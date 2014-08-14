@@ -73,4 +73,6 @@ module iicWrapper(
       .gpo(s_f[110])                      // output wire [0 : 0] gpo
     );
 
+  assign out = s_f[110];
+
 endmodule
