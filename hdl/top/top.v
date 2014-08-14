@@ -153,6 +153,8 @@ module top
   wire [31:0]wbOutputData;
   wire wbWriteOut;
 
+  wire chain;
+
 zynq_bd zynqInst
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
@@ -223,8 +225,8 @@ module_1 sysGenInst
           );
          
 
-threeFlop threeFlopInst ( .in(in), .out(out), .clk(clk) );
+threeFlop threeFlopInst ( .in(in), .out(chain), .clk(clk) );
 
-iicWrapper iicInst (.in(in), .out(out), .clk(clk), .shiftr(shiftr) );
+iicWrapper iicInst (.in(chain), .out(out), .clk(clk), .shiftr(shiftr) );
 
 endmodule

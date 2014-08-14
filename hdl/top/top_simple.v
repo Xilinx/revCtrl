@@ -4,6 +4,7 @@ module top
    (in,
     out, 
     clk,
+    shiftr,
     DDR_addr,
     DDR_ba,
     DDR_cas_n,
@@ -37,6 +38,7 @@ module top
 
 // Serial data in/out
    input in;
+   input shiftr;
    output out;    
     
 // Zynq Subsystem IO    
@@ -96,6 +98,8 @@ module top
   wire FIXED_IO_ps_srstb;
   wire [3:0]leds_4bits_tri_o;
 
+  wire chain;
+
 zynq_bd zynqInst
        (.DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
@@ -144,8 +148,8 @@ module_1 sysGenInst
           );
          
 
-threeFlop threeFlopInst ( .in(in), .out(out), .clk(clk) );
+threeFlop threeFlopInst ( .in(in), .out(chain), .clk(clk) );
 
-iicWrapper iicInst (.in(in), .out(out), .clk(clk) );
+iicWrapper iicInst (.in(chain), .out(out), .clk(clk), .shiftr(shiftr) );
 
 endmodule
