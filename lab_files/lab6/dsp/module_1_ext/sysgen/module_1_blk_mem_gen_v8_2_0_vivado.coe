@@ -1,0 +1,2 @@
+  memory_initialization_radix = 16;
+  memory_initialization_vector = 0, C7C, 187E, 238E, 2D41, 3537, 3B21, 3EC5, 4000, 3EC5, 3B21, 3537, 2D41, 238E, 187E, C7C;

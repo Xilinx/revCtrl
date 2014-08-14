@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Jun 30 18:29:15 2014
+# Process ID: 22884
+# Log file: C:/Data/tmp/project_10/project_10.srcs/sources_1/dsp/module_1/vivado.log
+# Journal file: C:/Data/tmp/project_10/project_10.srcs/sources_1/dsp/module_1\vivado.jou
+#-----------------------------------------------------------
+source SysGenSubModule.tcl -notrace
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 30 18:29:16 2014...
