@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
-//Date        : Tue Aug 12 14:59:04 2014
+//Date        : Wed Aug 13 23:24:46 2014
 //Host        : xsjrplyler30 running 64-bit Service Pack 1  (build 7601)
 //Command     : generate_target zynq_bd_wrapper.bd
 //Design      : zynq_bd_wrapper

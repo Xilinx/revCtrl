@@ -76,7 +76,8 @@ if { ${design_name} ne "" && ${cur_design} eq ${design_name} } {
    if { [get_files -quiet ${design_name}.bd] eq "" } {
       puts "INFO: Currently there is no design <$design_name> in project, so creating one..."
 
-      create_bd_design $design_name
+      # The -dir option is not part of write_bd_tcl - added by GD
+      create_bd_design -dir . $design_name
 
       puts "INFO: Making design <$design_name> as current_bd_design."
       current_bd_design $design_name
