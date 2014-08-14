@@ -1,0 +1,56 @@
+{
+   guistr: "# # String gsaved with Nlview version 6.4-r1  2014-02-28 bk=1.3047 VDI=34 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port error -pg 1 -y 770 -defaultsOSRD
+preplace port wbClk -pg 1 -y 700 -defaultsOSRD
+preplace port LEDs_4Bits -pg 1 -y 230 -defaultsOSRD
+preplace port video_in_stream -pg 1 -y 550 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 330 -defaultsOSRD
+preplace port wbWriteOut -pg 1 -y 780 -defaultsOSRD
+preplace port video_out_stream -pg 1 -y 580 -defaultsOSRD
+preplace port ap_rst_n -pg 1 -y 590 -defaultsOSRD
+preplace port DDR -pg 1 -y 310 -defaultsOSRD
+preplace port reset -pg 1 -y 740 -defaultsOSRD
+preplace port bftClk -pg 1 -y 720 -defaultsOSRD
+preplace port wbDataForOutput -pg 1 -y 730 -defaultsOSRD
+preplace port ap_clk -pg 1 -y 570 -defaultsOSRD
+preplace port wbDataForInput -pg 1 -y 760 -defaultsOSRD
+preplace portBus wbInputData -pg 1 -y 800 -defaultsOSRD
+preplace portBus mux_V -pg 1 -y 610 -defaultsOSRD
+preplace portBus wbOutputData -pg 1 -y 750 -defaultsOSRD
+preplace inst rgb_mux_0 -pg 1 -lvl 4 -y 580 -defaultsOSRD
+preplace inst bft_0 -pg 1 -lvl 4 -y 750 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 4 -y 230 -defaultsOSRD
+preplace inst rst_processing_system7_0_50M -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -y 120 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -y 190 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 390 -defaultsOSRD
+preplace netloc processing_system7_0_ddr 1 1 4 NJ 310 NJ 310 NJ 310 N
+preplace netloc wbClk_1 1 0 4 NJ 700 NJ 700 NJ 700 N
+preplace netloc proc_sys_reset_interconnect_aresetn 1 1 1 590
+preplace netloc rgb_mux_0_video_out_stream 1 4 1 N
+preplace netloc axi_gpio_0_gpio 1 4 1 N
+preplace netloc proc_sys_reset_peripheral_aresetn 1 1 3 610 270 930 280 NJ
+preplace netloc bft_0_wbOutputData 1 4 1 N
+preplace netloc ap_rst_n_1 1 0 4 NJ 590 NJ 590 NJ 590 N
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 1190
+preplace netloc mux_V_1 1 0 4 NJ 610 NJ 610 NJ 610 N
+preplace netloc wbInputData_1 1 0 4 NJ 800 NJ 800 NJ 800 N
+preplace netloc video_in_stream_1 1 0 4 NJ 550 NJ 550 NJ 550 N
+preplace netloc processing_system7_0_axi_periph_m01_axi 1 2 1 940
+preplace netloc wbDataForInput_1 1 0 4 NJ 760 NJ 760 NJ 760 N
+preplace netloc bft_0_wbDataForOutput 1 4 1 N
+preplace netloc ap_clk_1 1 0 4 NJ 570 NJ 570 NJ 570 N
+preplace netloc processing_system7_0_fclk_reset0_n 1 0 2 190 260 570
+preplace netloc bft_0_error 1 4 1 N
+preplace netloc processing_system7_0_fixed_io 1 1 4 NJ 330 NJ 330 NJ 330 N
+preplace netloc processing_system7_0_fclk_clk0 1 0 4 180 530 600 340 940 270 NJ
+preplace netloc processing_system7_0_axi_periph_m00_axi 1 2 2 N 120 NJ
+preplace netloc wbWriteOut_1 1 0 4 NJ 780 NJ 780 NJ 780 N
+preplace netloc reset_1 1 0 4 NJ 740 NJ 740 NJ 740 N
+preplace netloc processing_system7_0_m_axi_gp0 1 1 1 580
+preplace netloc bftClk_1 1 0 4 NJ 720 NJ 720 NJ 720 N
+levelinfo -pg 1 160 380 770 1060 1340 1520
+",
+}

@@ -1,15 +1,10 @@
 `timescale 1 ps / 1 ps
 
 module top
-   (
-    // threeFlop & iicWrapper share in, clk and out
-    in,
+   (in,
+    out, 
     clk,
-    
-    //iicWrapper
     shiftr,
-    
-    //zynq_bd instance 
     DDR_addr,
     DDR_ba,
     DDR_cas_n,
@@ -50,17 +45,22 @@ module top
     wbDataForOutput,
     wbInputData,
     wbOutputData,
-    wbWriteOut
-    // Sys Gen IO Missing
-    
+    wbWriteOut,
+    data_in3,
+    data_in2,
+    data_in1,
+    data_in,
+    data_out,
+    data_out1,
+    data_out2
     );
 
-// Serial data in/out, clk shared with iicWrapper
+// Serial data in/out
   input clk;
   input in;
   input shiftr;
-   
-
+  output out;    
+    
 // BD Subsystem IO    
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -105,8 +105,14 @@ module top
   input wbWriteOut;
   
 // System Generator IO  
+  input data_in3;
+  input [15:0]data_in2;
+  input [3:0]data_in1;
+  input [15:0]data_in;
+  output [24:0]data_out;
+  output data_out1;
+  output data_out2;
 
-  
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -147,20 +153,68 @@ module top
   wire [31:0]wbOutputData;
   wire wbWriteOut;
 
-zynq_bd zynqInst
-       (
-	
-	);
+  wire chain;
 
+zynq_bd zynqInst
+       (.DDR_addr(DDR_addr),
+        .DDR_ba(DDR_ba),
+        .DDR_cas_n(DDR_cas_n),
+        .DDR_ck_n(DDR_ck_n),
+        .DDR_ck_p(DDR_ck_p),
+        .DDR_cke(DDR_cke),
+        .DDR_cs_n(DDR_cs_n),
+        .DDR_dm(DDR_dm),
+        .DDR_dq(DDR_dq),
+        .DDR_dqs_n(DDR_dqs_n),
+        .DDR_dqs_p(DDR_dqs_p),
+        .DDR_odt(DDR_odt),
+        .DDR_ras_n(DDR_ras_n),
+        .DDR_reset_n(DDR_reset_n),
+        .DDR_we_n(DDR_we_n),
+        .FIXED_IO_ddr_vrn(FIXED_IO_ddr_vrn),
+        .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp),
+        .FIXED_IO_mio(FIXED_IO_mio),
+        .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
+        .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
+        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .LEDs_4Bits_tri_o(leds_4bits_tri_o),
+        .ap_clk(clk),
+        .ap_rst_n(ap_rst_n),
+        .bftClk(clk),
+        .error(error),
+        .mux_V(mux_V),
+        .reset(reset),
+        .video_in_stream_tdata(video_in_stream_tdata),
+        .video_in_stream_tlast(video_in_stream_tlast),
+        .video_in_stream_tready(video_in_stream_tready),
+        .video_in_stream_tuser(video_in_stream_tuser),
+        .video_in_stream_tvalid(video_in_stream_tvalid),
+        .video_out_stream_tdata(video_out_stream_tdata),
+        .video_out_stream_tlast(video_out_stream_tlast),
+        .video_out_stream_tready(video_out_stream_tready),
+        .video_out_stream_tuser(video_out_stream_tuser),
+        .video_out_stream_tvalid(video_out_stream_tvalid),
+        .wbClk(clk),
+        .wbDataForInput(wbDataForInput),
+        .wbDataForOutput(wbDataForOutput),
+        .wbInputData(wbInputData),
+        .wbOutputData(wbOutputData),
+        .wbWriteOut(wbWriteOut));
 
 module_1 sysGenInst
-            (
-        
-	    );
+            (.clk(clk),
+            .data_in3(data_in3),
+            .data_in2(data_in2),
+            .data_in1(data_in1),
+            .data_in(data_in),
+            .data_out(data_out),
+            .data_out1(data_out1),
+            .data_out2(data_out2)
+          );
          
 
-threeFlop threeFlopInst (  );
+threeFlop threeFlopInst ( .in(in), .out(chain), .clk(clk) );
 
-iicWrapper iicInst (.in(in), .out(out), .clk(clk), .shiftr(shiftr) );
+iicWrapper iicInst (.in(chain), .out(out), .clk(clk), .shiftr(shiftr) );
 
 endmodule
