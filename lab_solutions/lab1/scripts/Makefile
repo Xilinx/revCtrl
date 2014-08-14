@@ -1,4 +1,4 @@
-RTL=../hdl/threeFlop/threeFlop.v
+RTL=../hdl/top/top.v ../hdl/threeFlop/threeFlop.v
 XDC=../xdc/top.xdc
 
 

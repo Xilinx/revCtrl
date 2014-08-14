@@ -8,6 +8,7 @@ source $thisDir/utils.tcl
 # Create project
 create_project top ./top/ -part xc7z020clg484-1
 
+add_files -norecurse ../hdl/top/top.v
 add_files -norecurse ../hdl/threeFlop/threeFlop.v
 add_files -norecurse ../xdc/top.xdc
 update_compile_order -fileset sources_1
