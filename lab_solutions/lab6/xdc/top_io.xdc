@@ -426,5 +426,5 @@ set_property IOSTANDARD LVCMOS18 [get_ports {video_out_stream_tuser[0]}]
 set_property IOSTANDARD LVCMOS18 [get_ports video_out_stream_tvalid]
 
 # settings for shiftr
-set_property PACKAGE_PIN B19 [get_ports ]
-set_property IOSTANDARD LVCMOS18 [get_ports ]
+set_property PACKAGE_PIN B19 [get_ports shiftr]
+set_property IOSTANDARD LVCMOS18 [get_ports shiftr]
