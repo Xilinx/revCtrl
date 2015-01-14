@@ -6,10 +6,12 @@ BD=../bd/zynq_bd/zynq_bd.bd
 CIP=../hdl/bft/bft.vhdl
 HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
 
-all : hls cip ip setup bd_gen compile
+#all : hls cip ip setup bd_gen compile
+all : hls cip ip setup compile
 
 compile : .compile.done
-.compile.done : .bd_gen.done
+#.compile.done : .bd_gen.done
+.compile.done :
 	cmd /c "vivado -mode batch -source ../scripts/compile.tcl -log compile.log -jou compile.jou"
 
 # This setups up the top level project
@@ -18,9 +20,9 @@ setup : .setup.done
 	cmd /c "vivado -mode batch -source ../scripts/setup.tcl -log setup.log -jou setup.jou"
 
 # This generates the Zynq subystem block diagram
-bd_gen : .bd_gen.done
-.bd_gen.done : .cip.done .hls.done
-	cmd /c "vivado -mode batch -source ../scripts/bd_gen.tcl -log bd_gen.log -jou bd_gen.jou"
+#bd_gen : .bd_gen.done
+#.bd_gen.done : .cip.done .hls.done
+#	cmd /c "vivado -mode batch -source ../scripts/bd_gen.tcl -log bd_gen.log -jou bd_gen.jou"
 
 # This generates the managed IP project and generates the IP for AXI_IIC
 ip : .ip.done
