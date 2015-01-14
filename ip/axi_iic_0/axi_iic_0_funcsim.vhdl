@@ -1,9 +1,9 @@
 -- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
--- Date        : Wed Jul 23 17:36:56 2014
+-- Date        : Wed Jan 14 12:00:32 2015
 -- Host        : XCODAUGHTRY30 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim c:/junk/tsc14/work/ip/axi_iic_0/axi_iic_0_funcsim.vhdl
+-- Command     : write_vhdl -force -mode funcsim C:/junk/revCtrl/ip/axi_iic_0/axi_iic_0_funcsim.vhdl
 -- Design      : axi_iic_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
