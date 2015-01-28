@@ -24,39 +24,13 @@ puts "INFO: Project created:zynq"
 # Source the bd.tcl file to create the bd
 #source $thisDir/bd.tcl
 # Source the bd.tcl file to create the bd with custom ip module
-source $thisDir/bd_cip.tcl
+if {[version -short] eq "2014.4"} {
+   source $thisDir/bd_cip_2014_4.tcl
+} else {
+   source $thisDir/bd_cip.tcl
+}
 validate_bd_design
 save_bd_design
-
-# Close the IPI design without any layout information
-#close_bd_design zynq_bd
-
-# Apply UI file
-#  set folder [pwd]
-#  set ui_file "bd_cf78a2d4.ui"
-#  set ui_file_path [glob $folder/$ui_file]
-#  set project_name [current_project]
-#  set project_dir  [get_property DIRECTORY [current_project]]
-
-#  if { [file exists "$ui_file_path"] == 1 } { 
-#     set str_ui_folder $proj_dir/../zynq_bd/ui
-#     puts "Copying <$ui_file_path> to <$str_ui_folder/$ui_file>..."
-#     file copy -force $ui_file_path "$str_ui_folder/$ui_file"
-#  } else {
-#     puts "ERROR: Unable to find the .ui file <$ui_file>!"
-#  }
-
-# Re-open IPI design with layout and comments
-#set bd_file  $proj_dir/../zynq_bd/zynq_bd.bd
-#open_bd_design $bd_file
-
-# Re-generate layout
-#regenerate_bd_layout
-
-# Validate bd
-#validate_bd_design
-
-#save_bd_design
 
 # Generate Target
 generate_target all [get_files */zynq_bd.bd]

@@ -20,9 +20,9 @@ setup : .setup.done
 	cmd /c "vivado -mode batch -source ../scripts/setup.tcl -log setup.log -jou setup.jou"
 
 # This generates the Zynq subystem block diagram
-#bd_gen : .bd_gen.done
-#.bd_gen.done : .cip.done .hls.done
-#	cmd /c "vivado -mode batch -source ../scripts/bd_gen.tcl -log bd_gen.log -jou bd_gen.jou"
+bd_gen : .bd_gen.done
+.bd_gen.done : .cip.done .hls.done
+	cmd /c "vivado -mode batch -source ../scripts/bd_gen.tcl -log bd_gen.log -jou bd_gen.jou"
 
 # This generates the managed IP project and generates the IP for AXI_IIC
 ip : .ip.done
