@@ -1,1 +1,0 @@
-The ip output can be copied from ../common/ip
