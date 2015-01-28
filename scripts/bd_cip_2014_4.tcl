@@ -94,7 +94,8 @@ if { ${design_name} eq "" } {
 
    puts "INFO: Currently there is no design <$design_name> in project, so creating one..."
 
-   create_bd_design $design_name
+   # the -dir option is not part of write_bd_tcl - added by GD to create a remote bd
+   create_bd_design -dir $proj_dir/.. $design_name
 
    puts "INFO: Making design <$design_name> as current_bd_design."
    current_bd_design $design_name
