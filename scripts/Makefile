@@ -6,8 +6,7 @@ BD=../bd/zynq_bd/zynq_bd.bd
 CIP=../hdl/bft/bft.vhdl
 HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
 
-#all : hls cip ip setup bd_gen compile
-all : hls cip ip setup compile
+all : hls cip ip setup bd_gen compile
 
 compile : .compile.done
 #.compile.done : .bd_gen.done
