@@ -3,11 +3,17 @@ set thisDir [file dirname [info script]]
 # source common utilities
 source $thisDir/utils.tcl
 
+# passed into this scirpt w/ -tclargs option to specify
+# whether to reuse golden sources or rebuild all from scratch
 # set this variable to 1 to reuse the latest "golden"
 # sources checked into revision control repository
 # and set it to 0 to use the local users "sandbox"
 # which is rebuilt from scratch
-set reuseGolden 0
+if {[llength $argv] > 0 && "$argv[2]" eq "reuseGolden"} {
+   set reuseGolden 0
+} else {
+   set reuseGolden 1
+}
 
 # these variables point to the root directory location
 # of various source types - change this to point to 
