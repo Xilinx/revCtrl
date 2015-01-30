@@ -3,6 +3,30 @@ set thisDir [file dirname [info script]]
 # source common utilities
 source $thisDir/utils.tcl
 
+# set this variable to 1 to reuse the latest "golden"
+# sources checked into revision control repository
+# and set it to 0 to use the local users "sandbox"
+# which is rebuilt from scratch
+set reuseGolden 1
+
+# these variables point to the root directory location
+# of various source types - change this to point to 
+# any diretory location accessible to the machine
+set repoRoot ../
+set localRoot ./
+set hdlRoot $repoRoot/hdl
+set xdcRoot $repoRoot/xdc
+set dspRoot $repoRoot/dsp
+if {$reuseGolden} {
+   # point to the golden repo
+   set ipRoot $repoRoot/ip
+   set bdRoot $repoRoot/bd
+} else {
+   # point to the local sandbox repo
+   set ipRoot $localRoot/ip
+   set bdRoot $localRoot
+}
+
 # Create project
 create_project top ./top/ -part xc7z020clg484-1
 
@@ -16,15 +40,16 @@ set_property "target_language" "Verilog" $obj
 set_property ip_repo_paths {../cip/bft ../cip/rgb_mux} [current_fileset]
 update_ip_catalog
 
-add_files -norecurse ../hdl/top/top.v
-add_files -norecurse ../hdl/top/iicWrapper.v
-add_files -norecurse ../hdl/top/shift.v
-add_files -norecurse ../hdl/threeFlop/threeFlop.v
-add_files -norecurse ../xdc/top.xdc
-add_files -norecurse ../xdc/top_io.xdc
-add_files -norecurse ../ip/axi_iic_0/axi_iic_0.xci
-add_files -norecurse ../dsp/module_1_ext/module_1.slx
-add_files -norecurse ../bd/zynq_bd/zynq_bd.bd
+add_files -norecurse $hdlRoot/top/top.v
+add_files -norecurse $hdlRoot/top/iicWrapper.v
+add_files -norecurse $hdlRoot/top/shift.v
+add_files -norecurse $hdlRoot/threeFlop/threeFlop.v
+add_files -norecurse $xdcRoot/top.xdc
+add_files -norecurse $xdcRoot/top_io.xdc
+add_files -norecurse $ipRoot/axi_iic_0/axi_iic_0.xci
+add_files -norecurse $dspRoot/module_1_ext/module_1.slx
+add_files -norecurse $bdRoot/zynq_bd/zynq_bd.bd
+
 update_compile_order -fileset sources_1
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
 add_files -fileset sim_1 -norecurse ../tb/hdl_zynq/tb.v
