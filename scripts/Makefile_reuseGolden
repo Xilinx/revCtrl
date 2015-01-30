@@ -6,7 +6,7 @@ BD=../bd/zynq_bd/zynq_bd.bd
 CIP=../hdl/bft/bft.vhdl
 HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
 
-all : hls cip ip setup bd_gen compile
+all : setup compile
 
 compile : .compile.done
 .compile.done : .setup.done
@@ -14,7 +14,7 @@ compile : .compile.done
 
 # This setups up the top level project
 setup : .setup.done
-.setup.done : $(RTL) $(XDC) $(IP) $(DSP) $(BD) .bd_gen.done .ip.done
+.setup.done : $(RTL) $(XDC) $(IP) $(DSP) $(BD)
 	cmd /c "vivado -mode batch -source ../scripts/setup.tcl -log setup.log -jou setup.jou -tclargs reuseGolden"
 
 # This generates the Zynq subystem block diagram
