@@ -13,8 +13,8 @@ compile : .compile.done
 	cmd /c "vivado -mode batch -source ../scripts/compile.tcl -log compile.log -jou compile.jou"
 
 # This setups up the top level project
-setup : .setup.done .bd_gen.done .ip.done
-.setup.done : $(RTL) $(XDC) $(IP) $(DSP) $(BD)
+setup : .setup.done
+.setup.done : $(RTL) $(XDC) $(IP) $(DSP) $(BD) .bd_gen.done .ip.done
 	cmd /c "vivado -mode batch -source ../scripts/setup.tcl -log setup.log -jou setup.jou"
 
 # This generates the Zynq subystem block diagram
