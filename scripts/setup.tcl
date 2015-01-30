@@ -7,7 +7,7 @@ source $thisDir/utils.tcl
 # sources checked into revision control repository
 # and set it to 0 to use the local users "sandbox"
 # which is rebuilt from scratch
-set reuseGolden 1
+set reuseGolden 0
 
 # these variables point to the root directory location
 # of various source types - change this to point to 

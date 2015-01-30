@@ -9,12 +9,11 @@ HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
 all : hls cip ip setup bd_gen compile
 
 compile : .compile.done
-#.compile.done : .bd_gen.done
-.compile.done :
+.compile.done : .setup.done
 	cmd /c "vivado -mode batch -source ../scripts/compile.tcl -log compile.log -jou compile.jou"
 
 # This setups up the top level project
-setup : .setup.done
+setup : .setup.done .bd_gen.done .ip.done
 .setup.done : $(RTL) $(XDC) $(IP) $(DSP) $(BD)
 	cmd /c "vivado -mode batch -source ../scripts/setup.tcl -log setup.log -jou setup.jou"
 
