@@ -22,14 +22,18 @@ set_property "target_language" "Verilog" $obj
 puts "INFO: Project created:zynq"
 
 # Source the bd.tcl file to create the bd with custom ip module
-set currVer [version -short]
+# first get the major.minor version of the tool - and source
+# the bd creation script that corresponds to the current tool version
+set currVer [join [lrange [split [version -short] "."] 0 1] "."]
 puts "Current Version $currVer"
-if {$currVer eq "2014.4"} {
+if {$currVer eq "2014.3"} {
+   source $thisDir/bd_cip_2014_3.tcl
+} elseif {$currVer eq "2014.4"} {
    source $thisDir/bd_cip_2014_4.tcl
-} elseif {$currVer eq "2015.1.0"} {
+} elseif {$currVer eq "2015.1"} {
    source $thisDir/bd_cip_2015_1.tcl
 } else {
-   # this project was originally written with 2014.1
+   # this script will only work with 2014.2, everything else will fail
    source $thisDir/bd_cip.tcl
 }
 validate_bd_design
