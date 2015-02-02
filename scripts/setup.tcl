@@ -21,6 +21,7 @@ if {[llength $argv] > 0 && "$argv" eq "reuseGolden"} {
 set repoRoot ../
 set localRoot ./
 set hdlRoot $repoRoot/hdl
+set tbRoot $repoRoot/tb
 set xdcRoot $repoRoot/xdc
 set dspRoot $repoRoot/dsp
 if {$reuseGolden} {
@@ -33,6 +34,16 @@ if {$reuseGolden} {
    set bdRoot $localRoot
 }
 
+puts "INFO:  repoRoot is $repoRoot"
+puts "INFO:  localRoot is $localRoot"
+puts "INFO:  hdlRoot is $hdlRoot"
+puts "INFO:  tbRoot is $tbRoot"
+puts "INFO:  xdcRoot is $xdcRoot"
+puts "INFO:  dspRoot is $dspRoot"
+puts "INFO:  ipRoot is $ipRoot"
+puts "INFO:  bdRoot is $bdRoot"
+
+
 # Create project
 create_project top ./top/ -part xc7z020clg484-1
 
@@ -43,7 +54,7 @@ set_property "simulator_language" "Mixed" $obj
 set_property "target_language" "Verilog" $obj
 
 # setup up custom ip repository location
-set_property ip_repo_paths {../cip/bft ../cip/rgb_mux} [current_fileset]
+set_property ip_repo_paths {$repoRoot/cip/bft $repoRoot/cip/rgb_mux} [current_fileset]
 update_ip_catalog
 
 add_files -norecurse $hdlRoot/top/top.v
@@ -58,7 +69,7 @@ add_files -norecurse $bdRoot/zynq_bd/zynq_bd.bd
 
 update_compile_order -fileset sources_1
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse ../tb/hdl_zynq/tb.v
+add_files -fileset sim_1 -norecurse $tbRoot/hdl_zynq/tb.v
 update_compile_order -fileset sim_1
 
 # if everything is successful "touch" a file so make will not it's done
