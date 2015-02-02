@@ -9,10 +9,10 @@ source $thisDir/utils.tcl
 # sources checked into revision control repository
 # and set it to 0 to use the local users "sandbox"
 # which is rebuilt from scratch
-if {[llength $argv] > 0 && "$argv[2]" eq "reuseGolden"} {
-   set reuseGolden 0
-} else {
+if {[llength $argv] > 0 && "$argv" eq "reuseGolden"} {
    set reuseGolden 1
+} else {
+   set reuseGolden 0
 }
 
 # these variables point to the root directory location

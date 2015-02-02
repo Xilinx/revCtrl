@@ -11,7 +11,19 @@ HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
 # or rebuild everything from scratch locally from scripts
 # set this TRUE to reuse sources from golden repo
 # set this to anything else to rebuild everything from scripts
-REUSEGOLDEN = TRUE
+REUSEGOLDEN = FALSE
+
+# if reusing golden data you do not need to wait for bd and ip generation
+ifeq ($(REUSEGOLDEN), TRUE)
+SETUPUDEPS =  $(RTL) $(XDC) $(IP) $(DSP) $(BD)
+SETUPOPS = -source ../scripts/setup.tcl -log setup.log -jou setup.jou -tclargs reuseGolden
+else
+SETUPDEPS =  $(RTL) $(XDC) $(IP) $(DSP) $(BD) .bd_gen.done .ip.done
+SETUPOPS = -source ../scripts/setup.tcl -log setup.log -jou setup.jou
+endif
+
+# Common Vivado options
+VIVADOCOMOPS = -mode batch
 
 # determine the OS shell - this make file should work on both linux and windows
 UNAME := $(shell uname)
@@ -24,18 +36,6 @@ else
 PREFIX = cmd /c "
 POSTFIX = "
 endif
-
-# if reusing golden data you do not need to wait for bd and ip generation
-ifeq ($(REUSEGOLDEN), TRUE)
-SETUPUDEPS =  $(RTL) $(XDC) $(IP) $(DSP) $(BD)
-SETUPOPS = -source ../scripts/setup.tcl -log setup.log -jou setup.jou -tclargs reuseGolden
-else
-SETUPUDEPS =  $(RTL) $(XDC) $(IP) $(DSP) $(BD) .bd_gen.done .ip.done
-SETUPOPS = -source ../scripts/setup.tcl -log setup.log -jou setup.jou
-endif
-
-# Common Vivado options
-VIVADOCOMOPS = -mode batch
 
 # These are all the compilation targets, starting with "all"
 all : setup compile
