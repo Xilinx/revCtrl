@@ -2,7 +2,7 @@
 RTL=../hdl/top/top.v ../hdl/threeFlop/threeFlop.v ../hdl/top/shift.v ../hdl/top/iicWrapper.v
 XDC=../xdc/top.xdc ../xdc/top_io.xdc
 IP=../ip/axi_iic_0/axi_iic_0.xci
-DSP=../dsp/module_1_ext/module_1.slx
+DSP=../dsp/module_1_ext/module_1.dcp
 BD=../bd/zynq_bd/zynq_bd.bd
 CIP=../hdl/bft/bft.vhdl
 HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
