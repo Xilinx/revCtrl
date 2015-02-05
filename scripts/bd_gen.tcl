@@ -40,7 +40,10 @@ validate_bd_design
 save_bd_design
 
 # Generate Target
+create_fileset -blockset -define_from zynq_bd zynq_bd
 generate_target all [get_files */zynq_bd.bd]
+launch_runs zynq_bd_synth_1
+wait_on_run zynq_bd_synth_1 
 
 # if everything is successful "touch" a file so make will not it's done
 touch {.bd_gen.done}
