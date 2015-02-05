@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root MajorVersion="0" MinorVersion="29">
+<Root MajorVersion="0" MinorVersion="31">
   <CompositeFile CompositeFileTopName="zynq_bd" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
     <Generation Name="SYNTHESIS" State="GENERATED"/>
@@ -8,7 +8,7 @@
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\zynq_bd_axi_bram_ctrl_0_0\zynq_bd_axi_bram_ctrl_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_bram_ctrl_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -16,7 +16,7 @@
       </File>
       <File Name="ip\zynq_bd_axi_gpio_0_0\zynq_bd_axi_gpio_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_gpio_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -24,7 +24,7 @@
       </File>
       <File Name="ip\zynq_bd_axi_mem_intercon_0\zynq_bd_axi_mem_intercon_0.xci" Type="IP">
         <Instance HierarchyPath="axi_mem_intercon"/>
-        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -32,7 +32,7 @@
       </File>
       <File Name="ip\zynq_bd_xbar_0\zynq_bd_xbar_0.xci" Type="IP">
         <Instance HierarchyPath="axi_mem_intercon/xbar"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -40,7 +40,7 @@
       </File>
       <File Name="ip\zynq_bd_bft_0_0\zynq_bd_bft_0_0.xci" Type="IP">
         <Instance HierarchyPath="bft_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -48,7 +48,7 @@
       </File>
       <File Name="ip\zynq_bd_blk_mem_gen_0_0\zynq_bd_blk_mem_gen_0_0.xci" Type="IP">
         <Instance HierarchyPath="blk_mem_gen_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -56,7 +56,7 @@
       </File>
       <File Name="ip\zynq_bd_processing_system7_0_0\zynq_bd_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -64,7 +64,7 @@
       </File>
       <File Name="ip\zynq_bd_rgb_mux_0_0\zynq_bd_rgb_mux_0_0.xci" Type="IP">
         <Instance HierarchyPath="rgb_mux_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -72,7 +72,7 @@
       </File>
       <File Name="ip\zynq_bd_rst_processing_system7_0_50M_0\zynq_bd_rst_processing_system7_0_50M_0.xci" Type="IP">
         <Instance HierarchyPath="rst_processing_system7_0_50M"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -80,7 +80,7 @@
       </File>
       <File Name="ip\zynq_bd_auto_pc_0\zynq_bd_auto_pc_0.xci" Type="IP">
         <Instance HierarchyPath="axi_mem_intercon/m00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
@@ -88,36 +88,67 @@
       </File>
       <File Name="ip\zynq_bd_auto_pc_1\zynq_bd_auto_pc_1.xci" Type="IP">
         <Instance HierarchyPath="axi_mem_intercon/s00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="hdl\zynq_bd.v" Type="Verilog">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="zynq_bd.bmm" Type="BMM">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="zynq_bd_ooc.xdc" Type="XDC">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="OUT_OF_CONTEXT"/>
       </File>
       <File Name="hw_handoff\zynq_bd.hwh" Type="HwHandoff">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff\zynq_bd_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="zynq_bd.dcp" Type="DCP">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="zynq_bd_stub.v" Type="Verilog">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTH_BLACKBOX_STUB"/>
+      </File>
+      <File Name="zynq_bd_stub.vhdl" Type="VHDL">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTH_BLACKBOX_STUB"/>
+      </File>
+      <File Name="zynq_bd_funcsim.v" Type="Verilog">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="zynq_bd_funcsim.vhdl" Type="VHDL">
+        <Properties IsEditable="true" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
       </File>
     </FileCollection>
   </CompositeFile>

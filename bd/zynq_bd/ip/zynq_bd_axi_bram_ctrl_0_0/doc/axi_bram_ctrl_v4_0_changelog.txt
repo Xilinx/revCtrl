@@ -1,3 +1,7 @@
+2014.3:
+ * Version 4.0 (Rev. 2)
+ * Re-Packaged to improve internal automation, no functional changes
+
 2014.2:
  * Version 4.0 (Rev. 1)
  * Constrained the range for the variable "size_plus_lsb" between 1 to 256 in narrow.vhd file to improve the timing

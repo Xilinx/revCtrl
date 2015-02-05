@@ -848,9 +848,9 @@
         <set param="pcw_ddr_odt_loc" value="P18" />
         <set param="pcw_ddr_we_b_loc" value="R19" />
         <set param="pcw_ddr_cke_loc" value="T19" />
-        <set param="pcw_ddr_ck_p_loc" value="N19" />
+        <set param="pcw_ddr_ckp_loc" value="N19" />
         <set param="pcw_ddr_cas_b_loc" value="P20" />
-        <set param="pcw_ddr_ck_n_loc" value="N18" />
+        <set param="pcw_ddr_ckn_loc" value="N18" />
         <set param="pcw_ddr_vrp_loc" value="N16" />
         <set param="pcw_ddr_dq[0]_loc" value="D22" />
         <set param="pcw_ddr_dq[1]_loc" value="C20" />
@@ -982,9 +982,9 @@
         <set param="pcw_ddr_odt_loc" value="P18" />
         <set param="pcw_ddr_we_b_loc" value="R19" />
         <set param="pcw_ddr_cke_loc" value="T19" />
-        <set param="pcw_ddr_ck_p_loc" value="N19" />
+        <set param="pcw_ddr_ckp_loc" value="N19" />
         <set param="pcw_ddr_cas_b_loc" value="P20" />
-        <set param="pcw_ddr_ck_n_loc" value="N18" />
+        <set param="pcw_ddr_ckn_loc" value="N18" />
         <set param="pcw_ddr_vrp_loc" value="N16" />
         <set param="pcw_ddr_dq[0]_loc" value="D22" />
         <set param="pcw_ddr_dq[1]_loc" value="C20" />
@@ -1116,9 +1116,9 @@
         <set param="pcw_ddr_odt_loc" value="P18" />
         <set param="pcw_ddr_we_b_loc" value="R19" />
         <set param="pcw_ddr_cke_loc" value="T19" />
-        <set param="pcw_ddr_ck_p_loc" value="N19" />
+        <set param="pcw_ddr_ckp_loc" value="N19" />
         <set param="pcw_ddr_cas_b_loc" value="P20" />
-        <set param="pcw_ddr_ck_n_loc" value="N18" />
+        <set param="pcw_ddr_ckn_loc" value="N18" />
         <set param="pcw_ddr_vrp_loc" value="N16" />
         <set param="pcw_ddr_dq[0]_loc" value="D22" />
         <set param="pcw_ddr_dq[1]_loc" value="C20" />
@@ -3466,9 +3466,9 @@
         <set param="pcw_ddr_odt_loc" value="P18" />
         <set param="pcw_ddr_we_b_loc" value="R19" />
         <set param="pcw_ddr_cke_loc" value="T19" />
-        <set param="pcw_ddr_ck_p_loc" value="N19" />
+        <set param="pcw_ddr_ckp_loc" value="N19" />
         <set param="pcw_ddr_cas_b_loc" value="P20" />
-        <set param="pcw_ddr_ck_n_loc" value="N18" />
+        <set param="pcw_ddr_ckn_loc" value="N18" />
         <set param="pcw_ddr_vrp_loc" value="N16" />
         <set param="pcw_ddr_dq[0]_loc" value="D22" />
         <set param="pcw_ddr_dq[1]_loc" value="C20" />
@@ -3601,9 +3601,9 @@
         <set param="pcw_ddr_odt_loc" value="P18" />
         <set param="pcw_ddr_we_b_loc" value="R19" />
         <set param="pcw_ddr_cke_loc" value="T19" />
-        <set param="pcw_ddr_ck_p_loc" value="N19" />
+        <set param="pcw_ddr_ckp_loc" value="N19" />
         <set param="pcw_ddr_cas_b_loc" value="P20" />
-        <set param="pcw_ddr_ck_n_loc" value="N18" />
+        <set param="pcw_ddr_ckn_loc" value="N18" />
         <set param="pcw_ddr_vrp_loc" value="N16" />
         <set param="pcw_ddr_dq[0]_loc" value="D22" />
         <set param="pcw_ddr_dq[1]_loc" value="C20" />
@@ -3736,9 +3736,9 @@
         <set param="pcw_ddr_odt_loc" value="P18" />
         <set param="pcw_ddr_we_b_loc" value="R19" />
         <set param="pcw_ddr_cke_loc" value="T19" />
-        <set param="pcw_ddr_ck_p_loc" value="N19" />
+        <set param="pcw_ddr_ckp_loc" value="N19" />
         <set param="pcw_ddr_cas_b_loc" value="P20" />
-        <set param="pcw_ddr_ck_n_loc" value="N18" />
+        <set param="pcw_ddr_ckn_loc" value="N18" />
         <set param="pcw_ddr_vrp_loc" value="N16" />
         <set param="pcw_ddr_dq[0]_loc" value="D22" />
         <set param="pcw_ddr_dq[1]_loc" value="C20" />
@@ -5635,9 +5635,9 @@
         <set param="pcw_ddr_odt_loc" value="K30" />
         <set param="pcw_ddr_we_b_loc" value="L30" />
         <set param="pcw_ddr_cke_loc" value="M26" />
-        <set param="pcw_ddr_ck_p_loc" value="J28" />
+        <set param="pcw_ddr_ckp_loc" value="J28" />
         <set param="pcw_ddr_cas_b_loc" value="L29" />
-        <set param="pcw_ddr_ck_n_loc" value="H28" />
+        <set param="pcw_ddr_ckn_loc" value="H28" />
         <set param="pcw_ddr_vrp_loc" value="L27" />
         <set param="pcw_ddr_dq[0]_loc" value="A28" />
         <set param="pcw_ddr_dq[1]_loc" value="C27" />
@@ -5783,9 +5783,9 @@
         <set param="pcw_ddr_odt_loc" value="K30" />
         <set param="pcw_ddr_we_b_loc" value="L30" />
         <set param="pcw_ddr_cke_loc" value="M26" />
-        <set param="pcw_ddr_ck_p_loc" value="J28" />
+        <set param="pcw_ddr_ckp_loc" value="J28" />
         <set param="pcw_ddr_cas_b_loc" value="L29" />
-        <set param="pcw_ddr_ck_n_loc" value="H28" />
+        <set param="pcw_ddr_ckn_loc" value="H28" />
         <set param="pcw_ddr_vrp_loc" value="L27" />
         <set param="pcw_ddr_dq[0]_loc" value="A28" />
         <set param="pcw_ddr_dq[1]_loc" value="C27" />
@@ -5930,9 +5930,9 @@
         <set param="pcw_ddr_odt_loc" value="N5" />
         <set param="pcw_ddr_cke_loc" value="N3" />
         <set param="pcw_ddr_we_b_loc" value="M5" />
-        <set param="pcw_ddr_ck_p_loc" value="L2" />
+        <set param="pcw_ddr_ckp_loc" value="L2" />
         <set param="pcw_ddr_cas_b_loc" value="P5" />
-        <set param="pcw_ddr_ck_n_loc" value="M2" />
+        <set param="pcw_ddr_ckn_loc" value="M2" />
         <set param="pcw_ddr_vrp_loc" value="H5" />
         <set param="pcw_ddr_dq[0]_loc" value="C3" />
         <set param="pcw_ddr_dq[1]_loc" value="B3" />
@@ -6077,9 +6077,9 @@
         <set param="pcw_ddr_odt_loc" value="N5" />
         <set param="pcw_ddr_cke_loc" value="N3" />
         <set param="pcw_ddr_we_b_loc" value="M5" />
-        <set param="pcw_ddr_ck_p_loc" value="L2" />
+        <set param="pcw_ddr_ckp_loc" value="L2" />
         <set param="pcw_ddr_cas_b_loc" value="P5" />
-        <set param="pcw_ddr_ck_n_loc" value="M2" />
+        <set param="pcw_ddr_ckn_loc" value="M2" />
         <set param="pcw_ddr_vrp_loc" value="H5" />
         <set param="pcw_ddr_dq[0]_loc" value="C3" />
         <set param="pcw_ddr_dq[1]_loc" value="B3" />
@@ -6224,9 +6224,9 @@
         <set param="pcw_ddr_odt_loc" value="K3" />
         <set param="pcw_ddr_we_b_loc" value="R3" />
         <set param="pcw_ddr_cke_loc" value="L3" />
-        <set param="pcw_ddr_ck_p_loc" value="N3" />
+        <set param="pcw_ddr_ckp_loc" value="N3" />
         <set param="pcw_ddr_cas_b_loc" value="R5" />
-        <set param="pcw_ddr_ck_n_loc" value="N2" />
+        <set param="pcw_ddr_ckn_loc" value="N2" />
         <set param="pcw_ddr_vrp_loc" value="H3" />
         <set param="pcw_ddr_dq[0]_loc" value="D4" />
         <set param="pcw_ddr_dq[1]_loc" value="A2" />
@@ -6323,9 +6323,9 @@
         <set param="pcw_ddr_odt_loc" value="K3" />
         <set param="pcw_ddr_we_b_loc" value="R3" />
         <set param="pcw_ddr_cke_loc" value="L3" />
-        <set param="pcw_ddr_ck_p_loc" value="N3" />
+        <set param="pcw_ddr_ckp_loc" value="N3" />
         <set param="pcw_ddr_cas_b_loc" value="R5" />
-        <set param="pcw_ddr_ck_n_loc" value="N2" />
+        <set param="pcw_ddr_ckn_loc" value="N2" />
         <set param="pcw_ddr_vrp_loc" value="H3" />
         <set param="pcw_ddr_dq[0]_loc" value="D4" />
         <set param="pcw_ddr_dq[1]_loc" value="A2" />
@@ -6422,9 +6422,9 @@
         <set param="pcw_ddr_odt_loc" value="N5" />
         <set param="pcw_ddr_we_b_loc" value="M5" />
         <set param="pcw_ddr_cke_loc" value="N3" />
-        <set param="pcw_ddr_ck_p_loc" value="L2" />
+        <set param="pcw_ddr_ckp_loc" value="L2" />
         <set param="pcw_ddr_cas_b_loc" value="P5" />
-        <set param="pcw_ddr_ck_n_loc" value="M2" />
+        <set param="pcw_ddr_ckn_loc" value="M2" />
         <set param="pcw_ddr_vrp_loc" value="H5" />
         <set param="pcw_ddr_dq[0]_loc" value="C3" />
         <set param="pcw_ddr_dq[1]_loc" value="B3" />
@@ -6569,9 +6569,9 @@
         <set param="pcw_ddr_odt_loc" value="N5" />
         <set param="pcw_ddr_we_b_loc" value="M5" />
         <set param="pcw_ddr_cke_loc" value="N3" />
-        <set param="pcw_ddr_ck_p_loc" value="L2" />
+        <set param="pcw_ddr_ckp_loc" value="L2" />
         <set param="pcw_ddr_cas_b_loc" value="P5" />
-        <set param="pcw_ddr_ck_n_loc" value="M2" />
+        <set param="pcw_ddr_ckn_loc" value="M2" />
         <set param="pcw_ddr_vrp_loc" value="H5" />
         <set param="pcw_ddr_dq[0]_loc" value="C3" />
         <set param="pcw_ddr_dq[1]_loc" value="B3" />
@@ -6716,9 +6716,9 @@
         <set param="pcw_ddr_odt_loc" value="P5" />
         <set param="pcw_ddr_we_b_loc" value="R4" />
         <set param="pcw_ddr_cke_loc" value="V3" />
-        <set param="pcw_ddr_ck_p_loc" value="N4" />
+        <set param="pcw_ddr_ckp_loc" value="N4" />
         <set param="pcw_ddr_cas_b_loc" value="P3" />
-        <set param="pcw_ddr_ck_n_loc" value="N5" />
+        <set param="pcw_ddr_ckn_loc" value="N5" />
         <set param="pcw_ddr_vrp_loc" value="N7" />
         <set param="pcw_ddr_dq[0]_loc" value="D1" />
         <set param="pcw_ddr_dq[1]_loc" value="C3" />
@@ -6863,9 +6863,9 @@
         <set param="pcw_ddr_odt_loc" value="P5" />
         <set param="pcw_ddr_we_b_loc" value="R4" />
         <set param="pcw_ddr_cke_loc" value="V3" />
-        <set param="pcw_ddr_ck_p_loc" value="N4" />
+        <set param="pcw_ddr_ckp_loc" value="N4" />
         <set param="pcw_ddr_cas_b_loc" value="P3" />
-        <set param="pcw_ddr_ck_n_loc" value="N5" />
+        <set param="pcw_ddr_ckn_loc" value="N5" />
         <set param="pcw_ddr_vrp_loc" value="N7" />
         <set param="pcw_ddr_dq[0]_loc" value="D1" />
         <set param="pcw_ddr_dq[1]_loc" value="C3" />
@@ -7010,9 +7010,9 @@
         <set param="pcw_ddr_odt_loc" value="N5" />
         <set param="pcw_ddr_cke_loc" value="N3" />
         <set param="pcw_ddr_we_b_loc" value="M5" />
-        <set param="pcw_ddr_ck_p_loc" value="L2" />
+        <set param="pcw_ddr_ckp_loc" value="L2" />
         <set param="pcw_ddr_cas_b_loc" value="P5" />
-        <set param="pcw_ddr_ck_n_loc" value="M2" />
+        <set param="pcw_ddr_ckn_loc" value="M2" />
         <set param="pcw_ddr_vrp_loc" value="H5" />
         <set param="pcw_ddr_dq[0]_loc" value="C3" />
         <set param="pcw_ddr_dq[1]_loc" value="B3" />
@@ -7157,9 +7157,9 @@
         <set param="pcw_ddr_odt_loc" value="N5" />
         <set param="pcw_ddr_cke_loc" value="N3" />
         <set param="pcw_ddr_we_b_loc" value="M5" />
-        <set param="pcw_ddr_ck_p_loc" value="L2" />
+        <set param="pcw_ddr_ckp_loc" value="L2" />
         <set param="pcw_ddr_cas_b_loc" value="P5" />
-        <set param="pcw_ddr_ck_n_loc" value="M2" />
+        <set param="pcw_ddr_ckn_loc" value="M2" />
         <set param="pcw_ddr_vrp_loc" value="H5" />
         <set param="pcw_ddr_dq[0]_loc" value="C3" />
         <set param="pcw_ddr_dq[1]_loc" value="B3" />
@@ -7304,9 +7304,9 @@
         <set param="pcw_ddr_odt_loc" value="N5" />
         <set param="pcw_ddr_cke_loc" value="N3" />
         <set param="pcw_ddr_we_b_loc" value="M5" />
-        <set param="pcw_ddr_ck_p_loc" value="L2" />
+        <set param="pcw_ddr_ckp_loc" value="L2" />
         <set param="pcw_ddr_cas_b_loc" value="P5" />
-        <set param="pcw_ddr_ck_n_loc" value="M2" />
+        <set param="pcw_ddr_ckn_loc" value="M2" />
         <set param="pcw_ddr_vrp_loc" value="H5" />
         <set param="pcw_ddr_dq[0]_loc" value="C3" />
         <set param="pcw_ddr_dq[1]_loc" value="B3" />
@@ -7451,9 +7451,9 @@
         <set param="pcw_ddr_odt_loc" value="P5" />
         <set param="pcw_ddr_we_b_loc" value="R4" />
         <set param="pcw_ddr_cke_loc" value="V3" />
-        <set param="pcw_ddr_ck_p_loc" value="N4" />
+        <set param="pcw_ddr_ckp_loc" value="N4" />
         <set param="pcw_ddr_cas_b_loc" value="P3" />
-        <set param="pcw_ddr_ck_n_loc" value="N5" />
+        <set param="pcw_ddr_ckn_loc" value="N5" />
         <set param="pcw_ddr_vrp_loc" value="N7" />
         <set param="pcw_ddr_dq[0]_loc" value="D1" />
         <set param="pcw_ddr_dq[1]_loc" value="C3" />
@@ -7598,9 +7598,9 @@
         <set param="pcw_ddr_odt_loc" value="P5" />
         <set param="pcw_ddr_we_b_loc" value="R4" />
         <set param="pcw_ddr_cke_loc" value="V3" />
-        <set param="pcw_ddr_ck_p_loc" value="N4" />
+        <set param="pcw_ddr_ckp_loc" value="N4" />
         <set param="pcw_ddr_cas_b_loc" value="P3" />
-        <set param="pcw_ddr_ck_n_loc" value="N5" />
+        <set param="pcw_ddr_ckn_loc" value="N5" />
         <set param="pcw_ddr_vrp_loc" value="N7" />
         <set param="pcw_ddr_dq[0]_loc" value="D1" />
         <set param="pcw_ddr_dq[1]_loc" value="C3" />
@@ -7745,9 +7745,9 @@
         <set param="pcw_ddr_odt_loc" value="P5" />
         <set param="pcw_ddr_we_b_loc" value="R4" />
         <set param="pcw_ddr_cke_loc" value="V3" />
-        <set param="pcw_ddr_ck_p_loc" value="N4" />
+        <set param="pcw_ddr_ckp_loc" value="N4" />
         <set param="pcw_ddr_cas_b_loc" value="P3" />
-        <set param="pcw_ddr_ck_n_loc" value="N5" />
+        <set param="pcw_ddr_ckn_loc" value="N5" />
         <set param="pcw_ddr_vrp_loc" value="N7" />
         <set param="pcw_ddr_dq[0]_loc" value="D1" />
         <set param="pcw_ddr_dq[1]_loc" value="C3" />
@@ -7893,9 +7893,9 @@
         <set param="pcw_ddr_odt_loc" value="Y22" />
         <set param="pcw_ddr_we_b_loc" value="V22" />
         <set param="pcw_ddr_cke_loc" value="U21" />
-        <set param="pcw_ddr_ck_p_loc" value="R21" />
+        <set param="pcw_ddr_ckp_loc" value="R21" />
         <set param="pcw_ddr_cas_b_loc" value="Y23" />
-        <set param="pcw_ddr_ck_n_loc" value="P21" />
+        <set param="pcw_ddr_ckn_loc" value="P21" />
         <set param="pcw_ddr_vrp_loc" value="W21" />
         <set param="pcw_ddr_dq[0]_loc" value="J26" />
         <set param="pcw_ddr_dq[1]_loc" value="F25" />
@@ -8041,9 +8041,9 @@
         <set param="pcw_ddr_odt_loc" value="Y22" />
         <set param="pcw_ddr_we_b_loc" value="V22" />
         <set param="pcw_ddr_cke_loc" value="U21" />
-        <set param="pcw_ddr_ck_p_loc" value="R21" />
+        <set param="pcw_ddr_ckp_loc" value="R21" />
         <set param="pcw_ddr_cas_b_loc" value="Y23" />
-        <set param="pcw_ddr_ck_n_loc" value="P21" />
+        <set param="pcw_ddr_ckn_loc" value="P21" />
         <set param="pcw_ddr_vrp_loc" value="W21" />
         <set param="pcw_ddr_dq[0]_loc" value="J26" />
         <set param="pcw_ddr_dq[1]_loc" value="F25" />
@@ -8189,9 +8189,9 @@
         <set param="pcw_ddr_odt_loc" value="Y22" />
         <set param="pcw_ddr_we_b_loc" value="V22" />
         <set param="pcw_ddr_cke_loc" value="U21" />
-        <set param="pcw_ddr_ck_p_loc" value="R21" />
+        <set param="pcw_ddr_ckp_loc" value="R21" />
         <set param="pcw_ddr_cas_b_loc" value="Y23" />
-        <set param="pcw_ddr_ck_n_loc" value="P21" />
+        <set param="pcw_ddr_ckn_loc" value="P21" />
         <set param="pcw_ddr_vrp_loc" value="W21" />
         <set param="pcw_ddr_dq[0]_loc" value="J26" />
         <set param="pcw_ddr_dq[1]_loc" value="F25" />
@@ -8337,9 +8337,9 @@
         <set param="pcw_ddr_odt_loc" value="N16" />
         <set param="pcw_ddr_we_b_loc" value="L16" />
         <set param="pcw_ddr_cke_loc" value="M15" />
-        <set param="pcw_ddr_ck_p_loc" value="H17" />
+        <set param="pcw_ddr_ckp_loc" value="H17" />
         <set param="pcw_ddr_cas_b_loc" value="M18" />
-        <set param="pcw_ddr_ck_n_loc" value="G17" />
+        <set param="pcw_ddr_ckn_loc" value="G17" />
         <set param="pcw_ddr_vrp_loc" value="K17" />
         <set param="pcw_ddr_dq[0]_loc" value="A16" />
         <set param="pcw_ddr_dq[1]_loc" value="D19" />
@@ -8485,9 +8485,9 @@
         <set param="pcw_ddr_odt_loc" value="N16" />
         <set param="pcw_ddr_we_b_loc" value="L16" />
         <set param="pcw_ddr_cke_loc" value="M15" />
-        <set param="pcw_ddr_ck_p_loc" value="H17" />
+        <set param="pcw_ddr_ckp_loc" value="H17" />
         <set param="pcw_ddr_cas_b_loc" value="M18" />
-        <set param="pcw_ddr_ck_n_loc" value="G17" />
+        <set param="pcw_ddr_ckn_loc" value="G17" />
         <set param="pcw_ddr_vrp_loc" value="K17" />
         <set param="pcw_ddr_dq[0]_loc" value="A16" />
         <set param="pcw_ddr_dq[1]_loc" value="D19" />
@@ -8633,9 +8633,9 @@
         <set param="pcw_ddr_odt_loc" value="N16" />
         <set param="pcw_ddr_we_b_loc" value="L16" />
         <set param="pcw_ddr_cke_loc" value="M15" />
-        <set param="pcw_ddr_ck_p_loc" value="H17" />
+        <set param="pcw_ddr_ckp_loc" value="H17" />
         <set param="pcw_ddr_cas_b_loc" value="M18" />
-        <set param="pcw_ddr_ck_n_loc" value="G17" />
+        <set param="pcw_ddr_ckn_loc" value="G17" />
         <set param="pcw_ddr_vrp_loc" value="K17" />
         <set param="pcw_ddr_dq[0]_loc" value="A16" />
         <set param="pcw_ddr_dq[1]_loc" value="D19" />
@@ -8781,9 +8781,9 @@
         <set param="pcw_ddr_odt_loc" value="Y22" />
         <set param="pcw_ddr_we_b_loc" value="V22" />
         <set param="pcw_ddr_cke_loc" value="U21" />
-        <set param="pcw_ddr_ck_p_loc" value="R21" />
+        <set param="pcw_ddr_ckp_loc" value="R21" />
         <set param="pcw_ddr_cas_b_loc" value="Y23" />
-        <set param="pcw_ddr_ck_n_loc" value="P21" />
+        <set param="pcw_ddr_ckn_loc" value="P21" />
         <set param="pcw_ddr_vrp_loc" value="W21" />
         <set param="pcw_ddr_dq[0]_loc" value="J26" />
         <set param="pcw_ddr_dq[1]_loc" value="F25" />
@@ -8929,9 +8929,9 @@
         <set param="pcw_ddr_odt_loc" value="Y22" />
         <set param="pcw_ddr_we_b_loc" value="V22" />
         <set param="pcw_ddr_cke_loc" value="U21" />
-        <set param="pcw_ddr_ck_p_loc" value="R21" />
+        <set param="pcw_ddr_ckp_loc" value="R21" />
         <set param="pcw_ddr_cas_b_loc" value="Y23" />
-        <set param="pcw_ddr_ck_n_loc" value="P21" />
+        <set param="pcw_ddr_ckn_loc" value="P21" />
         <set param="pcw_ddr_vrp_loc" value="W21" />
         <set param="pcw_ddr_dq[0]_loc" value="J26" />
         <set param="pcw_ddr_dq[1]_loc" value="F25" />
@@ -9077,9 +9077,9 @@
         <set param="pcw_ddr_odt_loc" value="Y22" />
         <set param="pcw_ddr_we_b_loc" value="V22" />
         <set param="pcw_ddr_cke_loc" value="U21" />
-        <set param="pcw_ddr_ck_p_loc" value="R21" />
+        <set param="pcw_ddr_ckp_loc" value="R21" />
         <set param="pcw_ddr_cas_b_loc" value="Y23" />
-        <set param="pcw_ddr_ck_n_loc" value="P21" />
+        <set param="pcw_ddr_ckn_loc" value="P21" />
         <set param="pcw_ddr_vrp_loc" value="W21" />
         <set param="pcw_ddr_dq[0]_loc" value="J26" />
         <set param="pcw_ddr_dq[1]_loc" value="F25" />

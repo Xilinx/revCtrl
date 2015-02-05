@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2014 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2015 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_gpio:2.0
--- IP Revision: 5
+-- IP Revision: 6
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

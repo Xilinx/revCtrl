@@ -671,6 +671,7 @@ module processing_system7_bfm_v2_0_processing_system7_bfm
     IRQ_P2F_CAN1
   );
 
+
   /* parameters for gen_clk */
   parameter C_FCLK_CLK0_FREQ = 50;
   parameter C_FCLK_CLK1_FREQ = 50;
@@ -690,6 +691,11 @@ module processing_system7_bfm_v2_0_processing_system7_bfm
   parameter C_S_AXI_HP1_DATA_WIDTH = 32;
   parameter C_S_AXI_HP2_DATA_WIDTH = 32;
   parameter C_S_AXI_HP3_DATA_WIDTH = 32;
+  
+  parameter C_M_AXI_GP0_THREAD_ID_WIDTH = 12;
+  parameter C_M_AXI_GP1_THREAD_ID_WIDTH = 12; 
+  parameter C_M_AXI_GP0_ENABLE_STATIC_REMAP = 0;
+  parameter C_M_AXI_GP1_ENABLE_STATIC_REMAP = 0; 
   
 /* Do we need these 
   parameter C_S_AXI_HP0_ENABLE_HIGHOCM = 0;
@@ -907,9 +913,9 @@ module processing_system7_bfm_v2_0_processing_system7_bfm
   output M_AXI_GP0_RREADY;
   output M_AXI_GP0_WLAST;
   output M_AXI_GP0_WVALID;
-  output [11:0] M_AXI_GP0_ARID;
-  output [11:0] M_AXI_GP0_AWID;
-  output [11:0] M_AXI_GP0_WID;
+  output [C_M_AXI_GP0_THREAD_ID_WIDTH-1:0] M_AXI_GP0_ARID;
+  output [C_M_AXI_GP0_THREAD_ID_WIDTH-1:0] M_AXI_GP0_AWID;
+  output [C_M_AXI_GP0_THREAD_ID_WIDTH-1:0] M_AXI_GP0_WID;
   output [1:0] M_AXI_GP0_ARBURST;
   output [1:0] M_AXI_GP0_ARLOCK;
   output [2:0] M_AXI_GP0_ARSIZE;
@@ -935,8 +941,8 @@ module processing_system7_bfm_v2_0_processing_system7_bfm
   input M_AXI_GP0_RLAST;
   input M_AXI_GP0_RVALID;
   input M_AXI_GP0_WREADY;
-  input [11:0] M_AXI_GP0_BID;
-  input [11:0] M_AXI_GP0_RID;
+  input [C_M_AXI_GP0_THREAD_ID_WIDTH-1:0] M_AXI_GP0_BID;
+  input [C_M_AXI_GP0_THREAD_ID_WIDTH-1:0] M_AXI_GP0_RID;
   input [1:0] M_AXI_GP0_BRESP;
   input [1:0] M_AXI_GP0_RRESP;
   input [31:0] M_AXI_GP0_RDATA;
@@ -946,9 +952,9 @@ module processing_system7_bfm_v2_0_processing_system7_bfm
   output M_AXI_GP1_RREADY;
   output M_AXI_GP1_WLAST;
   output M_AXI_GP1_WVALID;
-  output [11:0] M_AXI_GP1_ARID;
-  output [11:0] M_AXI_GP1_AWID;
-  output [11:0] M_AXI_GP1_WID;
+  output [C_M_AXI_GP1_THREAD_ID_WIDTH-1:0] M_AXI_GP1_ARID;
+  output [C_M_AXI_GP1_THREAD_ID_WIDTH-1:0] M_AXI_GP1_AWID;
+  output [C_M_AXI_GP1_THREAD_ID_WIDTH-1:0] M_AXI_GP1_WID;
   output [1:0] M_AXI_GP1_ARBURST;
   output [1:0] M_AXI_GP1_ARLOCK;
   output [2:0] M_AXI_GP1_ARSIZE;
@@ -974,8 +980,8 @@ module processing_system7_bfm_v2_0_processing_system7_bfm
   input M_AXI_GP1_RLAST;
   input M_AXI_GP1_RVALID;
   input M_AXI_GP1_WREADY;
-  input [11:0] M_AXI_GP1_BID;
-  input [11:0] M_AXI_GP1_RID;
+  input [C_M_AXI_GP1_THREAD_ID_WIDTH-1:0] M_AXI_GP1_BID;
+  input [C_M_AXI_GP1_THREAD_ID_WIDTH-1:0] M_AXI_GP1_RID;
   input [1:0] M_AXI_GP1_BRESP;
   input [1:0] M_AXI_GP1_RRESP;
   input [31:0] M_AXI_GP1_RDATA;
@@ -1631,6 +1637,50 @@ module processing_system7_bfm_v2_0_processing_system7_bfm
   wire[max_burst_bits-1:0] reg_rd_data_port1;
   wire[max_burst_bytes_width:0] reg_rd_bytes_port1;
   wire [axi_qos_width-1:0] reg_rd_qos_port1;
+
+  wire [11:0]  M_AXI_GP0_AWID_FULL;
+  wire [11:0]  M_AXI_GP0_WID_FULL;
+  wire [11:0]  M_AXI_GP0_ARID_FULL;
+  
+  wire [11:0]  M_AXI_GP0_BID_FULL;
+  wire [11:0]  M_AXI_GP0_RID_FULL;
+  
+  wire [11:0]  M_AXI_GP1_AWID_FULL;
+  wire [11:0]  M_AXI_GP1_WID_FULL;
+  wire [11:0]  M_AXI_GP1_ARID_FULL;
+  
+  wire [11:0]  M_AXI_GP1_BID_FULL;
+  wire [11:0]  M_AXI_GP1_RID_FULL;
+
+  
+  function [5:0] compress_id; 
+  	input [11:0] id; 
+  		begin 
+  			compress_id = id[5:0]; 
+  		end 
+  endfunction 
+  
+  function [11:0] uncompress_id; 
+  	input [5:0] id; 
+  		begin 
+  		    uncompress_id = {6'b110000, id[5:0]};
+  		end 
+  endfunction
+
+  assign M_AXI_GP0_AWID        = (C_M_AXI_GP0_ENABLE_STATIC_REMAP == 1) ? compress_id(M_AXI_GP0_AWID_FULL) : M_AXI_GP0_AWID_FULL;
+  assign M_AXI_GP0_WID         = (C_M_AXI_GP0_ENABLE_STATIC_REMAP == 1) ? compress_id(M_AXI_GP0_WID_FULL)  : M_AXI_GP0_WID_FULL;   
+  assign M_AXI_GP0_ARID        = (C_M_AXI_GP0_ENABLE_STATIC_REMAP == 1) ? compress_id(M_AXI_GP0_ARID_FULL) : M_AXI_GP0_ARID_FULL;      
+  assign M_AXI_GP0_BID_FULL    = (C_M_AXI_GP0_ENABLE_STATIC_REMAP == 1) ? uncompress_id(M_AXI_GP0_BID)     : M_AXI_GP0_BID;
+  assign M_AXI_GP0_RID_FULL    = (C_M_AXI_GP0_ENABLE_STATIC_REMAP == 1) ? uncompress_id(M_AXI_GP0_RID)     : M_AXI_GP0_RID;      
+
+
+  assign M_AXI_GP1_AWID        = (C_M_AXI_GP1_ENABLE_STATIC_REMAP == 1) ? compress_id(M_AXI_GP1_AWID_FULL) : M_AXI_GP1_AWID_FULL;
+  assign M_AXI_GP1_WID         = (C_M_AXI_GP1_ENABLE_STATIC_REMAP == 1) ? compress_id(M_AXI_GP1_WID_FULL)  : M_AXI_GP1_WID_FULL;   
+  assign M_AXI_GP1_ARID        = (C_M_AXI_GP1_ENABLE_STATIC_REMAP == 1) ? compress_id(M_AXI_GP1_ARID_FULL) : M_AXI_GP1_ARID_FULL;      
+  assign M_AXI_GP1_BID_FULL    = (C_M_AXI_GP1_ENABLE_STATIC_REMAP == 1) ? uncompress_id(M_AXI_GP1_BID)     : M_AXI_GP1_BID;
+  assign M_AXI_GP1_RID_FULL    = (C_M_AXI_GP1_ENABLE_STATIC_REMAP == 1) ? uncompress_id(M_AXI_GP1_RID)     : M_AXI_GP1_RID;      
+
+
 
 
   processing_system7_bfm_v2_0_interconnect_model icm (

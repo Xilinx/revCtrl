@@ -86,7 +86,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-library proc_common_v4_0;
+library lib_cdc_v1_0;
 
 -------------------------------------------------------------------------------
 --                     Definition of Generics :                              --
@@ -354,7 +354,7 @@ begin  -- architecture IMP
       end if;
     end process REG_SELECT_PROCESS;
 
-   INPUT_DOUBLE_REGS3 : entity  proc_common_v4_0.cdc_sync
+   INPUT_DOUBLE_REGS3 : entity  lib_cdc_v1_0.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_RESET_STATE              => 0,
@@ -594,7 +594,7 @@ begin  -- architecture IMP
     -- to GPIO_DATA REGISTER                                             
     ---------------------------------------------------------------------------
 
-   INPUT_DOUBLE_REGS4 : entity  proc_common_v4_0.cdc_sync
+   INPUT_DOUBLE_REGS4 : entity  lib_cdc_v1_0.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_RESET_STATE              => 0,
@@ -624,7 +624,7 @@ begin  -- architecture IMP
         end if;
       end process GPIO_INDATA_BIRDIR_PROCESS;
     
-   INPUT_DOUBLE_REGS5 : entity  proc_common_v4_0.cdc_sync
+   INPUT_DOUBLE_REGS5 : entity  lib_cdc_v1_0.cdc_sync
     generic map (
         C_CDC_TYPE                 => 1,
         C_RESET_STATE              => 0,

@@ -345,6 +345,12 @@ generate
       .b_full                           ( b_full          ) ,
       .b_resp_rdy                       ( si_rs_awready   )
     );
+    
+    assign rs_mi_wdata        = si_rs_wdata;
+    assign rs_mi_wstrb        = si_rs_wstrb;
+    assign rs_mi_wvalid       = si_rs_wvalid;
+    assign si_rs_wready       = rs_mi_wready;
+
   end else begin : NO_WR
     assign rs_mi_awaddr       = {C_AXI_ADDR_WIDTH{1'b0}};
     assign rs_mi_awvalid      = 1'b0;
@@ -468,12 +474,12 @@ axi_register_slice_v2_1_axi_register_slice #(
   .s_axi_awready              ( rs_mi_awready ) ,
   .s_axi_awregion             ( 4'h0          ) ,
   .s_axi_wid                  ( 1'b0          ) ,
-  .s_axi_wdata                ( si_rs_wdata   ) ,
-  .s_axi_wstrb                ( si_rs_wstrb   ) ,
+  .s_axi_wdata                ( rs_mi_wdata   ) ,
+  .s_axi_wstrb                ( rs_mi_wstrb   ) ,
   .s_axi_wlast                ( 1'b1          ) ,
   .s_axi_wuser                ( 1'b0          ) ,
-  .s_axi_wvalid               ( si_rs_wvalid  ) ,
-  .s_axi_wready               ( si_rs_wready  ) ,
+  .s_axi_wvalid               ( rs_mi_wvalid  ) ,
+  .s_axi_wready               ( rs_mi_wready  ) ,
   .s_axi_bid                  (               ) ,
   .s_axi_bresp                ( rs_mi_bresp   ) ,
   .s_axi_buser                (               ) ,

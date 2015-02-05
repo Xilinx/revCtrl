@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2014 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2015 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_bram_ctrl:4.0
--- IP Revision: 1
+-- IP Revision: 2
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -201,11 +201,11 @@ ARCHITECTURE zynq_bd_axi_bram_ctrl_0_0_arch OF zynq_bd_axi_bram_ctrl_0_0 IS
     );
   END COMPONENT axi_bram_ctrl;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF zynq_bd_axi_bram_ctrl_0_0_arch: ARCHITECTURE IS "axi_bram_ctrl,Vivado 2014.2";
+  ATTRIBUTE X_CORE_INFO OF zynq_bd_axi_bram_ctrl_0_0_arch: ARCHITECTURE IS "axi_bram_ctrl,Vivado 2014.3";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF zynq_bd_axi_bram_ctrl_0_0_arch : ARCHITECTURE IS "zynq_bd_axi_bram_ctrl_0_0,axi_bram_ctrl,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF zynq_bd_axi_bram_ctrl_0_0_arch: ARCHITECTURE IS "zynq_bd_axi_bram_ctrl_0_0,axi_bram_ctrl,{x_ipProduct=Vivado 2014.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_bram_ctrl,x_ipVersion=4.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,C_BRAM_INST_MODE=EXTERNAL,C_MEMORY_DEPTH=1024,C_BRAM_ADDR_WIDTH=10,C_S_AXI_ADDR_WIDTH=12,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ID_WIDTH=12,C_S_AXI_PROTOCOL=AXI4,C_S_AXI_SUPPORTS_NARROW_BURST=0,C_SINGLE_PORT_BRAM=1,C_FAMILY=zynq,C_S_AXI_CTRL_ADDR_WIDTH=32,C_S_AXI_CTRL_DATA_WIDTH=32,C_ECC=0,C_ECC_TYPE=0,C_FAULT_INJECT=0,C_ECC_ONOFF_RESET_VALUE=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF zynq_bd_axi_bram_ctrl_0_0_arch: ARCHITECTURE IS "zynq_bd_axi_bram_ctrl_0_0,axi_bram_ctrl,{x_ipProduct=Vivado 2014.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_bram_ctrl,x_ipVersion=4.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,C_BRAM_INST_MODE=EXTERNAL,C_MEMORY_DEPTH=1024,C_BRAM_ADDR_WIDTH=10,C_S_AXI_ADDR_WIDTH=12,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ID_WIDTH=12,C_S_AXI_PROTOCOL=AXI4,C_S_AXI_SUPPORTS_NARROW_BURST=0,C_SINGLE_PORT_BRAM=1,C_FAMILY=zynq,C_S_AXI_CTRL_ADDR_WIDTH=32,C_S_AXI_CTRL_DATA_WIDTH=32,C_ECC=0,C_ECC_TYPE=0,C_FAULT_INJECT=0,C_ECC_ONOFF_RESET_VALUE=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 CLKIF CLK";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 RSTIF RST";

@@ -11,38 +11,15 @@
     <set param="pcw_nor_peripheral_enable" value="0" />
     <set param="pcw_usb0_peripheral_enable" value="0" />
     <set param="pcw_usb1_peripheral_enable" value="0" />
-    <set param="pcw_nand_cycles_t_rr" value="0" />
-    <set param="pcw_nand_cycles_t_ar" value="0" />
-    <set param="pcw_nand_cycles_t_clr" value="0" />
+    <set param="pcw_trace_internal_width" value="2"/>
+    <set param="pcw_nand_cycles_t_rr" value="1" />
+    <set param="pcw_nand_cycles_t_ar" value="1" />
+    <set param="pcw_nand_cycles_t_clr" value="1" />
     <set param="pcw_nand_cycles_t_wp" value="1" />
     <set param="pcw_nand_cycles_t_rea" value="1" />
     <set param="pcw_nand_cycles_t_wc" value="2" />
     <set param="pcw_nand_cycles_t_rc" value="2" />
-    <set param="pcw_smc_nand_cycle_t0" value = "0" />
-    <set param="pcw_smc_nand_cycle_t1" value = "0" />
-    <set param="pcw_smc_nand_cycle_t2" value = "0" />
-    <set param="pcw_smc_nand_cycle_t3" value = "0" />
-    <set param="pcw_smc_nand_cycle_t4" value = "0" />
-    <set param="pcw_smc_nand_cycle_t5" value = "0" />
-    <set param="pcw_smc_nand_cycle_t6" value = "0" />
     <set param="pcw_use_cross_trigger" value = "0" />
-    
-    <set param="pcw_smc_sram_cycle0_t0" value = "0" />
-    <set param="pcw_smc_sram_cycle0_t1" value = "0" />
-    <set param="pcw_smc_sram_cycle0_t2" value = "0" />
-    <set param="pcw_smc_sram_cycle0_t3" value = "0" />
-    <set param="pcw_smc_sram_cycle0_t4" value = "0" />
-    <set param="pcw_smc_sram_cycle0_t5" value = "0" />
-    <set param="pcw_smc_sram_cycle0_t6" value = "0" />
-    
-    <set param="pcw_smc_sram_cycle1_t0" value = "0" />
-    <set param="pcw_smc_sram_cycle1_t1" value = "0" />
-    <set param="pcw_smc_sram_cycle1_t2" value = "0" />
-    <set param="pcw_smc_sram_cycle1_t3" value = "0" />
-    <set param="pcw_smc_sram_cycle1_t4" value = "0" />
-    <set param="pcw_smc_sram_cycle1_t5" value = "0" />
-    <set param="pcw_smc_sram_cycle1_t6" value = "0" />
-
     <set param="pcw_nand_opmode_set_mw" value="0" />
     <set param="pcw_nor_cs0_t_tr" value="1" />
     <set param="pcw_nor_cs0_t_pc" value="1" />
@@ -50,28 +27,28 @@
     <set param="pcw_nor_cs0_t_ceoe" value="1" />
     <set param="pcw_nor_cs0_t_wc" value="2" />
     <set param="pcw_nor_cs0_t_rc" value="2" />
-    <set param="pcw_nor_cs0_we_time" value="2" />
+    <set param="pcw_nor_cs0_we_time" value="0" />
     <set param="pcw_nor_cs1_t_tr" value="1" />
     <set param="pcw_nor_cs1_t_pc" value="1" />
     <set param="pcw_nor_cs1_t_wp" value="1" />
     <set param="pcw_nor_cs1_t_ceoe" value="1" />
     <set param="pcw_nor_cs1_t_wc" value="2" />
     <set param="pcw_nor_cs1_t_rc" value="2" />
-    <set param="pcw_nor_cs1_we_time" value="2" />
+    <set param="pcw_nor_cs1_we_time" value="0" />
     <set param="pcw_nor_sram_cs0_t_tr" value="1" />
     <set param="pcw_nor_sram_cs0_t_pc" value="1" />
     <set param="pcw_nor_sram_cs0_t_wp" value="1" />
     <set param="pcw_nor_sram_cs0_t_ceoe" value="1" />
     <set param="pcw_nor_sram_cs0_t_wc" value="2" />
     <set param="pcw_nor_sram_cs0_t_rc" value="2" />
-    <set param="pcw_nor_sram_cs0_we_time" value="2" />
+    <set param="pcw_nor_sram_cs0_we_time" value="0" />
     <set param="pcw_nor_sram_cs1_t_tr" value="1" />
     <set param="pcw_nor_sram_cs1_t_pc" value="1" />
     <set param="pcw_nor_sram_cs1_t_wp" value="1" />
     <set param="pcw_nor_sram_cs1_t_ceoe" value="1" />
     <set param="pcw_nor_sram_cs1_t_wc" value="2" />
     <set param="pcw_nor_sram_cs1_t_rc" value="2" />
-    <set param="pcw_nor_sram_cs1_we_time" value="2" />
+    <set param="pcw_nor_sram_cs1_we_time" value="0" />
     <set param="pcw_smcc_nand_rule" value="0" />
     <set param="pcw_smcc_cs0_rule" value="0" />
     <set param="pcw_smcc_cs1_rule" value="0" />
@@ -1186,32 +1163,8 @@
     <set param="pcw_enet1_internal_clksrc" value="2" />
   </preset>
 
-  <preset param="pcw_can0_peripheral_clksrc" name="ARM PLL"  strength="3">
-    <set param="pcw_can0_internal_clksrc" value="0" />
-  </preset>
-
-  <preset param="pcw_can0_peripheral_clksrc" name="DDR PLL"  strength="3">
-    <set param="pcw_can0_internal_clksrc" value="1" />
-  </preset>
-
-  <preset param="pcw_can0_peripheral_clksrc" name="IO PLL"  strength="3">
-    <set param="pcw_can0_internal_clksrc" value="2" />
-  </preset>
-
   <preset param="pcw_can0_peripheral_clksrc" name="External" strength="3">
     <set param="pcw_can0_internal_clksrc" value="3" />
-  </preset>
-
-  <preset param="pcw_can1_peripheral_clksrc" name="ARM PLL" strength="3">
-    <set param="pcw_can1_internal_clksrc" value="0" />
-  </preset>
-
-  <preset param="pcw_can1_peripheral_clksrc" name="DDR PLL" strength="3">
-    <set param="pcw_can1_internal_clksrc" value="1" />
-  </preset>
-
-  <preset param="pcw_can1_peripheral_clksrc" name="IO PLL" strength="3">
-    <set param="pcw_can1_internal_clksrc" value="2" />
   </preset>
 
   <preset param="pcw_can1_peripheral_clksrc" name="External" strength="3" >

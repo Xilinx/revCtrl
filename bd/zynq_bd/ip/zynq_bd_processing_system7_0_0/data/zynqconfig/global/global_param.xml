@@ -27,12 +27,14 @@
 <parameter uniqueid="pcw_smc_nand_cycle_t0">
     <name> SMC SET_T0 </name>
     <desc> -- </desc>
+    <range min="2" max="15" />
     <ui_param/>
   </parameter>
 
  <parameter uniqueid="pcw_smc_nand_cycle_t1">
     <name> SMC SET_T1 </name>
     <desc> -- </desc>
+    <range min="2" max="15" />
     <ui_param/>
   </parameter>
 
@@ -40,6 +42,7 @@
  <parameter uniqueid="pcw_smc_nand_cycle_t2">
     <name> SMC SET_T2 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
@@ -47,6 +50,7 @@
  <parameter uniqueid="pcw_smc_nand_cycle_t3">
     <name> SMC SET_T3 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
@@ -54,30 +58,35 @@
  <parameter uniqueid="pcw_smc_nand_cycle_t4">
     <name> SMC SET_T4 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
  <parameter uniqueid="pcw_smc_nand_cycle_t5">
     <name> SMC SET_T5 </name>
     <desc> -- </desc>
+    <range min="0" max="7" />
     <ui_param/>
   </parameter>
 
  <parameter uniqueid="pcw_smc_nand_cycle_t6">
     <name> SMC SET_T6 </name>
     <desc> -- </desc>
+    <range min="0" max="15" />
     <ui_param/>
   </parameter>
 
 <parameter uniqueid="pcw_smc_sram_cycle0_t0">
     <name> SMC SET_T0 </name>
     <desc> -- </desc>
+    <range min="2" max="15" />
     <ui_param/>
   </parameter>
 
  <parameter uniqueid="pcw_smc_sram_cycle0_t1">
     <name> SMC SET_T1 </name>
     <desc> -- </desc>
+    <range min="2" max="15" />
     <ui_param/>
   </parameter>
 
@@ -85,6 +94,7 @@
  <parameter uniqueid="pcw_smc_sram_cycle0_t2">
     <name> SMC SET_T2 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
@@ -92,6 +102,7 @@
  <parameter uniqueid="pcw_smc_sram_cycle0_t3">
     <name> SMC SET_T3 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
@@ -99,30 +110,35 @@
  <parameter uniqueid="pcw_smc_sram_cycle0_t4">
     <name> SMC SET_T4 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
  <parameter uniqueid="pcw_smc_sram_cycle0_t5">
     <name> SMC SET_T5 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
  <parameter uniqueid="pcw_smc_sram_cycle0_t6">
     <name> SMC SET_T6 </name>
     <desc> -- </desc>
+    <range min="0" max="1" />
     <ui_param/>
   </parameter>
 
 <parameter uniqueid="pcw_smc_sram_cycle1_t0">
     <name> SMC SET_T0 </name>
     <desc> -- </desc>
+    <range min="2" max="15" />
     <ui_param/>
   </parameter>
 
  <parameter uniqueid="pcw_smc_sram_cycle1_t1">
     <name> SMC SET_T1 </name>
     <desc> -- </desc>
+    <range min="2" max="15" />
     <ui_param/>
   </parameter>
 
@@ -130,6 +146,7 @@
  <parameter uniqueid="pcw_smc_sram_cycle1_t2">
     <name> SMC SET_T2 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
@@ -137,6 +154,7 @@
  <parameter uniqueid="pcw_smc_sram_cycle1_t3">
     <name> SMC SET_T3 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
@@ -144,18 +162,21 @@
  <parameter uniqueid="pcw_smc_sram_cycle1_t4">
     <name> SMC SET_T4 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
  <parameter uniqueid="pcw_smc_sram_cycle1_t5">
     <name> SMC SET_T5 </name>
     <desc> -- </desc>
+    <range min="1" max="7" />
     <ui_param/>
   </parameter>
 
  <parameter uniqueid="pcw_smc_sram_cycle1_t6">
     <name> SMC SET_T6 </name>
     <desc> -- </desc>
+    <range min="0" max="1" />
     <ui_param/>
   </parameter>
 

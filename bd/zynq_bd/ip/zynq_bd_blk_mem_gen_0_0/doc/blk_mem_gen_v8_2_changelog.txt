@@ -1,3 +1,10 @@
+2014.3:
+ * Version 8.2 (Rev. 2)
+ * Fixed the Memory Resource Doubling issue in Simple Dual Port RAM when aspect ratio is used
+ * Fixed the GUI crash in Simple Dual Port RAM
+ * Added support of all write modes in Simple Dual Port RAM when ECC is not used
+ * Increased the supported depth to a maximum value of 256k
+
 2014.2:
  * Version 8.2 (Rev. 1)
  * Updated the GUI tool tip for Byte write enable in the page-1 of block memory generator GUI

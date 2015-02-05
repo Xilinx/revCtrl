@@ -399,7 +399,15 @@ begin
 
 gint_inst: IF (C_BRAM_INST_MODE = "INTERNAL" ) GENERATE
 
-constant c_addrb_width : INTEGER := log2roundup(C_MEMORY_DEPTH);
+constant c_addrb_width    : INTEGER := log2roundup(C_MEMORY_DEPTH);
+constant C_WEA_WIDTH_I    : INTEGER := (C_S_AXI_DATA_WIDTH/8 + C_ECC*(1+(C_S_AXI_DATA_WIDTH/128))) ;
+constant C_WRITE_WIDTH_A_I  : INTEGER := (C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128))) ;
+constant C_READ_WIDTH_A_I : INTEGER := (C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)));
+constant C_ADDRA_WIDTH_I  : INTEGER := log2roundup(C_MEMORY_DEPTH);
+constant C_WEB_WIDTH_I     : INTEGER := (C_S_AXI_DATA_WIDTH/8 + C_ECC*(1+(C_S_AXI_DATA_WIDTH/128)));
+constant C_WRITE_WIDTH_B_I : INTEGER := (C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)));
+constant C_READ_WIDTH_B_I  : INTEGER := (C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)));
+
 signal s_axi_rdaddrecc_bmg_int : STD_LOGIC_VECTOR(c_addrb_width-1 DOWNTO 0);
 signal s_axi_dbiterr_bmg_int : STD_LOGIC;
 signal s_axi_sbiterr_bmg_int : STD_LOGIC;
@@ -455,17 +463,17 @@ bmgv81_inst : entity blk_mem_gen_v8_2.blk_mem_gen_v8_2
   
     --Byte Write Enable Parameters:
     C_USE_BYTE_WEA             => 1              ,
-    C_WEA_WIDTH                => (C_S_AXI_DATA_WIDTH/8 + C_ECC*(1+(C_S_AXI_DATA_WIDTH/128)))                 ,
+    C_WEA_WIDTH                => C_WEA_WIDTH_I, --(C_S_AXI_DATA_WIDTH/8 + C_ECC*(1+(C_S_AXI_DATA_WIDTH/128)))                 ,
   
     --Write Mode:
     C_WRITE_MODE_A             => "WRITE_FIRST"              ,
   
     --Data-Addr Width Parameters:
-    C_WRITE_WIDTH_A            => (C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)))             ,
-    C_READ_WIDTH_A             => (C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)))              ,
+    C_WRITE_WIDTH_A            => C_WRITE_WIDTH_A_I,--(C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)))             ,
+    C_READ_WIDTH_A             => C_READ_WIDTH_A_I,--(C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)))              ,
     C_WRITE_DEPTH_A            => C_MEMORY_DEPTH             ,
     C_READ_DEPTH_A             => C_MEMORY_DEPTH             ,
-    C_ADDRA_WIDTH              => log2roundup(C_MEMORY_DEPTH)               ,
+    C_ADDRA_WIDTH              => C_ADDRA_WIDTH_I,--log2roundup(C_MEMORY_DEPTH)               ,
   
   --Port B Parameters:
     --Reset Parameters:
@@ -477,17 +485,17 @@ bmgv81_inst : entity blk_mem_gen_v8_2.blk_mem_gen_v8_2
   
     --Byte Write Enable Parameters:
     C_USE_BYTE_WEB             => BWE_B              ,
-    C_WEB_WIDTH                => (C_S_AXI_DATA_WIDTH/8 + C_ECC*(1+(C_S_AXI_DATA_WIDTH/128)))                 ,
+    C_WEB_WIDTH                => C_WEB_WIDTH_I,--(C_S_AXI_DATA_WIDTH/8 + C_ECC*(1+(C_S_AXI_DATA_WIDTH/128)))                 ,
   
     --Write Mode:
     C_WRITE_MODE_B             => "WRITE_FIRST"              ,
   
     --Data-Addr Width Parameters:
-    C_WRITE_WIDTH_B            => (C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)))             ,
-    C_READ_WIDTH_B             => (C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)))              ,
+    C_WRITE_WIDTH_B            => C_WRITE_WIDTH_B_I,--(C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)))             ,
+    C_READ_WIDTH_B             => C_READ_WIDTH_B_I,--(C_S_AXI_DATA_WIDTH+C_ECC*8*(1+(C_S_AXI_DATA_WIDTH/128)))              ,
     C_WRITE_DEPTH_B            => C_MEMORY_DEPTH             ,
     C_READ_DEPTH_B             => C_MEMORY_DEPTH              ,
-    C_ADDRB_WIDTH              => log2roundup(C_MEMORY_DEPTH)               ,
+    C_ADDRB_WIDTH              => C_ADDRB_WIDTH,--log2roundup(C_MEMORY_DEPTH)               ,
   
   --Output Registers/ Pipelining Parameters:
     C_HAS_MEM_OUTPUT_REGS_A    => 0     ,

@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2014 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2015 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:hls:rgb_mux:2.3
 // IP Revision: 1408081154
 
-(* X_CORE_INFO = "rgb_mux,Vivado 2014.2" *)
+(* X_CORE_INFO = "rgb_mux,Vivado 2014.3" *)
 (* CHECK_LICENSE_TYPE = "zynq_bd_rgb_mux_0_0,rgb_mux,{}" *)
-(* CORE_GENERATION_INFO = "zynq_bd_rgb_mux_0_0,rgb_mux,{x_ipProduct=Vivado 2014.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=rgb_mux,x_ipVersion=2.3,x_ipCoreRevision=1408081154,x_ipLanguage=VERILOG}" *)
+(* CORE_GENERATION_INFO = "zynq_bd_rgb_mux_0_0,rgb_mux,{x_ipProduct=Vivado 2014.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=rgb_mux,x_ipVersion=2.3,x_ipCoreRevision=1408081154,x_ipLanguage=VERILOG}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module zynq_bd_rgb_mux_0_0 (
   ap_clk,

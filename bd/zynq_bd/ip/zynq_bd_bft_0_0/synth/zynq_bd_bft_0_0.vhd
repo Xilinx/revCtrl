@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2014 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2015 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -85,11 +85,11 @@ ARCHITECTURE zynq_bd_bft_0_0_arch OF zynq_bd_bft_0_0 IS
     );
   END COMPONENT bft;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF zynq_bd_bft_0_0_arch: ARCHITECTURE IS "bft,Vivado 2014.2";
+  ATTRIBUTE X_CORE_INFO OF zynq_bd_bft_0_0_arch: ARCHITECTURE IS "bft,Vivado 2014.3";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF zynq_bd_bft_0_0_arch : ARCHITECTURE IS "zynq_bd_bft_0_0,bft,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF zynq_bd_bft_0_0_arch: ARCHITECTURE IS "zynq_bd_bft_0_0,bft,{x_ipProduct=Vivado 2014.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=bft,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG}";
+  ATTRIBUTE CORE_GENERATION_INFO OF zynq_bd_bft_0_0_arch: ARCHITECTURE IS "zynq_bd_bft_0_0,bft,{x_ipProduct=Vivado 2014.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=bft,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG}";
 BEGIN
   U0 : bft
     PORT MAP (

@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2014 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2015 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -47,14 +47,24 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:ip:processing_system7:5.4
-// IP Revision: 1
+// IP VLNV: xilinx.com:ip:processing_system7:5.5
+// IP Revision: 0
 
-(* X_CORE_INFO = "processing_system7_v5_4_processing_system7,Vivado 2014.2" *)
-(* CHECK_LICENSE_TYPE = "zynq_bd_processing_system7_0_0,processing_system7_v5_4_processing_system7,{}" *)
-(* CORE_GENERATION_INFO = "zynq_bd_processing_system7_0_0,processing_system7_v5_4_processing_system7,{x_ipProduct=Vivado 2014.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=processing_system7,x_ipVersion=5.4,x_ipCoreRevision=1,x_ipLanguage=VERILOG,C_EN_EMIO_ENET0=0,C_EN_EMIO_ENET1=0,C_EN_EMIO_TRACE=0,C_INCLUDE_TRACE_BUFFER=0,C_TRACE_BUFFER_FIFO_SIZE=128,USE_TRACE_DATA_EDGE_DETECTOR=0,C_TRACE_PIPELINE_WIDTH=8,C_TRACE_BUFFER_CLOCK_DELAY=12,C_EMIO_GPIO_WIDTH=64,C_INCLUDE_ACP_TRANS_CHECK=0,C_USE_DEFAULT_ACP_USER_VAL=0,C_S_AXI_ACP_ARUSER_VAL=31,C_S_AXI_ACP_AWUSER_VAL=31,C_M_AXI_GP0_ID_WIDTH=12,C_M_AXI_GP0_ENABLE_STATIC_REMAP=0,C_M_AXI_GP1_ID_WIDTH=12,C_M_AXI_GP1_ENABLE_STATIC_REMAP=0,C_S_AXI_GP0_ID_WIDTH=6,C_S_AXI_GP1_ID_WIDTH=6,C_S_AXI_ACP_ID_WIDTH=3,C_S_AXI_HP0_ID_WIDTH=6,C_S_AXI_HP0_DATA_WIDTH=64,C_S_AXI_HP1_ID_WIDTH=6,C_S_AXI_HP1_DATA_WIDTH=64,C_S_AXI_HP2_ID_WIDTH=6,C_S_AXI_HP2_DATA_WIDTH=64,C_S_AXI_HP3_ID_WIDTH=6,C_S_AXI_HP3_DATA_WIDTH=64,C_M_AXI_GP0_THREAD_ID_WIDTH=12,C_M_AXI_GP1_THREAD_ID_WIDTH=12,C_NUM_F2P_INTR_INPUTS=1,C_IRQ_F2P_MODE=DIRECT,C_DQ_WIDTH=32,C_DQS_WIDTH=4,C_DM_WIDTH=4,C_MIO_PRIMITIVE=54,C_PS7_SI_REV=PRODUCTION,C_FCLK_CLK0_BUF=true,C_FCLK_CLK1_BUF=false,C_FCLK_CLK2_BUF=false,C_FCLK_CLK3_BUF=false,C_PACKAGE_NAME=clg484}" *)
+(* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2014.3" *)
+(* CHECK_LICENSE_TYPE = "zynq_bd_processing_system7_0_0,processing_system7_v5_5_processing_system7,{}" *)
+(* CORE_GENERATION_INFO = "zynq_bd_processing_system7_0_0,processing_system7_v5_5_processing_system7,{x_ipProduct=Vivado 2014.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=processing_system7,x_ipVersion=5.5,x_ipCoreRevision=0,x_ipLanguage=VERILOG,C_EN_EMIO_PJTAG=0,C_EN_EMIO_ENET0=0,C_EN_EMIO_ENET1=0,C_EN_EMIO_TRACE=0,C_INCLUDE_TRACE_BUFFER=0,C_TRACE_BUFFER_FIFO_SIZE=128,USE_TRACE_DATA_EDGE_DETECTOR=0,C_TRACE_PIPELINE_WIDTH=8,C_TRACE_BUFFER_CLOCK_DELAY=12,C_EMIO_GPIO_WIDTH=64,C_INCLUDE_ACP_TRANS_CHECK=0,C_USE_DEFAULT_ACP_USER_VAL=0,C_S_AXI_ACP_ARUSER_VAL=31,C_S_AXI_ACP_AWUSER_VAL=31,C_M_AXI_GP0_ID_WIDTH=12,C_M_AXI_GP0_ENABLE_STATIC_REMAP=0,C_M_AXI_GP1_ID_WIDTH=12,C_M_AXI_GP1_ENABLE_STATIC_REMAP=0,C_S_AXI_GP0_ID_WIDTH=6,C_S_AXI_GP1_ID_WIDTH=6,C_S_AXI_ACP_ID_WIDTH=3,C_S_AXI_HP0_ID_WIDTH=6,C_S_AXI_HP0_DATA_WIDTH=64,C_S_AXI_HP1_ID_WIDTH=6,C_S_AXI_HP1_DATA_WIDTH=64,C_S_AXI_HP2_ID_WIDTH=6,C_S_AXI_HP2_DATA_WIDTH=64,C_S_AXI_HP3_ID_WIDTH=6,C_S_AXI_HP3_DATA_WIDTH=64,C_M_AXI_GP0_THREAD_ID_WIDTH=12,C_M_AXI_GP1_THREAD_ID_WIDTH=12,C_NUM_F2P_INTR_INPUTS=1,C_IRQ_F2P_MODE=DIRECT,C_DQ_WIDTH=32,C_DQS_WIDTH=4,C_DM_WIDTH=4,C_MIO_PRIMITIVE=54,C_TRACE_INTERNAL_WIDTH=2,C_PS7_SI_REV=PRODUCTION,C_FCLK_CLK0_BUF=true,C_FCLK_CLK1_BUF=false,C_FCLK_CLK2_BUF=false,C_FCLK_CLK3_BUF=false,C_PACKAGE_NAME=clg484}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module zynq_bd_processing_system7_0_0 (
+  ENET0_PTP_DELAY_REQ_RX,
+  ENET0_PTP_DELAY_REQ_TX,
+  ENET0_PTP_PDELAY_REQ_RX,
+  ENET0_PTP_PDELAY_REQ_TX,
+  ENET0_PTP_PDELAY_RESP_RX,
+  ENET0_PTP_PDELAY_RESP_TX,
+  ENET0_PTP_SYNC_FRAME_RX,
+  ENET0_PTP_SYNC_FRAME_TX,
+  ENET0_SOF_RX,
+  ENET0_SOF_TX,
   TTC0_WAVE0_OUT,
   TTC0_WAVE1_OUT,
   TTC0_WAVE2_OUT,
@@ -125,6 +135,26 @@ module zynq_bd_processing_system7_0_0 (
   PS_PORB
 );
 
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 DELAY_REQ_RX" *)
+output wire ENET0_PTP_DELAY_REQ_RX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 DELAY_REQ_TX" *)
+output wire ENET0_PTP_DELAY_REQ_TX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 PDELAY_REQ_RX" *)
+output wire ENET0_PTP_PDELAY_REQ_RX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 PDELAY_REQ_TX" *)
+output wire ENET0_PTP_PDELAY_REQ_TX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 PDELAY_RESP_RX" *)
+output wire ENET0_PTP_PDELAY_RESP_RX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 PDELAY_RESP_TX" *)
+output wire ENET0_PTP_PDELAY_RESP_TX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 SYNC_FRAME_RX" *)
+output wire ENET0_PTP_SYNC_FRAME_RX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 SYNC_FRAME_TX" *)
+output wire ENET0_PTP_SYNC_FRAME_TX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 SOF_RX" *)
+output wire ENET0_SOF_RX;
+(* X_INTERFACE_INFO = "xilinx.com:interface:ptp:1.0 PTP_ETHERNET_0 SOF_TX" *)
+output wire ENET0_SOF_TX;
 output wire TTC0_WAVE0_OUT;
 output wire TTC0_WAVE1_OUT;
 output wire TTC0_WAVE2_OUT;
@@ -259,7 +289,8 @@ inout wire PS_CLK;
 (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *)
 inout wire PS_PORB;
 
-  processing_system7_v5_4_processing_system7 #(
+  processing_system7_v5_5_processing_system7 #(
+    .C_EN_EMIO_PJTAG(0),
     .C_EN_EMIO_ENET0(0),
     .C_EN_EMIO_ENET1(0),
     .C_EN_EMIO_TRACE(0),
@@ -296,6 +327,7 @@ inout wire PS_PORB;
     .C_DQS_WIDTH(4),
     .C_DM_WIDTH(4),
     .C_MIO_PRIMITIVE(54),
+    .C_TRACE_INTERNAL_WIDTH(2),
     .C_PS7_SI_REV("PRODUCTION"),
     .C_FCLK_CLK0_BUF("true"),
     .C_FCLK_CLK1_BUF("false"),
@@ -312,16 +344,16 @@ inout wire PS_PORB;
     .ENET0_MDIO_MDC(),
     .ENET0_MDIO_O(),
     .ENET0_MDIO_T(),
-    .ENET0_PTP_DELAY_REQ_RX(),
-    .ENET0_PTP_DELAY_REQ_TX(),
-    .ENET0_PTP_PDELAY_REQ_RX(),
-    .ENET0_PTP_PDELAY_REQ_TX(),
-    .ENET0_PTP_PDELAY_RESP_RX(),
-    .ENET0_PTP_PDELAY_RESP_TX(),
-    .ENET0_PTP_SYNC_FRAME_RX(),
-    .ENET0_PTP_SYNC_FRAME_TX(),
-    .ENET0_SOF_RX(),
-    .ENET0_SOF_TX(),
+    .ENET0_PTP_DELAY_REQ_RX(ENET0_PTP_DELAY_REQ_RX),
+    .ENET0_PTP_DELAY_REQ_TX(ENET0_PTP_DELAY_REQ_TX),
+    .ENET0_PTP_PDELAY_REQ_RX(ENET0_PTP_PDELAY_REQ_RX),
+    .ENET0_PTP_PDELAY_REQ_TX(ENET0_PTP_PDELAY_REQ_TX),
+    .ENET0_PTP_PDELAY_RESP_RX(ENET0_PTP_PDELAY_RESP_RX),
+    .ENET0_PTP_PDELAY_RESP_TX(ENET0_PTP_PDELAY_RESP_TX),
+    .ENET0_PTP_SYNC_FRAME_RX(ENET0_PTP_SYNC_FRAME_RX),
+    .ENET0_PTP_SYNC_FRAME_TX(ENET0_PTP_SYNC_FRAME_TX),
+    .ENET0_SOF_RX(ENET0_SOF_RX),
+    .ENET0_SOF_TX(ENET0_SOF_TX),
     .ENET0_GMII_TXD(),
     .ENET0_GMII_COL(1'B0),
     .ENET0_GMII_CRS(1'B0),
@@ -374,9 +406,8 @@ inout wire PS_PORB;
     .I2C1_SCL_T(),
     .PJTAG_TCK(1'B0),
     .PJTAG_TMS(1'B0),
-    .PJTAG_TD_I(1'B0),
-    .PJTAG_TD_T(),
-    .PJTAG_TD_O(),
+    .PJTAG_TDI(1'B0),
+    .PJTAG_TDO(),
     .SDIO0_CLK(),
     .SDIO0_CLK_FB(1'B0),
     .SDIO0_CMD_O(),
@@ -438,7 +469,7 @@ inout wire PS_PORB;
     .UART0_DCDN(1'B0),
     .UART0_DSRN(1'B0),
     .UART0_RIN(1'B0),
-    .UART0_RX(1'B0),
+    .UART0_RX(1'B1),
     .UART1_DTRN(),
     .UART1_RTSN(),
     .UART1_TX(),
@@ -446,7 +477,7 @@ inout wire PS_PORB;
     .UART1_DCDN(1'B0),
     .UART1_DSRN(1'B0),
     .UART1_RIN(1'B0),
-    .UART1_RX(1'B0),
+    .UART1_RX(1'B1),
     .TTC0_WAVE0_OUT(TTC0_WAVE0_OUT),
     .TTC0_WAVE1_OUT(TTC0_WAVE1_OUT),
     .TTC0_WAVE2_OUT(TTC0_WAVE2_OUT),

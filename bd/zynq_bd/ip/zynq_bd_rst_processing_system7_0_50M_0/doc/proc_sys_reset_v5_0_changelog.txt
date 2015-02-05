@@ -1,3 +1,9 @@
+2014.3:
+ * Version 5.0 (Rev. 6)
+ * Modified to use new sub-cores in place of proc_common,no functional changes
+ * Updated synchronizers for clock domain crossing to reduce Mean Time Between Failures (MTBF) from metastability
+ * Updated core to use utils.tcl, needed for board flow from common location
+
 2014.2:
  * Version 5.0 (Rev. 5)
  * Enhanced support for IP Integrator

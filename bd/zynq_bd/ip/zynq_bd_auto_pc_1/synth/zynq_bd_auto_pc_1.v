@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2014 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2015 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:axi_protocol_converter:2.1
-// IP Revision: 2
+// IP Revision: 3
 
-(* X_CORE_INFO = "axi_protocol_converter_v2_1_axi_protocol_converter,Vivado 2014.2" *)
+(* X_CORE_INFO = "axi_protocol_converter_v2_1_axi_protocol_converter,Vivado 2014.3" *)
 (* CHECK_LICENSE_TYPE = "zynq_bd_auto_pc_1,axi_protocol_converter_v2_1_axi_protocol_converter,{}" *)
-(* CORE_GENERATION_INFO = "zynq_bd_auto_pc_1,axi_protocol_converter_v2_1_axi_protocol_converter,{x_ipProduct=Vivado 2014.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_protocol_converter,x_ipVersion=2.1,x_ipCoreRevision=2,x_ipLanguage=VERILOG,C_FAMILY=zynq,C_M_AXI_PROTOCOL=0,C_S_AXI_PROTOCOL=1,C_IGNORE_ID=0,C_AXI_ID_WIDTH=12,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=32,C_AXI_SUPPORTS_WRITE=1,C_AXI_SUPPORTS_READ=1,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_TRANSLATION_MODE=2}" *)
+(* CORE_GENERATION_INFO = "zynq_bd_auto_pc_1,axi_protocol_converter_v2_1_axi_protocol_converter,{x_ipProduct=Vivado 2014.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_protocol_converter,x_ipVersion=2.1,x_ipCoreRevision=3,x_ipLanguage=VERILOG,C_FAMILY=zynq,C_M_AXI_PROTOCOL=0,C_S_AXI_PROTOCOL=1,C_IGNORE_ID=0,C_AXI_ID_WIDTH=12,C_AXI_ADDR_WIDTH=32,C_AXI_DATA_WIDTH=32,C_AXI_SUPPORTS_WRITE=1,C_AXI_SUPPORTS_READ=1,C_AXI_SUPPORTS_USER_SIGNALS=0,C_AXI_AWUSER_WIDTH=1,C_AXI_ARUSER_WIDTH=1,C_AXI_WUSER_WIDTH=1,C_AXI_RUSER_WIDTH=1,C_AXI_BUSER_WIDTH=1,C_TRANSLATION_MODE=2}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module zynq_bd_auto_pc_1 (
   aclk,

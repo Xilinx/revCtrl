@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2014 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2015 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_gpio:2.0
--- IP Revision: 5
+-- IP Revision: 6
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -133,11 +133,11 @@ ARCHITECTURE zynq_bd_axi_gpio_0_0_arch OF zynq_bd_axi_gpio_0_0 IS
     );
   END COMPONENT axi_gpio;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF zynq_bd_axi_gpio_0_0_arch: ARCHITECTURE IS "axi_gpio,Vivado 2014.2";
+  ATTRIBUTE X_CORE_INFO OF zynq_bd_axi_gpio_0_0_arch: ARCHITECTURE IS "axi_gpio,Vivado 2014.3";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF zynq_bd_axi_gpio_0_0_arch : ARCHITECTURE IS "zynq_bd_axi_gpio_0_0,axi_gpio,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF zynq_bd_axi_gpio_0_0_arch: ARCHITECTURE IS "zynq_bd_axi_gpio_0_0,axi_gpio,{x_ipProduct=Vivado 2014.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,C_FAMILY=zynq,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=4,C_GPIO2_WIDTH=32,C_ALL_INPUTS=0,C_ALL_INPUTS_2=0,C_ALL_OUTPUTS=1,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=0,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=0,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
+  ATTRIBUTE CORE_GENERATION_INFO OF zynq_bd_axi_gpio_0_0_arch: ARCHITECTURE IS "zynq_bd_axi_gpio_0_0,axi_gpio,{x_ipProduct=Vivado 2014.3,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,C_FAMILY=zynq,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=4,C_GPIO2_WIDTH=32,C_ALL_INPUTS=0,C_ALL_INPUTS_2=0,C_ALL_OUTPUTS=1,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=0,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=0,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 S_AXI_ACLK CLK";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 S_AXI_ARESETN RST";

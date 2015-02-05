@@ -707,7 +707,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>47528189</spirit:value>
+            <spirit:value>fd28118e</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -715,7 +715,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:02 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:04:29 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -732,18 +732,12 @@
           <spirit:localName>xilinx_vhdlsynthesis_xilinx_com_ip_blk_mem_gen_8_2__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_vhdlsynthesis_xilinx_com_ip_fifo_generator_12_0__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_vhdlsynthesis_xilinx_com_ip_proc_common_4_0__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>47528189</spirit:value>
+            <spirit:value>fd28118e</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -751,7 +745,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:03 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:04:30 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -770,7 +764,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>47528189</spirit:value>
+            <spirit:value>fd28118e</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -778,7 +772,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:03 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:04:30 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -795,18 +789,12 @@
           <spirit:localName>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_blk_mem_gen_8_2__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_fifo_generator_12_0__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_proc_common_4_0__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
           <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>b4273070</spirit:value>
+            <spirit:value>7325dedb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -814,7 +802,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:03 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:04:30 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -833,7 +821,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>b4273070</spirit:value>
+            <spirit:value>7325dedb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -841,7 +829,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:03 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:04:30 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -859,7 +847,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>47528189</spirit:value>
+            <spirit:value>fd28118e</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -867,7 +855,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:04 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:04:30 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -2937,642 +2925,7 @@
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.2" xilinx:isGenerated="true" xilinx:checksum="3b19c4c4">
-            <xilinx:mode xilinx:name="copy_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_vhdlsynthesis_xilinx_com_ip_fifo_generator_12_0__ref_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/fifo_generator_v12_0_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/fifo_generator_v12_0_defaults.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/bram_sync_reg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/bram_fifo_rstlogic.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/input_blk.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/output_blk.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/synchronizer_ff.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/shft_wrapper.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/shft_ram.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/dmem.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/memory.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/compare.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_bin_cntr.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_bin_cntr.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/updn_cntr.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_status_flags_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_status_flags_ss.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/rd_pe_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/rd_pe_ss.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_handshaking_flags.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_dc_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_dc_fwft_ext_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/dc_ss_fwft.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_fwft.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_logic_pkt_fifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/reset_blk_ramfifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/clk_x_pntrs.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_status_flags_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_status_flags_ss.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/wr_pf_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/wr_pf_ss.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_handshaking_flags.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_dc_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_dc_fwft_ext_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/dc_ss.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_logic.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_logic_pkt_fifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_status_flags_sshft.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_status_flags_sshft.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/wr_pf_sshft.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_pe_sshft.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/logic_sshft.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/async_fifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/rd_logic.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/fifo_generator_ramfifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/fifo_generator_v12_0_comps_builtin.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/delay.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/clk_x_pntrs_builtin.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/bin_cntr.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/logic_builtin.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/reset_builtin.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_prim.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_extdepth.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_top.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_prim_v6.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_extdepth_v6.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_extdepth_low_latency.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_top_v6.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/fifo_generator_v12_0_builtin.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/fifo_generator_top.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/axi_reg_slice.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/fifo_generator_v12_0_synth.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/fifo_generator_v12_0.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="5804ec94">
-            <xilinx:mode xilinx:name="copy_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_vhdlsynthesis_xilinx_com_ip_proc_common_4_0__ref_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/family.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/family_support.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/coregen_comp_defs.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/common_types_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/proc_common_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/conv_funs_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ipif_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/async_fifo_fg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/sync_fifo_fg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/basic_sfifo_fg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/blk_mem_gen_wrapper.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/addsub.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/counter_bit.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/counter.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/direct_path_cntr.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/direct_path_cntr_ai.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/down_counter.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/eval_timer.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/inferred_lut4.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ipif_steer.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ipif_steer128.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ipif_mirror128.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ld_arith_reg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ld_arith_reg2.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/mux_onehot.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_bits.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_muxcy.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_gate.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_gate128.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_adder_bit.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_adder.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_counter_bit.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_counter.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_counter_top.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_occ_counter.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_occ_counter_top.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_dpram_select.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pselect.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pselect_mask.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl16_fifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo2.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo3.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo_rbu.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/valid_be.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_with_enable_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/muxf_struct_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/dynshreg_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/dynshreg_i_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/mux_onehot_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo_rbu_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/compare_vectors_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pselect_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/counter_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_muxcy_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_gate_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/soft_reset.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/cdc_sync.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="proc_common" xilinx:version="4.0" xilinx:isGenerated="true" xilinx:checksum="f363c821">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.2" xilinx:isGenerated="true" xilinx:checksum="635e72cb">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -3697,483 +3050,13 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_blk_mem_gen_8_2__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:name>blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>blk_mem_gen_v8_2</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.2" xilinx:isGenerated="true" xilinx:checksum="f741f4f1">
-            <xilinx:mode xilinx:name="copy_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_fifo_generator_12_0__ref_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/simulation/fifo_generator_vhdl_beh.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/fifo_generator_v12_0_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/input_blk.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/output_blk.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/shft_wrapper.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/shft_ram.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/wr_pf_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/wr_pf_ss.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/rd_pe_as.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/common/rd_pe_ss.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/delay.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/bin_cntr.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/clk_x_pntrs_builtin.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/logic_builtin.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_prim.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_extdepth.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_top.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/reset_builtin.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_prim_v6.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_extdepth_v6.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_extdepth_low_latency.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/builtin_top_v6.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/builtin/fifo_generator_v12_0_builtin.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/bram_sync_reg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/bram_fifo_rstlogic.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/reset_blk_ramfifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/ramfifo/axi_reg_slice.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/fifo_generator_top_bi_sim.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/fifo_generator_v12_0_synth.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>fifo_generator_v12_0/hdl/fifo_generator_v12_0_top.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="40153eaa">
-            <xilinx:mode xilinx:name="copy_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_vhdlbehavioralsimulation_xilinx_com_ip_proc_common_4_0__ref_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/family.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/family_support.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/coregen_comp_defs.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/common_types_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/proc_common_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/conv_funs_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ipif_pkg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/async_fifo_fg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/sync_fifo_fg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/basic_sfifo_fg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/blk_mem_gen_wrapper.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/addsub.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/counter_bit.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/counter.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/direct_path_cntr.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/direct_path_cntr_ai.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/down_counter.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/eval_timer.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/inferred_lut4.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ipif_steer.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ipif_steer128.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ipif_mirror128.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ld_arith_reg.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/ld_arith_reg2.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/mux_onehot.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_bits.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_muxcy.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_gate.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_gate128.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_adder_bit.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_adder.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_counter_bit.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_counter.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_counter_top.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_occ_counter.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_occ_counter_top.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pf_dpram_select.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pselect.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pselect_mask.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl16_fifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo2.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo3.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo_rbu.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/valid_be.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_with_enable_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/muxf_struct_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/cntr_incr_decr_addn_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/dynshreg_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/dynshreg_i_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/mux_onehot_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo_rbu_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/srl_fifo_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/compare_vectors_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/pselect_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/counter_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_muxcy_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/or_gate_f.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/soft_reset.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>proc_common_v4_0/hdl/src/vhdl/cdc_sync.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>proc_common_v4_0</spirit:logicalName>
-      </spirit:file>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="proc_common" xilinx:version="4.0" xilinx:isGenerated="true" xilinx:checksum="f363c821">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.2" xilinx:isGenerated="true" xilinx:checksum="d94847fb">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -4367,18 +3250,18 @@
       </xilinx:taxonomies>
       <xilinx:displayName>AXI BRAM Controller</xilinx:displayName>
       <xilinx:vendorURL>http://www.xilinx.com</xilinx:vendorURL>
-      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
       <xilinx:paymentRequired>false</xilinx:paymentRequired>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:ip:axi_bram_ctrl:2.00.a</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2014-05-30T15:08:15Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2014-09-26T23:23:51Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2014.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2014.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="d3c9e395"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="8654a04a"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1e0c71cc"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="742a9ac5"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6cc063b8"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="69874815"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="3c5d9ff8"/>

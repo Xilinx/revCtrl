@@ -1,3 +1,7 @@
+2014.3:
+ * Version 2.1 (Rev. 4)
+ * Improved automation of Mmm_Sss_READ_CONNECTIVITY and Mmm_Sss_WRITE_CONNECTIVITY parameters in IPI.
+
 2014.2:
  * Version 2.1 (Rev. 3)
  * Fixed IP integrator support when all read or write connectivity parameters are set to manual override.

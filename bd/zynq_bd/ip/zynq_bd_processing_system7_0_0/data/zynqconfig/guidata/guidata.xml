@@ -285,6 +285,10 @@
       <parentTree> MIO Table </parentTree>
     </uiparam>
 
+<uiparam param="PCW_TRACE_INTERNAL_WIDTH" name="" rw="w" widgetType="comboBox" paramType="pcw_in" order="1000"> <desc> </desc>
+  <parentTree> </parentTree>
+  </uiparam>
+  
 <uiparam param="PCW_TRACE_GRP_32BIT_ENABLE" name="d[16:31]" rw="w" widgetType="checkBox" paramType="pcw_in" order="1000"> <desc> </desc>
   <parentTree> </parentTree>
   </uiparam>
@@ -2541,9 +2545,9 @@
 	<uiparam param="PCW_EN_EMIO_GPIO" name="Enable GPIO on EMIO Interface" rw="w" widgetType="checkBox" paramType="user" order="23"> <desc> </desc>
     </uiparam>
 
-	<uiparam param="PCW_UART0_BAUD_RATE" name="UART0 Baud Rate " rw="w" widgetType="comboBox" paramType="pcw_in" order="23"> <desc>Configure baud rate to determine UART0 operating frequency</desc>
+	<uiparam param="PCW_UART0_BAUD_RATE" name="UART0 Baud Rate " rw="w" widgetType="comboBox" paramType="pcw_in" order="23"> <desc>Baud rate is generated with internally fixed UART Ref Clock Freq=100MHz and Clock Source=IO PLL. As all possible standard baud rates can be generated with 100MHz Uart Ref clock.</desc>
     </uiparam>
-	<uiparam param="PCW_UART1_BAUD_RATE" name="UART1 Baud Rate " rw="w" widgetType="comboBox" paramType="pcw_in" order="23"> <desc>Configure baud rate to determine UART1 operating frequency</desc>
+	<uiparam param="PCW_UART1_BAUD_RATE" name="UART1 Baud Rate " rw="w" widgetType="comboBox" paramType="pcw_in" order="23"> <desc>Baud rate is generated with internally fixed UART Ref Clock Freq=100MHz and Clock Source=IO PLL. As all possible standard baud rates can be generated with 100MHz UART Ref clock.</desc>
     </uiparam>
 
 

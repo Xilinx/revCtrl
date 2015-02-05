@@ -271,9 +271,9 @@
 
     /* read_memory */
     task automatic read_mem;
-      output[max_burst_bits-1 :0] data;
       input [addr_width-1:0] start_addr;
       input [max_burst_bytes_width :0] no_of_bytes;
+      output[max_burst_bits-1 :0] data;
       reg [1:0] mem_type;
       integer succ;
       begin

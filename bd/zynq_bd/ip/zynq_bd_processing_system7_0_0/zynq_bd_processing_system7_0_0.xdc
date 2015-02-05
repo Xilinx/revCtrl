@@ -19,7 +19,9 @@
 ############################################################################
 create_clock -name clk_fpga_0 -period "20" [get_pins "PS7_i/FCLKCLK[0]"]
 set_input_jitter clk_fpga_0 0.6
-#The clocks are asynchronous, user should constrain them appropriately.#
+#set_clock_groups -asynchronous#
+#This will override any set_max_delay constrain set between the clock domain. This can cause hardware failures.#
+#There is no way for the user to "undo" the set_clock_groups command of the IP besides disabling the entire file.#
 
 
 ############################################################################
@@ -373,8 +375,8 @@ set_property slew "SLOW" [get_ports "DDR_ODT"]
 set_property PIO_DIRECTION "OUTPUT" [get_ports "DDR_ODT"]
 set_property iostandard "SSTL15" [get_ports "DDR_DRSTB"]
 set_property PACKAGE_PIN "F3" [get_ports "DDR_DRSTB"]
-set_property slew "FAST" [get_ports "DDR_DRSTB"]
-set_property PIO_DIRECTION "BIDIR" [get_ports "DDR_DRSTB"]
+set_property slew "SLOW" [get_ports "DDR_DRSTB"]
+set_property PIO_DIRECTION "OUTPUT" [get_ports "DDR_DRSTB"]
 set_property iostandard "DIFF_SSTL15_T_DCI" [get_ports "DDR_DQS[3]"]
 set_property PACKAGE_PIN "V2" [get_ports "DDR_DQS[3]"]
 set_property slew "FAST" [get_ports "DDR_DQS[3]"]
@@ -647,10 +649,9 @@ set_property iostandard "LVCMOS18" [get_ports "PS_PORB"]
 set_property PACKAGE_PIN "B5" [get_ports "PS_PORB"]
 set_property slew "slow" [get_ports "PS_PORB"]
 set_property drive "8" [get_ports "PS_PORB"]
-set_property iostandard "LVCMOS18" [get_ports "PS_SRSTB"]
+set_property iostandard "HSTL_I_18" [get_ports "PS_SRSTB"]
 set_property PACKAGE_PIN "C9" [get_ports "PS_SRSTB"]
 set_property slew "slow" [get_ports "PS_SRSTB"]
-set_property drive "8" [get_ports "PS_SRSTB"]
 set_property iostandard "LVCMOS18" [get_ports "PS_CLK"]
 set_property PACKAGE_PIN "F7" [get_ports "PS_CLK"]
 set_property slew "slow" [get_ports "PS_CLK"]

@@ -78,6 +78,7 @@
     <set param="pcw_qspi_grp_io1_io" value="MIO 0 9 .. 13" />
     <set param="pcw_qspi_internal_mode" value="2" />
     <set param="ps7_preset_qspi_mutex" value="3" />
+    <set param="pcw_qspi_internal_highaddress" value="0xFDFFFFFF" />
   </preset>
 
 

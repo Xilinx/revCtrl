@@ -95,6 +95,8 @@
 library IEEE;
     use IEEE.std_logic_1164.all;
     use IEEE.std_logic_arith.all;
+library lib_cdc_v1_0;
+--use lib_cdc_v1_0.all;
 library Unisim; 
     use Unisim.all; 
 -------------------------------------------------------------------------------
@@ -254,29 +256,60 @@ end process ASR_OUTPUT_PROCESS;
 ACTIVE_HIGH_EXT: if (C_EXT_RESET_HIGH /= '0') generate  
 begin
    -----------------------------------
-   ACT_HI_EXT:process(Slowest_Sync_Clk)
-   begin
-      if (Slowest_Sync_Clk'event and Slowest_Sync_Clk = '1') then
-         exr_d1     <= External_System_Reset or MB_Debug_Sys_Rst;
-         exr_lpf(0) <= exr_d1;
-      end if;
-   end process;
-   -----------------------------------
+exr_d1 <= External_System_Reset or MB_Debug_Sys_Rst;
+
+ACT_HI_EXT: entity lib_cdc_v1_0.cdc_sync
+  generic map (
+    C_CDC_TYPE           => 1,
+    C_RESET_STATE        => 0,
+    C_SINGLE_BIT         => 1,
+    C_FLOP_INPUT         => 0,
+    C_VECTOR_WIDTH       => 2,
+    C_MTBF_STAGES        => 4
+            )
+  port map(
+    prmry_aclk            => '1',
+    prmry_resetn          => '1',--S_AXI_ARESETN,
+    prmry_in              => exr_d1,
+    prmry_ack             => open,
+    scndry_out            => exr_lpf(0),
+    scndry_aclk           => Slowest_Sync_Clk,
+    scndry_resetn         => '1', --S_AXIS_ARESETN,
+    prmry_vect_in         => "00",
+    scndry_vect_out       => open
+     );
+
+-----------------------------------
 end generate ACTIVE_HIGH_EXT;
 -------------------------------------------------------------------------------
 -- This If-generate selects an active low input for External System Reset 
 -------------------------------------------------------------------------------
 ACTIVE_LOW_EXT: if  (C_EXT_RESET_HIGH = '0') generate  
 begin
+exr_d1 <= not External_System_Reset or MB_Debug_Sys_Rst;
    -------------------------------------
-   ACT_LO_EXT: process(Slowest_Sync_Clk)
-   begin
-      if (Slowest_Sync_Clk'event) and Slowest_Sync_Clk = '1' then
-         exr_d1     <= not External_System_Reset or MB_Debug_Sys_Rst;
-         exr_lpf(0) <= exr_d1;
-      end if;
-   end process;
-   -------------------------------------
+
+ACT_LO_EXT: entity lib_cdc_v1_0.cdc_sync
+  generic map (
+    C_CDC_TYPE           => 1,
+    C_RESET_STATE        => 0,
+    C_SINGLE_BIT         => 1,
+    C_FLOP_INPUT         => 0,
+    C_VECTOR_WIDTH       => 2,
+    C_MTBF_STAGES        => 4
+            )
+  port map(
+    prmry_aclk            => '1',
+    prmry_resetn          => '1',--S_AXI_ARESETN,
+    prmry_in              => exr_d1,
+    prmry_ack             => open,
+    scndry_out            => exr_lpf(0),
+    scndry_aclk           => Slowest_Sync_Clk,
+    scndry_resetn         => '1', --S_AXIS_ARESETN,
+    prmry_vect_in         => "00",
+    scndry_vect_out       => open
+     );
+-------------------------------------
 end generate ACTIVE_LOW_EXT;
 
 -------------------------------------------------------------------------------
@@ -284,14 +317,29 @@ end generate ACTIVE_LOW_EXT;
 -------------------------------------------------------------------------------
 ACTIVE_HIGH_AUX: if (C_AUX_RESET_HIGH /= '0') generate  
 begin
-   -------------------------------------
-   ACT_HI_AUX: process(Slowest_Sync_Clk)
-   begin
-      if (Slowest_Sync_Clk'event) and Slowest_Sync_Clk = '1' then
-         asr_d1     <= Auxiliary_System_Reset;
-         asr_lpf(0) <= asr_d1;
-      end if;
-   end process;
+asr_d1 <= Auxiliary_System_Reset;
+-------------------------------------
+
+ACT_HI_AUX: entity lib_cdc_v1_0.cdc_sync
+  generic map (
+    C_CDC_TYPE           => 1,
+    C_RESET_STATE        => 0,
+    C_SINGLE_BIT         => 1,
+    C_FLOP_INPUT         => 0,
+    C_VECTOR_WIDTH       => 2,
+    C_MTBF_STAGES        => 4
+            )
+  port map(
+    prmry_aclk            => '1',
+    prmry_resetn          => '1',--S_AXI_ARESETN,
+    prmry_in              => asr_d1,
+    prmry_ack             => open,
+    scndry_out            => asr_lpf(0),
+    scndry_aclk           => Slowest_Sync_Clk,
+    scndry_resetn         => '1', --S_AXIS_ARESETN,
+    prmry_vect_in         => "00",
+    scndry_vect_out       => open
+     );
    -------------------------------------
 end generate ACTIVE_HIGH_AUX;
 -------------------------------------------------------------------------------
@@ -300,13 +348,28 @@ end generate ACTIVE_HIGH_AUX;
 ACTIVE_LOW_AUX: if (C_AUX_RESET_HIGH = '0') generate  
 begin
    -------------------------------------
-   ACT_LO_AUX: process(Slowest_Sync_Clk)
-   begin
-      if (Slowest_Sync_Clk'event) and Slowest_Sync_Clk = '1' then
-         asr_d1     <= not Auxiliary_System_Reset;
-         asr_lpf(0) <= asr_d1;
-      end if;
-   end process;
+asr_d1 <= not Auxiliary_System_Reset;
+
+ACT_LO_AUX: entity lib_cdc_v1_0.cdc_sync
+  generic map (
+    C_CDC_TYPE           => 1,
+    C_RESET_STATE        => 0,
+    C_SINGLE_BIT         => 1,
+    C_FLOP_INPUT         => 0,
+    C_VECTOR_WIDTH       => 2,
+    C_MTBF_STAGES        => 4
+            )
+  port map(
+    prmry_aclk            => '1',
+    prmry_resetn          => '1',--S_AXI_ARESETN,
+    prmry_in              => asr_d1,
+    prmry_ack             => open,
+    scndry_out            => asr_lpf(0),
+    scndry_aclk           => Slowest_Sync_Clk,
+    scndry_resetn         => '1', --S_AXIS_ARESETN,
+    prmry_vect_in         => "00",
+    scndry_vect_out       => open
+     );
    -------------------------------------
 end generate ACTIVE_LOW_AUX;
 

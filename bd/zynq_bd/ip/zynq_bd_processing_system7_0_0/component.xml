@@ -5,7 +5,7 @@
 	<spirit:vendor>xilinx.com</spirit:vendor>
 	<spirit:library>ip</spirit:library>
 	<spirit:name>processing_system7</spirit:name>
-	<spirit:version>5.4</spirit:version>
+	<spirit:version>5.5</spirit:version>
 	<spirit:busInterfaces>
 		<spirit:busInterface>
 			<spirit:name>GMII_ETHERNET_0</spirit:name>
@@ -266,7 +266,7 @@
 					<xilinx:enablement>
 						<xilinx:presence>optional</xilinx:presence>
 						<xilinx:isEnabled xilinx:resolve="dependent"
-								xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+								xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 					</xilinx:enablement>
 				</xilinx:busInterfaceInfo>
 			</spirit:vendorExtensions>
@@ -562,7 +562,7 @@
 					<xilinx:enablement>
 						<xilinx:presence>optional</xilinx:presence>
 						<xilinx:isEnabled xilinx:resolve="dependent"
-								xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+								xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 					</xilinx:enablement>
 				</xilinx:busInterfaceInfo>
 			</spirit:vendorExtensions>
@@ -1531,12 +1531,12 @@
 			<spirit:busType spirit:vendor="xilinx.com"
 					spirit:library="interface"
 					spirit:name="jtag"
-					spirit:version="1.0"/>
+					spirit:version="2.0"/>
 			<spirit:abstractionType spirit:vendor="xilinx.com"
 					spirit:library="interface"
 					spirit:name="jtag_rtl"
-					spirit:version="1.0"/>
-			<spirit:master/>
+					spirit:version="2.0"/>
+			<spirit:slave/>
 			<spirit:connectionRequired>false</spirit:connectionRequired>
 			<spirit:portMaps>
 				<spirit:portMap>
@@ -1557,26 +1557,18 @@
 				</spirit:portMap>
 				<spirit:portMap>
 					<spirit:logicalPort>
-						<spirit:name>TD_I</spirit:name>
+						<spirit:name>TDI</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>PJTAG_TD_I</spirit:name>
+						<spirit:name>PJTAG_TDI</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 				<spirit:portMap>
 					<spirit:logicalPort>
-						<spirit:name>TD_T</spirit:name>
+						<spirit:name>TDO</spirit:name>
 					</spirit:logicalPort>
 					<spirit:physicalPort>
-						<spirit:name>PJTAG_TD_T</spirit:name>
-					</spirit:physicalPort>
-				</spirit:portMap>
-				<spirit:portMap>
-					<spirit:logicalPort>
-						<spirit:name>TD_O</spirit:name>
-					</spirit:logicalPort>
-					<spirit:physicalPort>
-						<spirit:name>PJTAG_TD_O</spirit:name>
+						<spirit:name>PJTAG_TDO</spirit:name>
 					</spirit:physicalPort>
 				</spirit:portMap>
 			</spirit:portMaps>
@@ -11703,7 +11695,7 @@
 				<spirit:name>xilinx_anylanguagesynthesis</spirit:name>
 				<spirit:displayName>Vivado Synthesis</spirit:displayName>
 				<spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
-				<spirit:modelName>processing_system7_v5_4_processing_system7</spirit:modelName>
+				<spirit:modelName>processing_system7_v5_5_processing_system7</spirit:modelName>
 				<spirit:fileSetRef>
 					<spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
 				</spirit:fileSetRef>
@@ -12004,7 +11996,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12026,7 +12018,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12048,7 +12040,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12070,7 +12062,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12092,7 +12084,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12114,7 +12106,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12136,7 +12128,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12158,7 +12150,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12180,7 +12172,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12202,7 +12194,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET0)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET0_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12591,7 +12583,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12613,7 +12605,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12635,7 +12627,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12657,7 +12649,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12679,7 +12671,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12701,7 +12693,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12723,7 +12715,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12745,7 +12737,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12767,7 +12759,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -12789,7 +12781,7 @@
 						<xilinx:enablement>
 							<xilinx:presence>optional</xilinx:presence>
 							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_ENET1)) = 1)">false</xilinx:isEnabled>
+									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE)) = 1)">false</xilinx:isEnabled>
 						</xilinx:enablement>
 					</xilinx:portInfo>
 				</spirit:vendorExtensions>
@@ -13457,7 +13449,7 @@
 				</spirit:vendorExtensions>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>PJTAG_TD_I</spirit:name>
+				<spirit:name>PJTAG_TDI</spirit:name>
 				<spirit:wire>
 					<spirit:direction>in</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -13482,29 +13474,7 @@
 				</spirit:vendorExtensions>
 			</spirit:port>
 			<spirit:port>
-				<spirit:name>PJTAG_TD_T</spirit:name>
-				<spirit:wire>
-					<spirit:direction>out</spirit:direction>
-					<spirit:wireTypeDefs>
-						<spirit:wireTypeDef>
-							<spirit:typeName>std_logic</spirit:typeName>
-							<spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
-							<spirit:viewNameRef>xilinx_anylanguagesimulation</spirit:viewNameRef>
-						</spirit:wireTypeDef>
-					</spirit:wireTypeDefs>
-				</spirit:wire>
-				<spirit:vendorExtensions>
-					<xilinx:portInfo>
-						<xilinx:enablement>
-							<xilinx:presence>optional</xilinx:presence>
-							<xilinx:isEnabled xilinx:resolve="dependent"
-									xilinx:dependency="(spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_PJTAG)) = 1)">false</xilinx:isEnabled>
-						</xilinx:enablement>
-					</xilinx:portInfo>
-				</spirit:vendorExtensions>
-			</spirit:port>
-			<spirit:port>
-				<spirit:name>PJTAG_TD_O</spirit:name>
+				<spirit:name>PJTAG_TDO</spirit:name>
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:wireTypeDefs>
@@ -14977,7 +14947,7 @@
 						</spirit:wireTypeDef>
 					</spirit:wireTypeDefs>
 					<spirit:driver>
-						<spirit:defaultValue>0</spirit:defaultValue>
+						<spirit:defaultValue>1</spirit:defaultValue>
 					</spirit:driver>
 				</spirit:wire>
 				<spirit:vendorExtensions>
@@ -15168,7 +15138,7 @@
 						</spirit:wireTypeDef>
 					</spirit:wireTypeDefs>
 					<spirit:driver>
-						<spirit:defaultValue>0</spirit:defaultValue>
+						<spirit:defaultValue>1</spirit:defaultValue>
 					</spirit:driver>
 				</spirit:wire>
 				<spirit:vendorExtensions>
@@ -15584,7 +15554,9 @@
 				<spirit:wire>
 					<spirit:direction>out</spirit:direction>
 					<spirit:vector>
-						<spirit:left spirit:bitStringLength="0">31</spirit:left>
+						<spirit:left spirit:resolve="dependent"
+								spirit:dependency="(spirit:decode(id(MODELPARAM_VALUE.C_TRACE_INTERNAL_WIDTH)) - 1)"
+								spirit:bitStringLength="0">31</spirit:left>
 						<spirit:right spirit:bitStringLength="0">0</spirit:right>
 					</spirit:vector>
 					<spirit:wireTypeDefs>
@@ -28883,6 +28855,13 @@
 		<spirit:modelParameters>
 			<spirit:modelParameter xsi:type="spirit:nameValueTypeType"
 					spirit:dataType="INTEGER">
+				<spirit:name>C_EN_EMIO_PJTAG</spirit:name>
+				<spirit:value spirit:format="long"
+						spirit:resolve="dependent"
+						spirit:id="MODELPARAM_VALUE.C_EN_EMIO_PJTAG"
+						spirit:dependency="spirit:decode(id(PARAM_VALUE.PCW_EN_EMIO_PJTAG))">0</spirit:value>
+			</spirit:modelParameter>
+			<spirit:modelParameter spirit:dataType="INTEGER">
 				<spirit:name>C_EN_EMIO_ENET0</spirit:name>
 				<spirit:value spirit:format="long"
 						spirit:resolve="dependent"
@@ -29133,6 +29112,13 @@
 						spirit:resolve="dependent"
 						spirit:id="MODELPARAM_VALUE.C_MIO_PRIMITIVE"
 						spirit:dependency="spirit:decode(id(PARAM_VALUE.PCW_MIO_PRIMITIVE))">54</spirit:value>
+			</spirit:modelParameter>
+			<spirit:modelParameter spirit:dataType="INTEGER">
+				<spirit:name>C_TRACE_INTERNAL_WIDTH</spirit:name>
+				<spirit:value spirit:format="long"
+						spirit:resolve="dependent"
+						spirit:id="MODELPARAM_VALUE.C_TRACE_INTERNAL_WIDTH"
+						spirit:dependency="spirit:decode(id(PARAM_VALUE.PCW_TRACE_INTERNAL_WIDTH))">NA</spirit:value>
 			</spirit:modelParameter>
 			<spirit:modelParameter spirit:dataType="STRING">
 				<spirit:name>C_PS7_SI_REV</spirit:name>
@@ -31778,34 +31764,62 @@
 		</spirit:choice>
 		<spirit:choice>
 			<spirit:name>choices_622</spirit:name>
-			<spirit:enumeration>None</spirit:enumeration>
+			<spirit:enumeration spirit:text="NA">NA</spirit:enumeration>
 		</spirit:choice>
 		<spirit:choice>
 			<spirit:name>choices_623</spirit:name>
-			<spirit:enumeration spirit:text="PRODUCTION">PRODUCTION</spirit:enumeration>
+			<spirit:enumeration spirit:text="NA">NA</spirit:enumeration>
 		</spirit:choice>
 		<spirit:choice>
 			<spirit:name>choices_624</spirit:name>
-			<spirit:enumeration>0</spirit:enumeration>
-			<spirit:enumeration>1</spirit:enumeration>
+			<spirit:enumeration spirit:text="NA">NA</spirit:enumeration>
 		</spirit:choice>
 		<spirit:choice>
 			<spirit:name>choices_625</spirit:name>
-			<spirit:enumeration>0</spirit:enumeration>
-			<spirit:enumeration>1</spirit:enumeration>
+			<spirit:enumeration spirit:text="NA">NA</spirit:enumeration>
 		</spirit:choice>
 		<spirit:choice>
 			<spirit:name>choices_626</spirit:name>
-			<spirit:enumeration>0</spirit:enumeration>
-			<spirit:enumeration>1</spirit:enumeration>
+			<spirit:enumeration spirit:text="NA">NA</spirit:enumeration>
 		</spirit:choice>
 		<spirit:choice>
 			<spirit:name>choices_627</spirit:name>
+			<spirit:enumeration spirit:text="NA">NA</spirit:enumeration>
+		</spirit:choice>
+		<spirit:choice>
+			<spirit:name>choices_628</spirit:name>
+			<spirit:enumeration spirit:text="NA">NA</spirit:enumeration>
+		</spirit:choice>
+		<spirit:choice>
+			<spirit:name>choices_629</spirit:name>
+			<spirit:enumeration>None</spirit:enumeration>
+		</spirit:choice>
+		<spirit:choice>
+			<spirit:name>choices_630</spirit:name>
+			<spirit:enumeration spirit:text="PRODUCTION">PRODUCTION</spirit:enumeration>
+		</spirit:choice>
+		<spirit:choice>
+			<spirit:name>choices_631</spirit:name>
 			<spirit:enumeration>0</spirit:enumeration>
 			<spirit:enumeration>1</spirit:enumeration>
 		</spirit:choice>
 		<spirit:choice>
-			<spirit:name>choices_628</spirit:name>
+			<spirit:name>choices_632</spirit:name>
+			<spirit:enumeration>0</spirit:enumeration>
+			<spirit:enumeration>1</spirit:enumeration>
+		</spirit:choice>
+		<spirit:choice>
+			<spirit:name>choices_633</spirit:name>
+			<spirit:enumeration>0</spirit:enumeration>
+			<spirit:enumeration>1</spirit:enumeration>
+		</spirit:choice>
+		<spirit:choice>
+			<spirit:name>choices_634</spirit:name>
+			<spirit:enumeration>0</spirit:enumeration>
+			<spirit:enumeration>1</spirit:enumeration>
+		</spirit:choice>
+		<spirit:choice>
+			<spirit:name>choices_635</spirit:name>
 			<spirit:enumeration>clg484</spirit:enumeration>
 			<spirit:enumeration>clg225</spirit:enumeration>
 			<spirit:enumeration>clg400</spirit:enumeration>
@@ -31851,23 +31865,23 @@
 				</spirit:define>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/processing_system7_v5_4_aw_atc.v</spirit:name>
+				<spirit:name>hdl/verilog/processing_system7_v5_5_aw_atc.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/processing_system7_v5_4_b_atc.v</spirit:name>
+				<spirit:name>hdl/verilog/processing_system7_v5_5_b_atc.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/processing_system7_v5_4_w_atc.v</spirit:name>
+				<spirit:name>hdl/verilog/processing_system7_v5_5_w_atc.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/processing_system7_v5_4_atc.v</spirit:name>
+				<spirit:name>hdl/verilog/processing_system7_v5_5_atc.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
-				<spirit:name>hdl/verilog/processing_system7_v5_4_trace_buffer.v</spirit:name>
+				<spirit:name>hdl/verilog/processing_system7_v5_5_trace_buffer.v</spirit:name>
 				<spirit:fileType>verilogSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -32521,6 +32535,14 @@
 				<spirit:userFileType>xml</spirit:userFileType>
 			</spirit:file>
 			<spirit:file>
+				<spirit:name>jtag.xml</spirit:name>
+				<spirit:userFileType>xml</spirit:userFileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>jtag_rtl.xml</spirit:name>
+				<spirit:userFileType>xml</spirit:userFileType>
+			</spirit:file>
+			<spirit:file>
 				<spirit:name>hpstatusctrl.xml</spirit:name>
 				<spirit:userFileType>xml</spirit:userFileType>
 			</spirit:file>
@@ -32540,7 +32562,7 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_vivadoxpgui_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>xgui/processing_system7_v5_4.tcl</spirit:name>
+				<spirit:name>xgui/processing_system7_v5_5.tcl</spirit:name>
 				<spirit:fileType>tclSource</spirit:fileType>
 				<spirit:userFileType>XGUI_VERSION_2_1</spirit:userFileType>
 			</spirit:file>
@@ -32548,14 +32570,14 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_vivadoversioninformation_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>doc/processing_system7_v5_4_changelog.txt</spirit:name>
+				<spirit:name>doc/processing_system7_v5_5_changelog.txt</spirit:name>
 				<spirit:userFileType>text</spirit:userFileType>
 			</spirit:file>
 		</spirit:fileSet>
 		<spirit:fileSet>
 			<spirit:name>xilinx_utility_xit_files_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>xgui/processing_system7_v5_4.tcl</spirit:name>
+				<spirit:name>xgui/processing_system7_v5_5.tcl</spirit:name>
 				<spirit:fileType>tclSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -32564,6 +32586,10 @@
 			</spirit:file>
 			<spirit:file>
 				<spirit:name>xgui/guiparamlist.tcl</spirit:name>
+				<spirit:fileType>tclSource</spirit:fileType>
+			</spirit:file>
+			<spirit:file>
+				<spirit:name>xgui/webtalk.tcl</spirit:name>
 				<spirit:fileType>tclSource</spirit:fileType>
 			</spirit:file>
 			<spirit:file>
@@ -32599,7 +32625,7 @@
 		<spirit:fileSet>
 			<spirit:name>xilinx_upgradescripts_view_fileset</spirit:name>
 			<spirit:file>
-				<spirit:name>xgui/processing_system7_v5_4_upgrades.tcl</spirit:name>
+				<spirit:name>xgui/processing_system7_v5_5_upgrades.tcl</spirit:name>
 				<spirit:fileType>tclSource</spirit:fileType>
 			</spirit:file>
 		</spirit:fileSet>
@@ -32624,6 +32650,10 @@
 			<spirit:addressSpaceRef spirit:addressSpaceRef="Data"/>
 			<spirit:parameters>
 				<spirit:parameter>
+					<spirit:name>is_visible</spirit:name>
+					<spirit:value>FALSE</spirit:value>
+				</spirit:parameter>
+				<spirit:parameter>
 					<spirit:name>processor_type</spirit:name>
 					<spirit:value>ARM</spirit:value>
 				</spirit:parameter>
@@ -32633,6 +32663,10 @@
 			<spirit:name>CPU1_A9</spirit:name>
 			<spirit:addressSpaceRef spirit:addressSpaceRef="Data"/>
 			<spirit:parameters>
+				<spirit:parameter>
+					<spirit:name>is_visible</spirit:name>
+					<spirit:value>FALSE</spirit:value>
+				</spirit:parameter>
 				<spirit:parameter>
 					<spirit:name>processor_type</spirit:name>
 					<spirit:value>ARM</spirit:value>
@@ -34559,6 +34593,28 @@
 			<spirit:value spirit:format="float"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ACT_CAN_PERIPHERAL_FREQMHZ"
+					spirit:order="27600"
+					spirit:minimum="0.1"
+					spirit:maximum="100"
+					spirit:rangeType="float">23.8095</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>PCW_ACT_CAN0_PERIPHERAL_FREQMHZ</spirit:name>
+			<spirit:displayName>PCW ACT CAN0 PERIPHERAL FREQMHZ</spirit:displayName>
+			<spirit:value spirit:format="float"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PCW_ACT_CAN0_PERIPHERAL_FREQMHZ"
+					spirit:order="27600"
+					spirit:minimum="0.1"
+					spirit:maximum="100"
+					spirit:rangeType="float">23.8095</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>PCW_ACT_CAN1_PERIPHERAL_FREQMHZ</spirit:name>
+			<spirit:displayName>PCW ACT CAN0 PERIPHERAL FREQMHZ</spirit:displayName>
+			<spirit:value spirit:format="float"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PCW_ACT_CAN1_PERIPHERAL_FREQMHZ"
 					spirit:order="27600"
 					spirit:minimum="0.1"
 					spirit:maximum="100"
@@ -38184,11 +38240,27 @@
 					spirit:order="6102">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
+			<spirit:name>PCW_ENET_RESET_ENABLE</spirit:name>
+			<spirit:value spirit:format="string"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PCW_ENET_RESET_ENABLE"
+					spirit:choiceRef="choices_273"
+					spirit:order="6103">NA</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>PCW_ENET_RESET_SELECT</spirit:name>
+			<spirit:value spirit:format="string"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PCW_ENET_RESET_SELECT"
+					spirit:choiceRef="choices_274"
+					spirit:order="6103">NA</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
 			<spirit:name>PCW_ENET0_RESET_ENABLE</spirit:name>
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET0_RESET_ENABLE"
-					spirit:choiceRef="choices_273"
+					spirit:choiceRef="choices_275"
 					spirit:order="6103">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38196,7 +38268,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET0_RESET_IO"
-					spirit:choiceRef="choices_274"
+					spirit:choiceRef="choices_276"
 					spirit:order="6104">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38205,7 +38277,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET1_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_275"
+					spirit:choiceRef="choices_277"
 					spirit:order="500">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38214,7 +38286,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET1_ENET1_IO"
-					spirit:choiceRef="choices_276"
+					spirit:choiceRef="choices_278"
 					spirit:order="6200">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38222,7 +38294,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET1_GRP_MDIO_ENABLE"
-					spirit:choiceRef="choices_277"
+					spirit:choiceRef="choices_279"
 					spirit:order="6201">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38231,7 +38303,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET1_GRP_MDIO_IO"
-					spirit:choiceRef="choices_278"
+					spirit:choiceRef="choices_280"
 					spirit:order="6202">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38239,7 +38311,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET1_RESET_ENABLE"
-					spirit:choiceRef="choices_279"
+					spirit:choiceRef="choices_281"
 					spirit:order="6203">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38247,7 +38319,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET1_RESET_IO"
-					spirit:choiceRef="choices_280"
+					spirit:choiceRef="choices_282"
 					spirit:order="6204">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38256,7 +38328,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD0_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_281"
+					spirit:choiceRef="choices_283"
 					spirit:order="600">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38265,7 +38337,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD0_SD0_IO"
-					spirit:choiceRef="choices_282"
+					spirit:choiceRef="choices_284"
 					spirit:order="6500">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38273,7 +38345,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD0_GRP_CD_ENABLE"
-					spirit:choiceRef="choices_283"
+					spirit:choiceRef="choices_285"
 					spirit:order="6501">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38282,7 +38354,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD0_GRP_CD_IO"
-					spirit:choiceRef="choices_284"
+					spirit:choiceRef="choices_286"
 					spirit:order="6502">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38290,7 +38362,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD0_GRP_WP_ENABLE"
-					spirit:choiceRef="choices_285"
+					spirit:choiceRef="choices_287"
 					spirit:order="6503">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38299,7 +38371,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD0_GRP_WP_IO"
-					spirit:choiceRef="choices_286"
+					spirit:choiceRef="choices_288"
 					spirit:order="6504">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38307,7 +38379,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD0_GRP_POW_ENABLE"
-					spirit:choiceRef="choices_287"
+					spirit:choiceRef="choices_289"
 					spirit:order="6505">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38316,7 +38388,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD0_GRP_POW_IO"
-					spirit:choiceRef="choices_288"
+					spirit:choiceRef="choices_290"
 					spirit:order="6506">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38325,7 +38397,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD1_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_289"
+					spirit:choiceRef="choices_291"
 					spirit:order="700">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38334,7 +38406,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD1_SD1_IO"
-					spirit:choiceRef="choices_290"
+					spirit:choiceRef="choices_292"
 					spirit:order="6600">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38342,7 +38414,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD1_GRP_CD_ENABLE"
-					spirit:choiceRef="choices_291"
+					spirit:choiceRef="choices_293"
 					spirit:order="6601">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38351,7 +38423,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD1_GRP_CD_IO"
-					spirit:choiceRef="choices_292"
+					spirit:choiceRef="choices_294"
 					spirit:order="6602">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38359,7 +38431,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD1_GRP_WP_ENABLE"
-					spirit:choiceRef="choices_293"
+					spirit:choiceRef="choices_295"
 					spirit:order="6603">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38368,7 +38440,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD1_GRP_WP_IO"
-					spirit:choiceRef="choices_294"
+					spirit:choiceRef="choices_296"
 					spirit:order="6604">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38376,7 +38448,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD1_GRP_POW_ENABLE"
-					spirit:choiceRef="choices_295"
+					spirit:choiceRef="choices_297"
 					spirit:order="6605">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38385,7 +38457,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SD1_GRP_POW_IO"
-					spirit:choiceRef="choices_296"
+					spirit:choiceRef="choices_298"
 					spirit:order="6606">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38394,7 +38466,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_UART0_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_297"
+					spirit:choiceRef="choices_299"
 					spirit:order="800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38403,7 +38475,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_UART0_UART0_IO"
-					spirit:choiceRef="choices_298"
+					spirit:choiceRef="choices_300"
 					spirit:order="6700">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38411,7 +38483,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_UART0_GRP_FULL_ENABLE"
-					spirit:choiceRef="choices_299"
+					spirit:choiceRef="choices_301"
 					spirit:order="6701">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38419,7 +38491,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_UART0_GRP_FULL_IO"
-					spirit:choiceRef="choices_300"
+					spirit:choiceRef="choices_302"
 					spirit:order="6702">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38428,7 +38500,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_UART1_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_301"
+					spirit:choiceRef="choices_303"
 					spirit:order="900">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38437,7 +38509,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_UART1_UART1_IO"
-					spirit:choiceRef="choices_302"
+					spirit:choiceRef="choices_304"
 					spirit:order="6800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38445,7 +38517,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_UART1_GRP_FULL_ENABLE"
-					spirit:choiceRef="choices_303"
+					spirit:choiceRef="choices_305"
 					spirit:order="6801">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38453,7 +38525,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_UART1_GRP_FULL_IO"
-					spirit:choiceRef="choices_304"
+					spirit:choiceRef="choices_306"
 					spirit:order="6802">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38462,7 +38534,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI0_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_305"
+					spirit:choiceRef="choices_307"
 					spirit:order="1000">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38471,7 +38543,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI0_SPI0_IO"
-					spirit:choiceRef="choices_306"
+					spirit:choiceRef="choices_308"
 					spirit:order="7100">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38479,7 +38551,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI0_GRP_SS0_ENABLE"
-					spirit:choiceRef="choices_307"
+					spirit:choiceRef="choices_309"
 					spirit:order="7105">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38488,7 +38560,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI0_GRP_SS0_IO"
-					spirit:choiceRef="choices_308"
+					spirit:choiceRef="choices_310"
 					spirit:order="7106">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38496,7 +38568,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI0_GRP_SS1_ENABLE"
-					spirit:choiceRef="choices_309"
+					spirit:choiceRef="choices_311"
 					spirit:order="7103">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38505,7 +38577,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI0_GRP_SS1_IO"
-					spirit:choiceRef="choices_310"
+					spirit:choiceRef="choices_312"
 					spirit:order="7104">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38513,7 +38585,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI0_GRP_SS2_ENABLE"
-					spirit:choiceRef="choices_311"
+					spirit:choiceRef="choices_313"
 					spirit:order="7101">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38522,7 +38594,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI0_GRP_SS2_IO"
-					spirit:choiceRef="choices_312"
+					spirit:choiceRef="choices_314"
 					spirit:order="7102">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38531,7 +38603,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI1_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_313"
+					spirit:choiceRef="choices_315"
 					spirit:order="1100">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38540,7 +38612,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI1_SPI1_IO"
-					spirit:choiceRef="choices_314"
+					spirit:choiceRef="choices_316"
 					spirit:order="7200">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38548,7 +38620,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI1_GRP_SS0_ENABLE"
-					spirit:choiceRef="choices_315"
+					spirit:choiceRef="choices_317"
 					spirit:order="7205">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38557,7 +38629,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI1_GRP_SS0_IO"
-					spirit:choiceRef="choices_316"
+					spirit:choiceRef="choices_318"
 					spirit:order="7206">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38565,7 +38637,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI1_GRP_SS1_ENABLE"
-					spirit:choiceRef="choices_317"
+					spirit:choiceRef="choices_319"
 					spirit:order="7203">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38574,7 +38646,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI1_GRP_SS1_IO"
-					spirit:choiceRef="choices_318"
+					spirit:choiceRef="choices_320"
 					spirit:order="7204">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38582,7 +38654,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI1_GRP_SS2_ENABLE"
-					spirit:choiceRef="choices_319"
+					spirit:choiceRef="choices_321"
 					spirit:order="7201">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38591,7 +38663,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI1_GRP_SS2_IO"
-					spirit:choiceRef="choices_320"
+					spirit:choiceRef="choices_322"
 					spirit:order="7202">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38600,7 +38672,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN0_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_321"
+					spirit:choiceRef="choices_323"
 					spirit:order="1200">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38609,7 +38681,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN0_CAN0_IO"
-					spirit:choiceRef="choices_322"
+					spirit:choiceRef="choices_324"
 					spirit:order="7300">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38617,7 +38689,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN0_GRP_CLK_ENABLE"
-					spirit:choiceRef="choices_323"
+					spirit:choiceRef="choices_325"
 					spirit:order="7301">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38626,7 +38698,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN0_GRP_CLK_IO"
-					spirit:choiceRef="choices_324"
+					spirit:choiceRef="choices_326"
 					spirit:order="7302">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38635,7 +38707,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN1_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_325"
+					spirit:choiceRef="choices_327"
 					spirit:order="1300">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38644,7 +38716,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN1_CAN1_IO"
-					spirit:choiceRef="choices_326"
+					spirit:choiceRef="choices_328"
 					spirit:order="7400">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38652,7 +38724,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN1_GRP_CLK_ENABLE"
-					spirit:choiceRef="choices_327"
+					spirit:choiceRef="choices_329"
 					spirit:order="7401">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38661,7 +38733,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN1_GRP_CLK_IO"
-					spirit:choiceRef="choices_328"
+					spirit:choiceRef="choices_330"
 					spirit:order="7402">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38670,7 +38742,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_329"
+					spirit:choiceRef="choices_331"
 					spirit:order="1400">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38679,7 +38751,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_TRACE_IO"
-					spirit:choiceRef="choices_330"
+					spirit:choiceRef="choices_332"
 					spirit:order="7500">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38687,7 +38759,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_2BIT_ENABLE"
-					spirit:choiceRef="choices_331"
+					spirit:choiceRef="choices_333"
 					spirit:order="7501">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38696,7 +38768,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_2BIT_IO"
-					spirit:choiceRef="choices_332"
+					spirit:choiceRef="choices_334"
 					spirit:order="7502">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38704,7 +38776,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_4BIT_ENABLE"
-					spirit:choiceRef="choices_333"
+					spirit:choiceRef="choices_335"
 					spirit:order="7503">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38713,7 +38785,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_4BIT_IO"
-					spirit:choiceRef="choices_334"
+					spirit:choiceRef="choices_336"
 					spirit:order="7504">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38721,7 +38793,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_8BIT_ENABLE"
-					spirit:choiceRef="choices_335"
+					spirit:choiceRef="choices_337"
 					spirit:order="7505">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38730,7 +38802,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_8BIT_IO"
-					spirit:choiceRef="choices_336"
+					spirit:choiceRef="choices_338"
 					spirit:order="7506">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38738,7 +38810,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_16BIT_ENABLE"
-					spirit:choiceRef="choices_337"
+					spirit:choiceRef="choices_339"
 					spirit:order="7507">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38747,7 +38819,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_16BIT_IO"
-					spirit:choiceRef="choices_338"
+					spirit:choiceRef="choices_340"
 					spirit:order="7508">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38755,7 +38827,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_32BIT_ENABLE"
-					spirit:choiceRef="choices_339"
+					spirit:choiceRef="choices_341"
 					spirit:order="7509">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38764,8 +38836,17 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TRACE_GRP_32BIT_IO"
-					spirit:choiceRef="choices_340"
+					spirit:choiceRef="choices_342"
 					spirit:order="7510">NA</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>PCW_TRACE_INTERNAL_WIDTH</spirit:name>
+			<spirit:displayName>PCW TRACE INTERNAL WIDTH</spirit:displayName>
+			<spirit:value spirit:format="string"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PCW_TRACE_INTERNAL_WIDTH"
+					spirit:choiceRef="choices_343"
+					spirit:order="7511">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
 			<spirit:name>PCW_WDT_PERIPHERAL_ENABLE</spirit:name>
@@ -38773,7 +38854,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_WDT_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_341"
+					spirit:choiceRef="choices_344"
 					spirit:order="1500">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38782,7 +38863,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_WDT_WDT_IO"
-					spirit:choiceRef="choices_342"
+					spirit:choiceRef="choices_345"
 					spirit:order="7800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38791,7 +38872,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC0_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_343"
+					spirit:choiceRef="choices_346"
 					spirit:order="1600">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38800,7 +38881,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC0_TTC0_IO"
-					spirit:choiceRef="choices_344"
+					spirit:choiceRef="choices_347"
 					spirit:order="7600">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38809,7 +38890,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC1_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_345"
+					spirit:choiceRef="choices_348"
 					spirit:order="1700">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38818,7 +38899,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC1_TTC1_IO"
-					spirit:choiceRef="choices_346"
+					spirit:choiceRef="choices_349"
 					spirit:order="7700">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38827,7 +38908,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_PJTAG_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_347"
+					spirit:choiceRef="choices_350"
 					spirit:order="1750">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38836,7 +38917,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_PJTAG_PJTAG_IO"
-					spirit:choiceRef="choices_348"
+					spirit:choiceRef="choices_351"
 					spirit:order="7900">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38845,7 +38926,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_USB0_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_349"
+					spirit:choiceRef="choices_352"
 					spirit:order="1800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38854,15 +38935,31 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_USB0_USB0_IO"
-					spirit:choiceRef="choices_350"
+					spirit:choiceRef="choices_353"
 					spirit:order="6300">NA</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>PCW_USB_RESET_ENABLE</spirit:name>
+			<spirit:value spirit:format="string"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PCW_USB_RESET_ENABLE"
+					spirit:choiceRef="choices_354"
+					spirit:order="6103">NA</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>PCW_USB_RESET_SELECT</spirit:name>
+			<spirit:value spirit:format="string"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PCW_USB_RESET_SELECT"
+					spirit:choiceRef="choices_355"
+					spirit:order="6103">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
 			<spirit:name>PCW_USB0_RESET_ENABLE</spirit:name>
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_USB0_RESET_ENABLE"
-					spirit:choiceRef="choices_351"
+					spirit:choiceRef="choices_356"
 					spirit:order="6301">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38870,7 +38967,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_USB0_RESET_IO"
-					spirit:choiceRef="choices_352"
+					spirit:choiceRef="choices_357"
 					spirit:order="6302">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38879,7 +38976,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_USB1_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_353"
+					spirit:choiceRef="choices_358"
 					spirit:order="1900">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38888,7 +38985,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_USB1_USB1_IO"
-					spirit:choiceRef="choices_354"
+					spirit:choiceRef="choices_359"
 					spirit:order="6400">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38896,7 +38993,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_USB1_RESET_ENABLE"
-					spirit:choiceRef="choices_355"
+					spirit:choiceRef="choices_360"
 					spirit:order="6401">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38904,7 +39001,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_USB1_RESET_IO"
-					spirit:choiceRef="choices_356"
+					spirit:choiceRef="choices_361"
 					spirit:order="6402">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38913,7 +39010,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C0_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_357"
+					spirit:choiceRef="choices_362"
 					spirit:order="2000">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38922,7 +39019,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C0_I2C0_IO"
-					spirit:choiceRef="choices_358"
+					spirit:choiceRef="choices_363"
 					spirit:order="6900">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38930,7 +39027,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C0_GRP_INT_ENABLE"
-					spirit:choiceRef="choices_359"
+					spirit:choiceRef="choices_364"
 					spirit:order="6901">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38939,7 +39036,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C0_GRP_INT_IO"
-					spirit:choiceRef="choices_360"
+					spirit:choiceRef="choices_365"
 					spirit:order="6902">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38947,7 +39044,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C0_RESET_ENABLE"
-					spirit:choiceRef="choices_361"
+					spirit:choiceRef="choices_366"
 					spirit:order="6903">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38955,7 +39052,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C0_RESET_IO"
-					spirit:choiceRef="choices_362"
+					spirit:choiceRef="choices_367"
 					spirit:order="6904">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38964,7 +39061,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C1_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_363"
+					spirit:choiceRef="choices_368"
 					spirit:order="2100">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38973,7 +39070,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C1_I2C1_IO"
-					spirit:choiceRef="choices_364"
+					spirit:choiceRef="choices_369"
 					spirit:order="7000">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38981,7 +39078,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C1_GRP_INT_ENABLE"
-					spirit:choiceRef="choices_365"
+					spirit:choiceRef="choices_370"
 					spirit:order="7001">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -38990,15 +39087,31 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C1_GRP_INT_IO"
-					spirit:choiceRef="choices_366"
+					spirit:choiceRef="choices_371"
 					spirit:order="7002">NA</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>PCW_I2C_RESET_ENABLE</spirit:name>
+			<spirit:value spirit:format="string"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PCW_I2C_RESET_ENABLE"
+					spirit:choiceRef="choices_372"
+					spirit:order="6103">NA</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>PCW_I2C_RESET_SELECT</spirit:name>
+			<spirit:value spirit:format="string"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.PCW_I2C_RESET_SELECT"
+					spirit:choiceRef="choices_373"
+					spirit:order="6103">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
 			<spirit:name>PCW_I2C1_RESET_ENABLE</spirit:name>
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C1_RESET_ENABLE"
-					spirit:choiceRef="choices_367"
+					spirit:choiceRef="choices_374"
 					spirit:order="7003">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39006,7 +39119,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C1_RESET_IO"
-					spirit:choiceRef="choices_368"
+					spirit:choiceRef="choices_375"
 					spirit:order="7004">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39015,7 +39128,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_GPIO_PERIPHERAL_ENABLE"
-					spirit:choiceRef="choices_369"
+					spirit:choiceRef="choices_376"
 					spirit:order="2200">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39023,7 +39136,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_GPIO_MIO_GPIO_ENABLE"
-					spirit:choiceRef="choices_370"
+					spirit:choiceRef="choices_377"
 					spirit:order="5499">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39032,7 +39145,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_GPIO_MIO_GPIO_IO"
-					spirit:choiceRef="choices_371"
+					spirit:choiceRef="choices_378"
 					spirit:order="5500">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39041,7 +39154,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_ENABLE"
-					spirit:choiceRef="choices_372"
+					spirit:choiceRef="choices_379"
 					spirit:order="5599">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39050,7 +39163,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_IO"
-					spirit:choiceRef="choices_373"
+					spirit:choiceRef="choices_380"
 					spirit:order="5600">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39059,7 +39172,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_APU_CLK_RATIO_ENABLE"
-					spirit:choiceRef="choices_374"
+					spirit:choiceRef="choices_381"
 					spirit:order="23400">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39068,7 +39181,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET0_PERIPHERAL_FREQMHZ"
-					spirit:choiceRef="choices_375"
+					spirit:choiceRef="choices_382"
 					spirit:order="23900">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39077,7 +39190,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET1_PERIPHERAL_FREQMHZ"
-					spirit:choiceRef="choices_376"
+					spirit:choiceRef="choices_383"
 					spirit:order="24000">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39086,7 +39199,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CPU_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_377"
+					spirit:choiceRef="choices_384"
 					spirit:order="20900">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39095,7 +39208,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_DDR_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_378"
+					spirit:choiceRef="choices_385"
 					spirit:order="20901">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39104,7 +39217,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SMC_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_379"
+					spirit:choiceRef="choices_386"
 					spirit:order="21000">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39113,7 +39226,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_QSPI_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_380"
+					spirit:choiceRef="choices_387"
 					spirit:order="21100">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39122,7 +39235,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SDIO_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_381"
+					spirit:choiceRef="choices_388"
 					spirit:order="21200">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39131,7 +39244,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_UART_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_382"
+					spirit:choiceRef="choices_389"
 					spirit:order="21300">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39140,7 +39253,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_SPI_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_383"
+					spirit:choiceRef="choices_390"
 					spirit:order="21400">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39149,7 +39262,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_384"
+					spirit:choiceRef="choices_391"
 					spirit:order="21500">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39158,7 +39271,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_FCLK0_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_385"
+					spirit:choiceRef="choices_392"
 					spirit:order="21600">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39167,7 +39280,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_FCLK1_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_386"
+					spirit:choiceRef="choices_393"
 					spirit:order="21700">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39176,7 +39289,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_FCLK2_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_387"
+					spirit:choiceRef="choices_394"
 					spirit:order="21800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39185,7 +39298,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_FCLK3_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_388"
+					spirit:choiceRef="choices_395"
 					spirit:order="21900">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39194,7 +39307,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET0_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_389"
+					spirit:choiceRef="choices_396"
 					spirit:order="22000">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39203,7 +39316,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET1_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_390"
+					spirit:choiceRef="choices_397"
 					spirit:order="22100">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39212,7 +39325,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN0_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_391"
+					spirit:choiceRef="choices_398"
 					spirit:order="22200">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39221,7 +39334,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_CAN1_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_392"
+					spirit:choiceRef="choices_399"
 					spirit:order="22300">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39230,7 +39343,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TPIU_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_393"
+					spirit:choiceRef="choices_400"
 					spirit:order="22400">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39239,7 +39352,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC0_CLK0_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_394"
+					spirit:choiceRef="choices_401"
 					spirit:order="22500">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39248,7 +39361,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC0_CLK1_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_395"
+					spirit:choiceRef="choices_402"
 					spirit:order="22600">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39257,7 +39370,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC0_CLK2_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_396"
+					spirit:choiceRef="choices_403"
 					spirit:order="22700">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39266,7 +39379,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC1_CLK0_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_397"
+					spirit:choiceRef="choices_404"
 					spirit:order="22800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39275,7 +39388,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC1_CLK1_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_398"
+					spirit:choiceRef="choices_405"
 					spirit:order="22900">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39284,7 +39397,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_TTC1_CLK2_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_399"
+					spirit:choiceRef="choices_406"
 					spirit:order="23000">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39293,7 +39406,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_WDT_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_400"
+					spirit:choiceRef="choices_407"
 					spirit:order="23100">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39302,7 +39415,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_DCI_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_401"
+					spirit:choiceRef="choices_408"
 					spirit:order="23100">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39311,7 +39424,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_PCAP_PERIPHERAL_CLKSRC"
-					spirit:choiceRef="choices_402"
+					spirit:choiceRef="choices_409"
 					spirit:order="23100">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39320,7 +39433,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_USB_RESET_POLARITY"
-					spirit:choiceRef="choices_403"
+					spirit:choiceRef="choices_410"
 					spirit:order="34800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39329,7 +39442,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_ENET_RESET_POLARITY"
-					spirit:choiceRef="choices_404"
+					spirit:choiceRef="choices_411"
 					spirit:order="34800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39338,7 +39451,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_I2C_RESET_POLARITY"
-					spirit:choiceRef="choices_405"
+					spirit:choiceRef="choices_412"
 					spirit:order="34800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39347,7 +39460,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_0_PULLUP"
-					spirit:choiceRef="choices_406"
+					spirit:choiceRef="choices_413"
 					spirit:order="29400">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39356,7 +39469,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_0_IOTYPE"
-					spirit:choiceRef="choices_407"
+					spirit:choiceRef="choices_414"
 					spirit:order="34800">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39365,7 +39478,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_0_DIRECTION"
-					spirit:choiceRef="choices_408"
+					spirit:choiceRef="choices_415"
 					spirit:order="40200">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39374,7 +39487,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_0_SLEW"
-					spirit:choiceRef="choices_409"
+					spirit:choiceRef="choices_416"
 					spirit:order="40300">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39383,7 +39496,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_1_PULLUP"
-					spirit:choiceRef="choices_410"
+					spirit:choiceRef="choices_417"
 					spirit:order="29401">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39392,7 +39505,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_1_IOTYPE"
-					spirit:choiceRef="choices_411"
+					spirit:choiceRef="choices_418"
 					spirit:order="34801">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39401,7 +39514,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_1_DIRECTION"
-					spirit:choiceRef="choices_412"
+					spirit:choiceRef="choices_419"
 					spirit:order="40201">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39410,7 +39523,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_1_SLEW"
-					spirit:choiceRef="choices_413"
+					spirit:choiceRef="choices_420"
 					spirit:order="40301">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39419,7 +39532,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_2_PULLUP"
-					spirit:choiceRef="choices_414"
+					spirit:choiceRef="choices_421"
 					spirit:order="29402">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39428,7 +39541,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_2_IOTYPE"
-					spirit:choiceRef="choices_415"
+					spirit:choiceRef="choices_422"
 					spirit:order="34802">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39437,7 +39550,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_2_DIRECTION"
-					spirit:choiceRef="choices_416"
+					spirit:choiceRef="choices_423"
 					spirit:order="40202">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39446,7 +39559,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_2_SLEW"
-					spirit:choiceRef="choices_417"
+					spirit:choiceRef="choices_424"
 					spirit:order="40302">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39455,7 +39568,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_3_PULLUP"
-					spirit:choiceRef="choices_418"
+					spirit:choiceRef="choices_425"
 					spirit:order="29403">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39464,7 +39577,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_3_IOTYPE"
-					spirit:choiceRef="choices_419"
+					spirit:choiceRef="choices_426"
 					spirit:order="34803">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39473,7 +39586,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_3_DIRECTION"
-					spirit:choiceRef="choices_420"
+					spirit:choiceRef="choices_427"
 					spirit:order="40203">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39482,7 +39595,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_3_SLEW"
-					spirit:choiceRef="choices_421"
+					spirit:choiceRef="choices_428"
 					spirit:order="40303">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39491,7 +39604,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_4_PULLUP"
-					spirit:choiceRef="choices_422"
+					spirit:choiceRef="choices_429"
 					spirit:order="29404">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39500,7 +39613,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_4_IOTYPE"
-					spirit:choiceRef="choices_423"
+					spirit:choiceRef="choices_430"
 					spirit:order="34804">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39509,7 +39622,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_4_DIRECTION"
-					spirit:choiceRef="choices_424"
+					spirit:choiceRef="choices_431"
 					spirit:order="40204">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39518,7 +39631,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_4_SLEW"
-					spirit:choiceRef="choices_425"
+					spirit:choiceRef="choices_432"
 					spirit:order="40304">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39527,7 +39640,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_5_PULLUP"
-					spirit:choiceRef="choices_426"
+					spirit:choiceRef="choices_433"
 					spirit:order="29405">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39536,7 +39649,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_5_IOTYPE"
-					spirit:choiceRef="choices_427"
+					spirit:choiceRef="choices_434"
 					spirit:order="34805">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39545,7 +39658,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_5_DIRECTION"
-					spirit:choiceRef="choices_428"
+					spirit:choiceRef="choices_435"
 					spirit:order="40205">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39554,7 +39667,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_5_SLEW"
-					spirit:choiceRef="choices_429"
+					spirit:choiceRef="choices_436"
 					spirit:order="40305">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39563,7 +39676,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_6_PULLUP"
-					spirit:choiceRef="choices_430"
+					spirit:choiceRef="choices_437"
 					spirit:order="29406">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39572,7 +39685,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_6_IOTYPE"
-					spirit:choiceRef="choices_431"
+					spirit:choiceRef="choices_438"
 					spirit:order="34806">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39581,7 +39694,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_6_DIRECTION"
-					spirit:choiceRef="choices_432"
+					spirit:choiceRef="choices_439"
 					spirit:order="40206">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39590,7 +39703,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_6_SLEW"
-					spirit:choiceRef="choices_433"
+					spirit:choiceRef="choices_440"
 					spirit:order="40306">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39599,7 +39712,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_7_PULLUP"
-					spirit:choiceRef="choices_434"
+					spirit:choiceRef="choices_441"
 					spirit:order="29407">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39608,7 +39721,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_7_IOTYPE"
-					spirit:choiceRef="choices_435"
+					spirit:choiceRef="choices_442"
 					spirit:order="34807">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39617,7 +39730,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_7_DIRECTION"
-					spirit:choiceRef="choices_436"
+					spirit:choiceRef="choices_443"
 					spirit:order="40207">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39626,7 +39739,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_7_SLEW"
-					spirit:choiceRef="choices_437"
+					spirit:choiceRef="choices_444"
 					spirit:order="40307">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39635,7 +39748,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_8_PULLUP"
-					spirit:choiceRef="choices_438"
+					spirit:choiceRef="choices_445"
 					spirit:order="29408">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39644,7 +39757,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_8_IOTYPE"
-					spirit:choiceRef="choices_439"
+					spirit:choiceRef="choices_446"
 					spirit:order="34808">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39653,7 +39766,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_8_DIRECTION"
-					spirit:choiceRef="choices_440"
+					spirit:choiceRef="choices_447"
 					spirit:order="40208">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39662,7 +39775,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_8_SLEW"
-					spirit:choiceRef="choices_441"
+					spirit:choiceRef="choices_448"
 					spirit:order="40308">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39671,7 +39784,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_9_PULLUP"
-					spirit:choiceRef="choices_442"
+					spirit:choiceRef="choices_449"
 					spirit:order="29409">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39680,7 +39793,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_9_IOTYPE"
-					spirit:choiceRef="choices_443"
+					spirit:choiceRef="choices_450"
 					spirit:order="34809">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39689,7 +39802,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_9_DIRECTION"
-					spirit:choiceRef="choices_444"
+					spirit:choiceRef="choices_451"
 					spirit:order="40209">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39698,7 +39811,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_9_SLEW"
-					spirit:choiceRef="choices_445"
+					spirit:choiceRef="choices_452"
 					spirit:order="40309">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39707,7 +39820,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_10_PULLUP"
-					spirit:choiceRef="choices_446"
+					spirit:choiceRef="choices_453"
 					spirit:order="29410">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39716,7 +39829,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_10_IOTYPE"
-					spirit:choiceRef="choices_447"
+					spirit:choiceRef="choices_454"
 					spirit:order="34810">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39725,7 +39838,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_10_DIRECTION"
-					spirit:choiceRef="choices_448"
+					spirit:choiceRef="choices_455"
 					spirit:order="40210">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39734,7 +39847,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_10_SLEW"
-					spirit:choiceRef="choices_449"
+					spirit:choiceRef="choices_456"
 					spirit:order="40310">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39743,7 +39856,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_11_PULLUP"
-					spirit:choiceRef="choices_450"
+					spirit:choiceRef="choices_457"
 					spirit:order="29411">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39752,7 +39865,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_11_IOTYPE"
-					spirit:choiceRef="choices_451"
+					spirit:choiceRef="choices_458"
 					spirit:order="34811">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39761,7 +39874,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_11_DIRECTION"
-					spirit:choiceRef="choices_452"
+					spirit:choiceRef="choices_459"
 					spirit:order="40211">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39770,7 +39883,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_11_SLEW"
-					spirit:choiceRef="choices_453"
+					spirit:choiceRef="choices_460"
 					spirit:order="40311">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39779,7 +39892,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_12_PULLUP"
-					spirit:choiceRef="choices_454"
+					spirit:choiceRef="choices_461"
 					spirit:order="29412">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39788,7 +39901,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_12_IOTYPE"
-					spirit:choiceRef="choices_455"
+					spirit:choiceRef="choices_462"
 					spirit:order="34812">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39797,7 +39910,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_12_DIRECTION"
-					spirit:choiceRef="choices_456"
+					spirit:choiceRef="choices_463"
 					spirit:order="40212">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39806,7 +39919,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_12_SLEW"
-					spirit:choiceRef="choices_457"
+					spirit:choiceRef="choices_464"
 					spirit:order="40312">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39815,7 +39928,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_13_PULLUP"
-					spirit:choiceRef="choices_458"
+					spirit:choiceRef="choices_465"
 					spirit:order="29413">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39824,7 +39937,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_13_IOTYPE"
-					spirit:choiceRef="choices_459"
+					spirit:choiceRef="choices_466"
 					spirit:order="34813">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39833,7 +39946,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_13_DIRECTION"
-					spirit:choiceRef="choices_460"
+					spirit:choiceRef="choices_467"
 					spirit:order="40213">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39842,7 +39955,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_13_SLEW"
-					spirit:choiceRef="choices_461"
+					spirit:choiceRef="choices_468"
 					spirit:order="40313">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39851,7 +39964,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_14_PULLUP"
-					spirit:choiceRef="choices_462"
+					spirit:choiceRef="choices_469"
 					spirit:order="29414">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39860,7 +39973,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_14_IOTYPE"
-					spirit:choiceRef="choices_463"
+					spirit:choiceRef="choices_470"
 					spirit:order="34814">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39869,7 +39982,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_14_DIRECTION"
-					spirit:choiceRef="choices_464"
+					spirit:choiceRef="choices_471"
 					spirit:order="40214">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39878,7 +39991,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_14_SLEW"
-					spirit:choiceRef="choices_465"
+					spirit:choiceRef="choices_472"
 					spirit:order="40314">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39887,7 +40000,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_15_PULLUP"
-					spirit:choiceRef="choices_466"
+					spirit:choiceRef="choices_473"
 					spirit:order="29415">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39896,7 +40009,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_15_IOTYPE"
-					spirit:choiceRef="choices_467"
+					spirit:choiceRef="choices_474"
 					spirit:order="34815">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39905,7 +40018,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_15_DIRECTION"
-					spirit:choiceRef="choices_468"
+					spirit:choiceRef="choices_475"
 					spirit:order="40215">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39914,7 +40027,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_15_SLEW"
-					spirit:choiceRef="choices_469"
+					spirit:choiceRef="choices_476"
 					spirit:order="40315">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39923,7 +40036,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_16_PULLUP"
-					spirit:choiceRef="choices_470"
+					spirit:choiceRef="choices_477"
 					spirit:order="29416">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39932,7 +40045,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_16_IOTYPE"
-					spirit:choiceRef="choices_471"
+					spirit:choiceRef="choices_478"
 					spirit:order="34816">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39941,7 +40054,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_16_DIRECTION"
-					spirit:choiceRef="choices_472"
+					spirit:choiceRef="choices_479"
 					spirit:order="40216">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39950,7 +40063,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_16_SLEW"
-					spirit:choiceRef="choices_473"
+					spirit:choiceRef="choices_480"
 					spirit:order="40316">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39959,7 +40072,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_17_PULLUP"
-					spirit:choiceRef="choices_474"
+					spirit:choiceRef="choices_481"
 					spirit:order="29417">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39968,7 +40081,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_17_IOTYPE"
-					spirit:choiceRef="choices_475"
+					spirit:choiceRef="choices_482"
 					spirit:order="34817">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39977,7 +40090,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_17_DIRECTION"
-					spirit:choiceRef="choices_476"
+					spirit:choiceRef="choices_483"
 					spirit:order="40217">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39986,7 +40099,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_17_SLEW"
-					spirit:choiceRef="choices_477"
+					spirit:choiceRef="choices_484"
 					spirit:order="40317">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -39995,7 +40108,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_18_PULLUP"
-					spirit:choiceRef="choices_478"
+					spirit:choiceRef="choices_485"
 					spirit:order="29418">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40004,7 +40117,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_18_IOTYPE"
-					spirit:choiceRef="choices_479"
+					spirit:choiceRef="choices_486"
 					spirit:order="34818">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40013,7 +40126,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_18_DIRECTION"
-					spirit:choiceRef="choices_480"
+					spirit:choiceRef="choices_487"
 					spirit:order="40218">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40022,7 +40135,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_18_SLEW"
-					spirit:choiceRef="choices_481"
+					spirit:choiceRef="choices_488"
 					spirit:order="40318">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40031,7 +40144,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_19_PULLUP"
-					spirit:choiceRef="choices_482"
+					spirit:choiceRef="choices_489"
 					spirit:order="29419">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40040,7 +40153,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_19_IOTYPE"
-					spirit:choiceRef="choices_483"
+					spirit:choiceRef="choices_490"
 					spirit:order="34819">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40049,7 +40162,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_19_DIRECTION"
-					spirit:choiceRef="choices_484"
+					spirit:choiceRef="choices_491"
 					spirit:order="40219">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40058,7 +40171,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_19_SLEW"
-					spirit:choiceRef="choices_485"
+					spirit:choiceRef="choices_492"
 					spirit:order="40319">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40067,7 +40180,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_20_PULLUP"
-					spirit:choiceRef="choices_486"
+					spirit:choiceRef="choices_493"
 					spirit:order="29420">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40076,7 +40189,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_20_IOTYPE"
-					spirit:choiceRef="choices_487"
+					spirit:choiceRef="choices_494"
 					spirit:order="34820">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40085,7 +40198,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_20_DIRECTION"
-					spirit:choiceRef="choices_488"
+					spirit:choiceRef="choices_495"
 					spirit:order="40220">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40094,7 +40207,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_20_SLEW"
-					spirit:choiceRef="choices_489"
+					spirit:choiceRef="choices_496"
 					spirit:order="40320">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40103,7 +40216,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_21_PULLUP"
-					spirit:choiceRef="choices_490"
+					spirit:choiceRef="choices_497"
 					spirit:order="29421">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40112,7 +40225,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_21_IOTYPE"
-					spirit:choiceRef="choices_491"
+					spirit:choiceRef="choices_498"
 					spirit:order="34821">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40121,7 +40234,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_21_DIRECTION"
-					spirit:choiceRef="choices_492"
+					spirit:choiceRef="choices_499"
 					spirit:order="40221">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40130,7 +40243,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_21_SLEW"
-					spirit:choiceRef="choices_493"
+					spirit:choiceRef="choices_500"
 					spirit:order="40321">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40139,7 +40252,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_22_PULLUP"
-					spirit:choiceRef="choices_494"
+					spirit:choiceRef="choices_501"
 					spirit:order="29422">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40148,7 +40261,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_22_IOTYPE"
-					spirit:choiceRef="choices_495"
+					spirit:choiceRef="choices_502"
 					spirit:order="34822">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40157,7 +40270,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_22_DIRECTION"
-					spirit:choiceRef="choices_496"
+					spirit:choiceRef="choices_503"
 					spirit:order="40222">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40166,7 +40279,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_22_SLEW"
-					spirit:choiceRef="choices_497"
+					spirit:choiceRef="choices_504"
 					spirit:order="40322">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40175,7 +40288,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_23_PULLUP"
-					spirit:choiceRef="choices_498"
+					spirit:choiceRef="choices_505"
 					spirit:order="29423">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40184,7 +40297,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_23_IOTYPE"
-					spirit:choiceRef="choices_499"
+					spirit:choiceRef="choices_506"
 					spirit:order="34823">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40193,7 +40306,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_23_DIRECTION"
-					spirit:choiceRef="choices_500"
+					spirit:choiceRef="choices_507"
 					spirit:order="40223">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40202,7 +40315,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_23_SLEW"
-					spirit:choiceRef="choices_501"
+					spirit:choiceRef="choices_508"
 					spirit:order="40323">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40211,7 +40324,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_24_PULLUP"
-					spirit:choiceRef="choices_502"
+					spirit:choiceRef="choices_509"
 					spirit:order="29424">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40220,7 +40333,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_24_IOTYPE"
-					spirit:choiceRef="choices_503"
+					spirit:choiceRef="choices_510"
 					spirit:order="34824">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40229,7 +40342,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_24_DIRECTION"
-					spirit:choiceRef="choices_504"
+					spirit:choiceRef="choices_511"
 					spirit:order="40224">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40238,7 +40351,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_24_SLEW"
-					spirit:choiceRef="choices_505"
+					spirit:choiceRef="choices_512"
 					spirit:order="40324">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40247,7 +40360,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_25_PULLUP"
-					spirit:choiceRef="choices_506"
+					spirit:choiceRef="choices_513"
 					spirit:order="29425">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40256,7 +40369,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_25_IOTYPE"
-					spirit:choiceRef="choices_507"
+					spirit:choiceRef="choices_514"
 					spirit:order="34825">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40265,7 +40378,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_25_DIRECTION"
-					spirit:choiceRef="choices_508"
+					spirit:choiceRef="choices_515"
 					spirit:order="40225">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40274,7 +40387,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_25_SLEW"
-					spirit:choiceRef="choices_509"
+					spirit:choiceRef="choices_516"
 					spirit:order="40325">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40283,7 +40396,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_26_PULLUP"
-					spirit:choiceRef="choices_510"
+					spirit:choiceRef="choices_517"
 					spirit:order="29426">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40292,7 +40405,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_26_IOTYPE"
-					spirit:choiceRef="choices_511"
+					spirit:choiceRef="choices_518"
 					spirit:order="34826">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40301,7 +40414,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_26_DIRECTION"
-					spirit:choiceRef="choices_512"
+					spirit:choiceRef="choices_519"
 					spirit:order="40226">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40310,7 +40423,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_26_SLEW"
-					spirit:choiceRef="choices_513"
+					spirit:choiceRef="choices_520"
 					spirit:order="40326">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40319,7 +40432,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_27_PULLUP"
-					spirit:choiceRef="choices_514"
+					spirit:choiceRef="choices_521"
 					spirit:order="29427">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40328,7 +40441,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_27_IOTYPE"
-					spirit:choiceRef="choices_515"
+					spirit:choiceRef="choices_522"
 					spirit:order="34827">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40337,7 +40450,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_27_DIRECTION"
-					spirit:choiceRef="choices_516"
+					spirit:choiceRef="choices_523"
 					spirit:order="40227">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40346,7 +40459,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_27_SLEW"
-					spirit:choiceRef="choices_517"
+					spirit:choiceRef="choices_524"
 					spirit:order="40327">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40355,7 +40468,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_28_PULLUP"
-					spirit:choiceRef="choices_518"
+					spirit:choiceRef="choices_525"
 					spirit:order="29428">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40364,7 +40477,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_28_IOTYPE"
-					spirit:choiceRef="choices_519"
+					spirit:choiceRef="choices_526"
 					spirit:order="34828">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40373,7 +40486,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_28_DIRECTION"
-					spirit:choiceRef="choices_520"
+					spirit:choiceRef="choices_527"
 					spirit:order="40228">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40382,7 +40495,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_28_SLEW"
-					spirit:choiceRef="choices_521"
+					spirit:choiceRef="choices_528"
 					spirit:order="40328">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40391,7 +40504,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_29_PULLUP"
-					spirit:choiceRef="choices_522"
+					spirit:choiceRef="choices_529"
 					spirit:order="29429">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40400,7 +40513,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_29_IOTYPE"
-					spirit:choiceRef="choices_523"
+					spirit:choiceRef="choices_530"
 					spirit:order="34829">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40409,7 +40522,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_29_DIRECTION"
-					spirit:choiceRef="choices_524"
+					spirit:choiceRef="choices_531"
 					spirit:order="40229">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40418,7 +40531,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_29_SLEW"
-					spirit:choiceRef="choices_525"
+					spirit:choiceRef="choices_532"
 					spirit:order="40329">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40427,7 +40540,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_30_PULLUP"
-					spirit:choiceRef="choices_526"
+					spirit:choiceRef="choices_533"
 					spirit:order="29430">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40436,7 +40549,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_30_IOTYPE"
-					spirit:choiceRef="choices_527"
+					spirit:choiceRef="choices_534"
 					spirit:order="34830">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40445,7 +40558,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_30_DIRECTION"
-					spirit:choiceRef="choices_528"
+					spirit:choiceRef="choices_535"
 					spirit:order="40230">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40454,7 +40567,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_30_SLEW"
-					spirit:choiceRef="choices_529"
+					spirit:choiceRef="choices_536"
 					spirit:order="40330">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40463,7 +40576,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_31_PULLUP"
-					spirit:choiceRef="choices_530"
+					spirit:choiceRef="choices_537"
 					spirit:order="29431">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40472,7 +40585,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_31_IOTYPE"
-					spirit:choiceRef="choices_531"
+					spirit:choiceRef="choices_538"
 					spirit:order="34831">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40481,7 +40594,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_31_DIRECTION"
-					spirit:choiceRef="choices_532"
+					spirit:choiceRef="choices_539"
 					spirit:order="40231">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40490,7 +40603,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_31_SLEW"
-					spirit:choiceRef="choices_533"
+					spirit:choiceRef="choices_540"
 					spirit:order="40331">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40499,7 +40612,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_32_PULLUP"
-					spirit:choiceRef="choices_534"
+					spirit:choiceRef="choices_541"
 					spirit:order="29432">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40508,7 +40621,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_32_IOTYPE"
-					spirit:choiceRef="choices_535"
+					spirit:choiceRef="choices_542"
 					spirit:order="34832">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40517,7 +40630,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_32_DIRECTION"
-					spirit:choiceRef="choices_536"
+					spirit:choiceRef="choices_543"
 					spirit:order="40232">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40526,7 +40639,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_32_SLEW"
-					spirit:choiceRef="choices_537"
+					spirit:choiceRef="choices_544"
 					spirit:order="40332">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40535,7 +40648,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_33_PULLUP"
-					spirit:choiceRef="choices_538"
+					spirit:choiceRef="choices_545"
 					spirit:order="29433">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40544,7 +40657,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_33_IOTYPE"
-					spirit:choiceRef="choices_539"
+					spirit:choiceRef="choices_546"
 					spirit:order="34833">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40553,7 +40666,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_33_DIRECTION"
-					spirit:choiceRef="choices_540"
+					spirit:choiceRef="choices_547"
 					spirit:order="40233">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40562,7 +40675,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_33_SLEW"
-					spirit:choiceRef="choices_541"
+					spirit:choiceRef="choices_548"
 					spirit:order="40333">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40571,7 +40684,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_34_PULLUP"
-					spirit:choiceRef="choices_542"
+					spirit:choiceRef="choices_549"
 					spirit:order="29434">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40580,7 +40693,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_34_IOTYPE"
-					spirit:choiceRef="choices_543"
+					spirit:choiceRef="choices_550"
 					spirit:order="34834">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40589,7 +40702,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_34_DIRECTION"
-					spirit:choiceRef="choices_544"
+					spirit:choiceRef="choices_551"
 					spirit:order="40234">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40598,7 +40711,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_34_SLEW"
-					spirit:choiceRef="choices_545"
+					spirit:choiceRef="choices_552"
 					spirit:order="40334">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40607,7 +40720,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_35_PULLUP"
-					spirit:choiceRef="choices_546"
+					spirit:choiceRef="choices_553"
 					spirit:order="29435">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40616,7 +40729,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_35_IOTYPE"
-					spirit:choiceRef="choices_547"
+					spirit:choiceRef="choices_554"
 					spirit:order="34835">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40625,7 +40738,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_35_DIRECTION"
-					spirit:choiceRef="choices_548"
+					spirit:choiceRef="choices_555"
 					spirit:order="40235">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40634,7 +40747,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_35_SLEW"
-					spirit:choiceRef="choices_549"
+					spirit:choiceRef="choices_556"
 					spirit:order="40335">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40643,7 +40756,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_36_PULLUP"
-					spirit:choiceRef="choices_550"
+					spirit:choiceRef="choices_557"
 					spirit:order="29436">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40652,7 +40765,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_36_IOTYPE"
-					spirit:choiceRef="choices_551"
+					spirit:choiceRef="choices_558"
 					spirit:order="34836">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40661,7 +40774,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_36_DIRECTION"
-					spirit:choiceRef="choices_552"
+					spirit:choiceRef="choices_559"
 					spirit:order="40236">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40670,7 +40783,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_36_SLEW"
-					spirit:choiceRef="choices_553"
+					spirit:choiceRef="choices_560"
 					spirit:order="40336">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40679,7 +40792,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_37_PULLUP"
-					spirit:choiceRef="choices_554"
+					spirit:choiceRef="choices_561"
 					spirit:order="29437">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40688,7 +40801,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_37_IOTYPE"
-					spirit:choiceRef="choices_555"
+					spirit:choiceRef="choices_562"
 					spirit:order="34837">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40697,7 +40810,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_37_DIRECTION"
-					spirit:choiceRef="choices_556"
+					spirit:choiceRef="choices_563"
 					spirit:order="40237">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40706,7 +40819,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_37_SLEW"
-					spirit:choiceRef="choices_557"
+					spirit:choiceRef="choices_564"
 					spirit:order="40337">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40715,7 +40828,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_38_PULLUP"
-					spirit:choiceRef="choices_558"
+					spirit:choiceRef="choices_565"
 					spirit:order="29438">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40724,7 +40837,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_38_IOTYPE"
-					spirit:choiceRef="choices_559"
+					spirit:choiceRef="choices_566"
 					spirit:order="34838">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40733,7 +40846,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_38_DIRECTION"
-					spirit:choiceRef="choices_560"
+					spirit:choiceRef="choices_567"
 					spirit:order="40238">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40742,7 +40855,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_38_SLEW"
-					spirit:choiceRef="choices_561"
+					spirit:choiceRef="choices_568"
 					spirit:order="40338">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40751,7 +40864,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_39_PULLUP"
-					spirit:choiceRef="choices_562"
+					spirit:choiceRef="choices_569"
 					spirit:order="29439">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40760,7 +40873,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_39_IOTYPE"
-					spirit:choiceRef="choices_563"
+					spirit:choiceRef="choices_570"
 					spirit:order="34839">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40769,7 +40882,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_39_DIRECTION"
-					spirit:choiceRef="choices_564"
+					spirit:choiceRef="choices_571"
 					spirit:order="40239">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40778,7 +40891,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_39_SLEW"
-					spirit:choiceRef="choices_565"
+					spirit:choiceRef="choices_572"
 					spirit:order="40339">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40787,7 +40900,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_40_PULLUP"
-					spirit:choiceRef="choices_566"
+					spirit:choiceRef="choices_573"
 					spirit:order="29440">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40796,7 +40909,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_40_IOTYPE"
-					spirit:choiceRef="choices_567"
+					spirit:choiceRef="choices_574"
 					spirit:order="34840">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40805,7 +40918,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_40_DIRECTION"
-					spirit:choiceRef="choices_568"
+					spirit:choiceRef="choices_575"
 					spirit:order="40240">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40814,7 +40927,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_40_SLEW"
-					spirit:choiceRef="choices_569"
+					spirit:choiceRef="choices_576"
 					spirit:order="40340">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40823,7 +40936,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_41_PULLUP"
-					spirit:choiceRef="choices_570"
+					spirit:choiceRef="choices_577"
 					spirit:order="29441">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40832,7 +40945,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_41_IOTYPE"
-					spirit:choiceRef="choices_571"
+					spirit:choiceRef="choices_578"
 					spirit:order="34841">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40841,7 +40954,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_41_DIRECTION"
-					spirit:choiceRef="choices_572"
+					spirit:choiceRef="choices_579"
 					spirit:order="40241">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40850,7 +40963,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_41_SLEW"
-					spirit:choiceRef="choices_573"
+					spirit:choiceRef="choices_580"
 					spirit:order="40341">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40859,7 +40972,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_42_PULLUP"
-					spirit:choiceRef="choices_574"
+					spirit:choiceRef="choices_581"
 					spirit:order="29442">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40868,7 +40981,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_42_IOTYPE"
-					spirit:choiceRef="choices_575"
+					spirit:choiceRef="choices_582"
 					spirit:order="34842">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40877,7 +40990,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_42_DIRECTION"
-					spirit:choiceRef="choices_576"
+					spirit:choiceRef="choices_583"
 					spirit:order="40242">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40886,7 +40999,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_42_SLEW"
-					spirit:choiceRef="choices_577"
+					spirit:choiceRef="choices_584"
 					spirit:order="40342">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40895,7 +41008,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_43_PULLUP"
-					spirit:choiceRef="choices_578"
+					spirit:choiceRef="choices_585"
 					spirit:order="29443">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40904,7 +41017,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_43_IOTYPE"
-					spirit:choiceRef="choices_579"
+					spirit:choiceRef="choices_586"
 					spirit:order="34843">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40913,7 +41026,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_43_DIRECTION"
-					spirit:choiceRef="choices_580"
+					spirit:choiceRef="choices_587"
 					spirit:order="40243">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40922,7 +41035,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_43_SLEW"
-					spirit:choiceRef="choices_581"
+					spirit:choiceRef="choices_588"
 					spirit:order="40343">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40931,7 +41044,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_44_PULLUP"
-					spirit:choiceRef="choices_582"
+					spirit:choiceRef="choices_589"
 					spirit:order="29444">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40940,7 +41053,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_44_IOTYPE"
-					spirit:choiceRef="choices_583"
+					spirit:choiceRef="choices_590"
 					spirit:order="34844">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40949,7 +41062,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_44_DIRECTION"
-					spirit:choiceRef="choices_584"
+					spirit:choiceRef="choices_591"
 					spirit:order="40244">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40958,7 +41071,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_44_SLEW"
-					spirit:choiceRef="choices_585"
+					spirit:choiceRef="choices_592"
 					spirit:order="40344">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40967,7 +41080,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_45_PULLUP"
-					spirit:choiceRef="choices_586"
+					spirit:choiceRef="choices_593"
 					spirit:order="29445">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40976,7 +41089,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_45_IOTYPE"
-					spirit:choiceRef="choices_587"
+					spirit:choiceRef="choices_594"
 					spirit:order="34845">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40985,7 +41098,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_45_DIRECTION"
-					spirit:choiceRef="choices_588"
+					spirit:choiceRef="choices_595"
 					spirit:order="40245">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -40994,7 +41107,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_45_SLEW"
-					spirit:choiceRef="choices_589"
+					spirit:choiceRef="choices_596"
 					spirit:order="40345">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41003,7 +41116,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_46_PULLUP"
-					spirit:choiceRef="choices_590"
+					spirit:choiceRef="choices_597"
 					spirit:order="29446">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41012,7 +41125,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_46_IOTYPE"
-					spirit:choiceRef="choices_591"
+					spirit:choiceRef="choices_598"
 					spirit:order="34846">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41021,7 +41134,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_46_DIRECTION"
-					spirit:choiceRef="choices_592"
+					spirit:choiceRef="choices_599"
 					spirit:order="40246">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41030,7 +41143,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_46_SLEW"
-					spirit:choiceRef="choices_593"
+					spirit:choiceRef="choices_600"
 					spirit:order="40346">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41039,7 +41152,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_47_PULLUP"
-					spirit:choiceRef="choices_594"
+					spirit:choiceRef="choices_601"
 					spirit:order="29447">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41048,7 +41161,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_47_IOTYPE"
-					spirit:choiceRef="choices_595"
+					spirit:choiceRef="choices_602"
 					spirit:order="34847">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41057,7 +41170,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_47_DIRECTION"
-					spirit:choiceRef="choices_596"
+					spirit:choiceRef="choices_603"
 					spirit:order="40247">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41066,7 +41179,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_47_SLEW"
-					spirit:choiceRef="choices_597"
+					spirit:choiceRef="choices_604"
 					spirit:order="40347">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41075,7 +41188,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_48_PULLUP"
-					spirit:choiceRef="choices_598"
+					spirit:choiceRef="choices_605"
 					spirit:order="29448">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41084,7 +41197,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_48_IOTYPE"
-					spirit:choiceRef="choices_599"
+					spirit:choiceRef="choices_606"
 					spirit:order="34848">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41093,7 +41206,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_48_DIRECTION"
-					spirit:choiceRef="choices_600"
+					spirit:choiceRef="choices_607"
 					spirit:order="40248">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41102,7 +41215,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_48_SLEW"
-					spirit:choiceRef="choices_601"
+					spirit:choiceRef="choices_608"
 					spirit:order="40348">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41111,7 +41224,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_49_PULLUP"
-					spirit:choiceRef="choices_602"
+					spirit:choiceRef="choices_609"
 					spirit:order="29449">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41120,7 +41233,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_49_IOTYPE"
-					spirit:choiceRef="choices_603"
+					spirit:choiceRef="choices_610"
 					spirit:order="34849">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41129,7 +41242,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_49_DIRECTION"
-					spirit:choiceRef="choices_604"
+					spirit:choiceRef="choices_611"
 					spirit:order="40249">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41138,7 +41251,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_49_SLEW"
-					spirit:choiceRef="choices_605"
+					spirit:choiceRef="choices_612"
 					spirit:order="40349">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41147,7 +41260,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_50_PULLUP"
-					spirit:choiceRef="choices_606"
+					spirit:choiceRef="choices_613"
 					spirit:order="29450">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41156,7 +41269,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_50_IOTYPE"
-					spirit:choiceRef="choices_607"
+					spirit:choiceRef="choices_614"
 					spirit:order="34850">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41165,7 +41278,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_50_DIRECTION"
-					spirit:choiceRef="choices_608"
+					spirit:choiceRef="choices_615"
 					spirit:order="40250">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41174,7 +41287,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_50_SLEW"
-					spirit:choiceRef="choices_609"
+					spirit:choiceRef="choices_616"
 					spirit:order="40350">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41183,7 +41296,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_51_PULLUP"
-					spirit:choiceRef="choices_610"
+					spirit:choiceRef="choices_617"
 					spirit:order="29451">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41192,7 +41305,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_51_IOTYPE"
-					spirit:choiceRef="choices_611"
+					spirit:choiceRef="choices_618"
 					spirit:order="34851">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41201,7 +41314,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_51_DIRECTION"
-					spirit:choiceRef="choices_612"
+					spirit:choiceRef="choices_619"
 					spirit:order="40251">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41210,7 +41323,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_51_SLEW"
-					spirit:choiceRef="choices_613"
+					spirit:choiceRef="choices_620"
 					spirit:order="40351">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41219,7 +41332,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_52_PULLUP"
-					spirit:choiceRef="choices_614"
+					spirit:choiceRef="choices_621"
 					spirit:order="29452">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41228,7 +41341,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_52_IOTYPE"
-					spirit:choiceRef="choices_615"
+					spirit:choiceRef="choices_622"
 					spirit:order="34852">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41237,7 +41350,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_52_DIRECTION"
-					spirit:choiceRef="choices_616"
+					spirit:choiceRef="choices_623"
 					spirit:order="40252">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41246,7 +41359,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_52_SLEW"
-					spirit:choiceRef="choices_617"
+					spirit:choiceRef="choices_624"
 					spirit:order="40352">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41255,7 +41368,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_53_PULLUP"
-					spirit:choiceRef="choices_618"
+					spirit:choiceRef="choices_625"
 					spirit:order="29453">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41264,7 +41377,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_53_IOTYPE"
-					spirit:choiceRef="choices_619"
+					spirit:choiceRef="choices_626"
 					spirit:order="34853">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41273,7 +41386,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_53_DIRECTION"
-					spirit:choiceRef="choices_620"
+					spirit:choiceRef="choices_627"
 					spirit:order="40253">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41282,7 +41395,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_MIO_53_SLEW"
-					spirit:choiceRef="choices_621"
+					spirit:choiceRef="choices_628"
 					spirit:order="40353">NA</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41291,7 +41404,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.preset"
-					spirit:choiceRef="choices_622"
+					spirit:choiceRef="choices_629"
 					spirit:order="40354">None</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41324,7 +41437,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_PS7_SI_REV"
-					spirit:choiceRef="choices_623"
+					spirit:choiceRef="choices_630"
 					spirit:order="49300">PRODUCTION</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
@@ -41333,7 +41446,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_FPGA_FCLK0_ENABLE"
-					spirit:choiceRef="choices_624"
+					spirit:choiceRef="choices_631"
 					spirit:order="63001">0</spirit:value>
 			<spirit:vendorExtensions>
 				<xilinx:parameterInfo>
@@ -41351,7 +41464,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_FPGA_FCLK1_ENABLE"
-					spirit:choiceRef="choices_625"
+					spirit:choiceRef="choices_632"
 					spirit:order="63101">0</spirit:value>
 			<spirit:vendorExtensions>
 				<xilinx:parameterInfo>
@@ -41369,7 +41482,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_FPGA_FCLK2_ENABLE"
-					spirit:choiceRef="choices_626"
+					spirit:choiceRef="choices_633"
 					spirit:order="63201">0</spirit:value>
 			<spirit:vendorExtensions>
 				<xilinx:parameterInfo>
@@ -41387,7 +41500,7 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_FPGA_FCLK3_ENABLE"
-					spirit:choiceRef="choices_627"
+					spirit:choiceRef="choices_634"
 					spirit:order="63301">0</spirit:value>
 			<spirit:vendorExtensions>
 				<xilinx:parameterInfo>
@@ -41741,14 +41854,14 @@
 			<spirit:value spirit:format="string"
 					spirit:resolve="user"
 					spirit:id="PARAM_VALUE.PCW_PACKAGE_NAME"
-					spirit:choiceRef="choices_628"
+					spirit:choiceRef="choices_635"
 					spirit:order="11">clg484</spirit:value>
 		</spirit:parameter>
 		<spirit:parameter>
 			<spirit:name>Component_Name</spirit:name>
 			<spirit:value spirit:resolve="user"
 					spirit:id="PARAM_VALUE.Component_Name"
-					spirit:order="1">processing_system7_v5_4</spirit:value>
+					spirit:order="1">processing_system7_v5_5</spirit:value>
 		</spirit:parameter>
 	</spirit:parameters>
 	<spirit:vendorExtensions>
@@ -41762,16 +41875,17 @@
 				<xilinx:taxonomy>/Embedded Processing/Processor/</xilinx:taxonomy>
 			</xilinx:taxonomies>
 			<xilinx:displayName>ZYNQ7 Processing System</xilinx:displayName>
-			<xilinx:coreRevision>1</xilinx:coreRevision>
+			<xilinx:coreRevision>0</xilinx:coreRevision>
 			<xilinx:upgrades>
 				<xilinx:canUpgradeFrom>xilinx.com:ip:processing_system7:5.01</xilinx:canUpgradeFrom>
 				<xilinx:canUpgradeFrom>xilinx.com:ip:processing_system7:5.2</xilinx:canUpgradeFrom>
 				<xilinx:canUpgradeFrom>xilinx.com:ip:processing_system7:5.3</xilinx:canUpgradeFrom>
+				<xilinx:canUpgradeFrom>xilinx.com:ip:processing_system7:5.4</xilinx:canUpgradeFrom>
 			</xilinx:upgrades>
-			<xilinx:coreCreationDateTime>2014-05-30T15:07:55Z</xilinx:coreCreationDateTime>
+			<xilinx:coreCreationDateTime>2014-09-26T23:23:28Z</xilinx:coreCreationDateTime>
 		</xilinx:coreExtensions>
 		<xilinx:packagingInfo>
-			<xilinx:xilinxVersion>2014.2</xilinx:xilinxVersion>
+			<xilinx:xilinxVersion>2014.3</xilinx:xilinxVersion>
 		</xilinx:packagingInfo>
 	</spirit:vendorExtensions>
 </spirit:component>

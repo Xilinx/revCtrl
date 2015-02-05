@@ -791,7 +791,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>854028a6</spirit:value>
+            <spirit:value>5a46a564</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -799,7 +799,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:53 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:05:04 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -836,7 +836,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>854028a6</spirit:value>
+            <spirit:value>5a46a564</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -844,7 +844,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:53 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:05:04 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -863,7 +863,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>854028a6</spirit:value>
+            <spirit:value>5a46a564</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -871,7 +871,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:54 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:05:04 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -905,7 +905,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>c2773736</spirit:value>
+            <spirit:value>36599090</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -913,7 +913,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:54 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:05:05 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -932,7 +932,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>c2773736</spirit:value>
+            <spirit:value>36599090</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -940,7 +940,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:54 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:05:05 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -958,7 +958,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>854028a6</spirit:value>
+            <spirit:value>5a46a564</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -966,7 +966,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Aug 08 21:11:54 UTC 2014</spirit:value>
+            <spirit:value>Thu Feb 05 18:05:05 UTC 2015</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>StaleAtRelink</spirit:name>
@@ -3732,7 +3732,7 @@
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.2" xilinx:isGenerated="true" xilinx:checksum="3b19c4c4">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.2" xilinx:isGenerated="true" xilinx:checksum="635e72cb">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -4057,7 +4057,7 @@
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="5804ec94">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="67bfe43f">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -4408,6 +4408,11 @@
         <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>fifo_generator_v12_0/hdl/common/synchronizer_ff.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>fifo_generator_v12_0/hdl/builtin/delay.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>fifo_generator_v12_0</spirit:logicalName>
@@ -4509,7 +4514,7 @@
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="85384395">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="12.0" xilinx:isGenerated="true" xilinx:checksum="b2552165">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -4717,16 +4722,16 @@
       </xilinx:taxonomies>
       <xilinx:displayName>AXI Protocol Converter</xilinx:displayName>
       <xilinx:vendorURL>http://www.xilinx.com</xilinx:vendorURL>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:ip:axi_protocol_converter:2.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2014-05-30T15:08:55Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2014-09-26T23:24:16Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2014.2</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2014.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="107f8ba3"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4e622286"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="dd4a5614"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="e3bfb6f4"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="4dc9c51f"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="92b45fc5"/>

@@ -21,8 +21,14 @@
     <group cmt="SRAM/NOR set opmode">
       <param param="ps7_smcc_set_opmode_set_bls"/>
     </group>
+    <group cmt="Trace Lock access register">
+      <force param="ps7_debug_tpiu_LAR_a" value="0xC5ACCE55" />
+    </group>
     <group cmt="Trace current Port Size">
       <param param="ps7_debug_tpiu_CurrentSize_a"/>
+    </group>
+    <group cmt="Trace Lock access register">
+      <force param="ps7_debug_tpiu_LAR_a" value="0x0" />
     </group>
     <group cmt="UART registers ">
       <param param="ps7_uart1_Baud_rate_divider_reg0_BDIV"/>
@@ -197,7 +203,7 @@
      </group>
      <group cmt="ENET Reset">
         <run_rule param="pcw_enet_reset_rule" value="1"/>
-        <run_rule param="pcw_data_reset_rule" value="1" dyn_value="pcw_enet_reset_state0"/>
+        <run_rule param="pcw_data_reset_rule" value="1" dyn_value="pcw_usb_reset_state0"/>
         <group cmt="DIR Mode Bank 0">
         <param param="ps7_gpio_DIRM_0_DIRECTION_0"/>
         </group>
@@ -229,7 +235,7 @@
         <param param="ps7_gpio_OEN_1_OP_ENABLE_1"/>
         </group>
 
-        <run_rule param="pcw_data_reset_rule" value="0" dyn_value="pcw_enet_reset_state1"/>
+        <run_rule param="pcw_data_reset_rule" value="0" dyn_value="pcw_usb_reset_state1"/>
         <group cmt="MASK_DATA_0_LSW Low Bank [15:0]">
         <param param="ps7_gpio_MASK_DATA_0_LSW_MASK_0_LSW"/>
         <param param="ps7_gpio_MASK_DATA_0_LSW_DATA_0_LSW"/>
@@ -249,7 +255,7 @@
         <group cmt="Add 1 MS delay" >
            <delay param="ps7_mpcore_Global_Timer_Counter_Register0_a" value="1"/>
         </group>   
-        <run_rule param="pcw_data_reset_rule" value="1" dyn_value="pcw_enet_reset_state2"/>
+        <run_rule param="pcw_data_reset_rule" value="1" dyn_value="pcw_usb_reset_state2"/>
         <group cmt="MASK_DATA_0_LSW high Bank [15:0]">
         <param param="ps7_gpio_MASK_DATA_0_LSW_MASK_0_LSW"/>
         <param param="ps7_gpio_MASK_DATA_0_LSW_DATA_0_LSW"/>
@@ -270,7 +276,7 @@
      </group>
      <group cmt="I2C Reset">
         <run_rule param="pcw_i2c_reset_rule" value="1"/>
-        <run_rule param="pcw_data_reset_rule" value="1" dyn_value="pcw_i2c_reset_state0"/>
+        <run_rule param="pcw_data_reset_rule" value="1" dyn_value="pcw_usb_reset_state0"/>
         <group cmt="DIR Mode GPIO Bank0">
         <param param="ps7_gpio_DIRM_0_DIRECTION_0"/>
         </group>
@@ -302,7 +308,7 @@
         <param param="ps7_gpio_OEN_1_OP_ENABLE_1"/>
         </group>
 
-        <run_rule param="pcw_data_reset_rule" value="0" dyn_value="pcw_i2c_reset_state1"/>
+        <run_rule param="pcw_data_reset_rule" value="0" dyn_value="pcw_usb_reset_state1"/>
         <group cmt="MASK_DATA_0_LSW Low Bank [15:0]">
         <param param="ps7_gpio_MASK_DATA_0_LSW_MASK_0_LSW"/>
         <param param="ps7_gpio_MASK_DATA_0_LSW_DATA_0_LSW"/>
@@ -322,7 +328,7 @@
         <group cmt="Add 1 MS delay" >
            <delay param="ps7_mpcore_Global_Timer_Counter_Register0_a" value="1"/>
         </group>   
-        <run_rule param="pcw_data_reset_rule" value="1" dyn_value="pcw_i2c_reset_state2"/>
+        <run_rule param="pcw_data_reset_rule" value="1" dyn_value="pcw_usb_reset_state2"/>
         <group cmt="MASK_DATA_0_LSW high Bank [15:0]">
         <param param="ps7_gpio_MASK_DATA_0_LSW_MASK_0_LSW"/>
         <param param="ps7_gpio_MASK_DATA_0_LSW_DATA_0_LSW"/>

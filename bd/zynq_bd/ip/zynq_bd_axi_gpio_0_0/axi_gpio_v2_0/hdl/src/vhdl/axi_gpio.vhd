@@ -101,22 +101,21 @@ use std.textio.all;
 -- function declarations
 -------------------------------------------------------------------------------
 
-library proc_common_v4_0;
-use proc_common_v4_0.ipif_pkg.calc_num_ce;
-use proc_common_v4_0.ipif_pkg.INTEGER_ARRAY_TYPE;
-use proc_common_v4_0.ipif_pkg.SLV64_ARRAY_TYPE;
 
 -------------------------------------------------------------------------------
 -- axi_gpio_v2_0 library is used for axi4 component declarations
 -------------------------------------------------------------------------------
-library axi_lite_ipif_v2_0; 
+library axi_lite_ipif_v3_0; 
+use axi_lite_ipif_v3_0.ipif_pkg.calc_num_ce;
+use axi_lite_ipif_v3_0.ipif_pkg.INTEGER_ARRAY_TYPE;
+use axi_lite_ipif_v3_0.ipif_pkg.SLV64_ARRAY_TYPE;
 
 -------------------------------------------------------------------------------
 -- axi_gpio_v2_0 library is used for interrupt controller component 
 -- declarations
 -------------------------------------------------------------------------------
 
-library interrupt_control_v3_0; 
+library interrupt_control_v3_1; 
 
 -------------------------------------------------------------------------------
 -- axi_gpio_v2_0 library is used for axi_gpio component declarations
@@ -538,7 +537,7 @@ signal IP2INTC_Irpt_i     : std_logic;
 begin -- architecture IMP
 
   
-    AXI_LITE_IPIF_I : entity axi_lite_ipif_v2_0.axi_lite_ipif
+    AXI_LITE_IPIF_I : entity axi_lite_ipif_v3_0.axi_lite_ipif
       generic map
        (
         C_S_AXI_ADDR_WIDTH        => C_S_AXI_ADDR_WIDTH,
@@ -696,7 +695,7 @@ begin -- architecture IMP
        end process I_WRITE_ACK_INTR_HOLES;
 
    				    
-      INTERRUPT_CONTROL_I : entity interrupt_control_v3_0.interrupt_control
+      INTERRUPT_CONTROL_I : entity interrupt_control_v3_1.interrupt_control
         generic map
         (
           C_NUM_CE                => NUM_CE,

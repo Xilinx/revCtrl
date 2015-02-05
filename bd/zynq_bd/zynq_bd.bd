@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:tool_version="2014.2" bd:top="zynq_bd" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:synthFlowMode="None" bd:tool_version="2014.3" bd:top="zynq_bd" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -295,7 +295,7 @@
       </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>processing_system7_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="processing_system7" spirit:vendor="xilinx.com" spirit:version="5.4"/>
+        <spirit:componentRef spirit:library="ip" spirit:name="processing_system7" spirit:vendor="xilinx.com" spirit:version="5.5"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">zynq_bd_processing_system7_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="preset">ZC702*</spirit:configurableElementValue>
@@ -669,10 +669,6 @@
           <spirit:name>ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -685,10 +681,6 @@
           <spirit:name>S00_ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -701,10 +693,6 @@
           <spirit:name>M00_ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -717,10 +705,6 @@
           <spirit:name>M01_ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>
@@ -962,10 +946,6 @@
           <spirit:name>M_ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -978,10 +958,6 @@
           <spirit:name>S_ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>
@@ -1132,10 +1108,6 @@
           <spirit:name>M_ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -1148,10 +1120,6 @@
           <spirit:name>S_ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>
@@ -1327,10 +1295,6 @@
           <spirit:name>M_ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -1343,10 +1307,6 @@
           <spirit:name>S_ARESETN</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-            <spirit:vector>
-              <spirit:left>0</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
       </spirit:ports>
@@ -1396,7 +1356,7 @@
     <spirit:vendor>xilinx.com</spirit:vendor>
     <spirit:library>Addressing/processing_system7_0</spirit:library>
     <spirit:name>processing_system7</spirit:name>
-    <spirit:version>5.4</spirit:version>
+    <spirit:version>5.5</spirit:version>
     <spirit:addressSpaces>
       <spirit:addressSpace>
         <spirit:name>Data</spirit:name>

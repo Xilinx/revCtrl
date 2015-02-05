@@ -1,3 +1,7 @@
+2014.3:
+ * Version 2.1 (Rev. 3)
+ * Clean-up benign Multiple Driver Nets warnings
+
 2014.2:
  * Version 2.1 (Rev. 2)
  * No changes

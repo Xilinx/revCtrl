@@ -39,7 +39,7 @@
   M_AXI_GP0(.M_RESETN (net_axi_mgp0_rstn),
             .M_ACLK   (M_AXI_GP0_ACLK),
             // Write Address Channel
-            .M_AWID    (M_AXI_GP0_AWID),
+            .M_AWID    (M_AXI_GP0_AWID_FULL),
             .M_AWADDR  (M_AXI_GP0_AWADDR),
             .M_AWLEN   (M_AXI_GP0_AWLEN),
             .M_AWSIZE  (M_AXI_GP0_AWSIZE),
@@ -50,19 +50,19 @@
             .M_AWVALID (M_AXI_GP0_AWVALID),
             .M_AWREADY (M_AXI_GP0_AWREADY),
             // Write Data Channel Signals.
-            .M_WID    (M_AXI_GP0_WID),
+            .M_WID    (M_AXI_GP0_WID_FULL),
             .M_WDATA  (M_AXI_GP0_WDATA),
             .M_WSTRB  (M_AXI_GP0_WSTRB), 
             .M_WLAST  (M_AXI_GP0_WLAST), 
             .M_WVALID (M_AXI_GP0_WVALID),
             .M_WREADY (M_AXI_GP0_WREADY),
             // Write Response Channel Signals.
-            .M_BID    (M_AXI_GP0_BID),
+            .M_BID    (M_AXI_GP0_BID_FULL),
             .M_BRESP  (M_AXI_GP0_BRESP),
             .M_BVALID (M_AXI_GP0_BVALID),
             .M_BREADY (M_AXI_GP0_BREADY),
             // Read Address Channel Signals.
-            .M_ARID    (M_AXI_GP0_ARID),
+            .M_ARID    (M_AXI_GP0_ARID_FULL),
             .M_ARADDR  (M_AXI_GP0_ARADDR),
             .M_ARLEN   (M_AXI_GP0_ARLEN),
             .M_ARSIZE  (M_AXI_GP0_ARSIZE),
@@ -73,7 +73,7 @@
             .M_ARVALID (M_AXI_GP0_ARVALID),
             .M_ARREADY (M_AXI_GP0_ARREADY),
             // Read Data Channel Signals.
-            .M_RID    (M_AXI_GP0_RID),
+            .M_RID    (M_AXI_GP0_RID_FULL),
             .M_RDATA  (M_AXI_GP0_RDATA),
             .M_RRESP  (M_AXI_GP0_RRESP),
             .M_RLAST  (M_AXI_GP0_RLAST),
@@ -97,7 +97,7 @@
   M_AXI_GP1(.M_RESETN (net_axi_mgp1_rstn),
             .M_ACLK   (M_AXI_GP1_ACLK),
             // Write Address Channel
-            .M_AWID    (M_AXI_GP1_AWID),
+            .M_AWID    (M_AXI_GP1_AWID_FULL),
             .M_AWADDR  (M_AXI_GP1_AWADDR),
             .M_AWLEN   (M_AXI_GP1_AWLEN),
             .M_AWSIZE  (M_AXI_GP1_AWSIZE),
@@ -108,19 +108,19 @@
             .M_AWVALID (M_AXI_GP1_AWVALID),
             .M_AWREADY (M_AXI_GP1_AWREADY),
             // Write Data Channel Signals.
-            .M_WID    (M_AXI_GP1_WID),
+            .M_WID    (M_AXI_GP1_WID_FULL),
             .M_WDATA  (M_AXI_GP1_WDATA),
             .M_WSTRB  (M_AXI_GP1_WSTRB), 
             .M_WLAST  (M_AXI_GP1_WLAST), 
             .M_WVALID (M_AXI_GP1_WVALID),
             .M_WREADY (M_AXI_GP1_WREADY),
             // Write Response Channel Signals.
-            .M_BID    (M_AXI_GP1_BID),
+            .M_BID    (M_AXI_GP1_BID_FULL),
             .M_BRESP  (M_AXI_GP1_BRESP),
             .M_BVALID (M_AXI_GP1_BVALID),
             .M_BREADY (M_AXI_GP1_BREADY),
             // Read Address Channel Signals.
-            .M_ARID    (M_AXI_GP1_ARID),
+            .M_ARID    (M_AXI_GP1_ARID_FULL),
             .M_ARADDR  (M_AXI_GP1_ARADDR),
             .M_ARLEN   (M_AXI_GP1_ARLEN),
             .M_ARSIZE  (M_AXI_GP1_ARSIZE),
@@ -131,7 +131,7 @@
             .M_ARVALID (M_AXI_GP1_ARVALID),
             .M_ARREADY (M_AXI_GP1_ARREADY),
             // Read Data Channel Signals.
-            .M_RID    (M_AXI_GP1_RID),
+            .M_RID    (M_AXI_GP1_RID_FULL),
             .M_RDATA  (M_AXI_GP1_RDATA),
             .M_RRESP  (M_AXI_GP1_RRESP),
             .M_RLAST  (M_AXI_GP1_RLAST),
