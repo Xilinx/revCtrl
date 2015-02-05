@@ -213,7 +213,7 @@ zynq_bd zynqInst
 //            data_out2: out std_logic
 //          );
 //        end module_1;
-module_1 sysGenInst
+module_1_0 sysGenInst
             (.clk(clk),
             .data_in3(data_in3),
             .data_in2(data_in2),

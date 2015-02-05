@@ -65,8 +65,7 @@ add_files -norecurse $xdcRoot/top.xdc
 add_files -norecurse $xdcRoot/top_io.xdc
 add_files -norecurse $ipRoot/axi_iic_0/axi_iic_0.xci
 add_files -norecurse $bdRoot/zynq_bd/zynq_bd.bd
-#add_files -norecurse $dspRoot/module_1_ext/module_1.slx
-add_files -norecurse $dspRoot/module_1_ext/module_1.dcp
+add_files -norecurse $dspRoot/module_1_0/module_1_0.xci
 
 update_compile_order -fileset sources_1
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
