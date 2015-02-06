@@ -11,7 +11,7 @@ HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
 # or rebuild everything from scratch locally from scripts
 # set this TRUE to reuse sources from golden repo
 # set this to anything else to rebuild everything from scripts
-REUSEGOLDEN = TRUE
+REUSEGOLDEN = FALSE
 
 # if reusing golden data you do not need to wait for bd and ip generation
 ifeq ($(REUSEGOLDEN), TRUE)
