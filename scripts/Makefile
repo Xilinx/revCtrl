@@ -2,7 +2,7 @@
 RTL=../hdl/top/top.v ../hdl/threeFlop/threeFlop.v ../hdl/top/shift.v ../hdl/top/iicWrapper.v
 XDC=../xdc/top.xdc ../xdc/top_io.xdc
 IP=../ip/axi_iic_0/axi_iic_0.xci
-DSP=../dsp/module_1_ext/module_1.dcp
+DSP=../dsp/module_1_0/module_1_0.xci
 BD=../bd/zynq_bd/zynq_bd.bd
 CIP=../hdl/bft/bft.vhdl
 HLS=../hls/rgb_mux.cpp ../hls/rgb_mux.h
@@ -40,34 +40,15 @@ endif
 # These are all the compilation targets, starting with "all"
 all : setup compile
 
-compile : .compile.done
-.compile.done : .setup.done
-	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/compile.tcl -log compile.log -jou compile.jou $(POSTFIX)
-
 # This setups up the top level project
 setup : .setup.done
 .setup.done : $(SETUPDEPS)
 	$(PREFIX) vivado $(VIVADOCOMOPS) $(SETUPOPS) $(POSTFIX)
 
-# This generates the Zynq subystem block diagram
-bd_gen : .bd_gen.done
-.bd_gen.done : .cip.done .hls.done
-	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/bd_gen.tcl -log bd_gen.log -jou bd_gen.jou $(POSTFIX)
+compile : .compile.done
+.compile.done : .setup.done
+	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/compile.tcl -log compile.log -jou compile.jou $(POSTFIX)
 
-# This generates the managed IP project and generates the IP for AXI_IIC
-ip : .ip.done
-.ip.done :
-	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/ip.tcl -log ip.log -jou ip.jou $(POSTFIX)
-
-# This generates the packaged RTL for bft to be integrated into IPI
-cip : .cip.done
-.cip.done : $(CIP)
-	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/cip.tcl -log cip.log -jou cip.jou $(POSTFIX)
-
-# This calls HLS and generates the rgb_mux IP packaged for IPI
-hls : .hls.done
-.hls.done : $(HLS)
-	$(PREFIX) vivado_hls -f ../scripts/hls.tcl -l hls.log $(POSTFIX)
-
+# delete everything except this Makefile
 clean :	
 	find . -not -name "Makefile" -not -name "." | xargs rm -rf

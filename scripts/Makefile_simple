@@ -8,7 +8,7 @@ all : setup compile
 # This setups up the top level project
 setup : .setup.done
 .setup.done : $(RTL) $(XDC)
-	cmd /c "vivado -mode batch -source ../scripts/setup_simple.tcl -log setup.log -jou compile.jou"
+	cmd /c "vivado -mode batch -source ../scripts/setup_simple.tcl -log setup.log -jou setup.jou"
 
 compile : .compile.done
 .compile.done : .setup.done
