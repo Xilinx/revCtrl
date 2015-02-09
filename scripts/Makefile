@@ -49,6 +49,26 @@ compile : .compile.done
 .compile.done : .setup.done
 	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/compile.tcl -log compile.log -jou compile.jou $(POSTFIX)
 
+# This generates the Zynq subystem block diagram
+bd_gen : .bd_gen.done
+.bd_gen.done : .cip.done .hls.done
+	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/bd_gen.tcl -log bd_gen.log -jou bd_gen.jou $(POSTFIX)
+
+# This generates the managed IP project and generates the IP for AXI_IIC
+ip : .ip.done
+.ip.done :
+	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/ip.tcl -log ip.log -jou ip.jou $(POSTFIX)
+
+# This generates the packaged RTL for bft to be integrated into IPI
+cip : .cip.done
+.cip.done : $(CIP)
+	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/cip.tcl -log cip.log -jou cip.jou $(POSTFIX)
+
+# This calls HLS and generates the rgb_mux IP packaged for IPI
+hls : .hls.done
+.hls.done : $(HLS)
+	$(PREFIX) vivado_hls -f ../scripts/hls.tcl -l hls.log $(POSTFIX)
+
 # delete everything except this Makefile
 clean :	
 	find . -not -name "Makefile" -not -name "." | xargs rm -rf
