@@ -1,7 +1,7 @@
 # get the directory where this script resides
 set thisDir [file dirname [info script]]
 # source common utilities
-source $thisDir/utils.tcl
+source -notrace $thisDir/utils.tcl
 
 # passed into this scirpt w/ -tclargs option to specify
 # whether to reuse golden sources or rebuild all from scratch

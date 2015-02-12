@@ -1,7 +1,7 @@
 # get the directory where this script resides
 set thisDir [file dirname [info script]]
 # source common utilities
-source $thisDir/utils.tcl
+source -notrace $thisDir/utils.tcl
 
 # create the directories to package the IP cleanly
 if {![file exists ./cip]} {
