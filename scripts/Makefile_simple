@@ -16,4 +16,4 @@ compile : .compile.done
 
 # delete everything except this Makefile
 clean :	
-	find . -not -name "Makefile" -not -name "." | xargs rm -rf
+	find . -not -name "Makefile*" -not -name "." | xargs rm -rf
