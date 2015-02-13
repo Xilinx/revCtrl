@@ -1,7 +1,7 @@
 # get the directory where this script resides
 set thisDir [file dirname [info script]]
 # source common utilities
-source $thisDir/utils.tcl
+source -notrace $thisDir/utils.tcl
 
 # Create project
 create_project zynq ./zynq -part xc7z020clg484-1
