@@ -45,7 +45,7 @@ puts "INFO:  bdRoot is $bdRoot"
 
 
 # Create project
-create_project top ./top/ -part xc7z020clg484-1
+create_project top $localRoot/top/ -part xc7z020clg484-1
 
 # Set project properties
 set obj [get_projects top]
