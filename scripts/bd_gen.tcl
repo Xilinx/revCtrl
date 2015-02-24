@@ -32,7 +32,7 @@ if {$reuseGolden} {
 create_project zynq $localRoot/zynq -part xc7z020clg484-1
 
 # setup up custom ip repository location
-set_property ip_repo_paths "$ipRoot/bft $ipRoot/rgb_mux} [current_fileset]
+set_property ip_repo_paths "$ipRoot/bft $ipRoot/rgb_mux" [current_fileset]
 update_ip_catalog
 
 # Set the directory path for the new project
