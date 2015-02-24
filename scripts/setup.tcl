@@ -27,10 +27,12 @@ set dspRoot $repoRoot/dsp
 if {$reuseGolden} {
    # point to the golden repo
    set ipRoot $repoRoot/ip
+   set cipRoot $repoRoot/cip
    set bdRoot $repoRoot/bd
 } else {
    # point to the local sandbox repo
    set ipRoot $localRoot/ip
+   set cipRoot $localRoot/cip
    set bdRoot $localRoot
 }
 
@@ -54,7 +56,7 @@ set_property "simulator_language" "Mixed" $obj
 set_property "target_language" "Verilog" $obj
 
 # setup up custom ip repository location
-set_property ip_repo_paths "$repoRoot/cip/bft $repoRoot/cip/rgb_mux" [current_fileset]
+set_property ip_repo_paths "$cipRoot/bft $cipRoot/rgb_mux" [current_fileset]
 update_ip_catalog
 
 add_files -norecurse $hdlRoot/top/top.v
