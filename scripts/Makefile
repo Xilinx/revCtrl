@@ -19,7 +19,7 @@ SETUPUDEPS =  $(RTL) $(XDC) $(IP) $(DSP) $(BD)
 SETUPOPS = -source ../scripts/setup.tcl -log setup.log -jou setup.jou -tclargs reuseGolden
 CIPOPS = -source ../scripts/cip.tcl -log cip.log -jou cip.jou -tclargs reuseGolden
 else
-SETUPDEPS =  $(RTL) $(XDC) $(IP) $(DSP) $(BD) .bd_gen.done .ip.done
+SETUPDEPS =  $(RTL) $(XDC) $(DSP) .bd_gen.done .ip.done
 SETUPOPS = -source ../scripts/setup.tcl -log setup.log -jou setup.jou
 CIPOPS = -source ../scripts/cip.tcl -log cip.log -jou cip.jou
 endif
