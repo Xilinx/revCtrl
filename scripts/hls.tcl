@@ -1,7 +1,7 @@
 # get the directory where this script resides
 set thisDir [file dirname [info script]]
 # source common utilities
-source -notrace $thisDir/utils.tcl
+source $thisDir/utils.tcl
 
 open_project rgb_mux
 set_top rgb_mux
