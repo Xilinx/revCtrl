@@ -3,7 +3,7 @@ set thisDir [file dirname [info script]]
 # source common utilities
 source -notrace $thisDir/utils.tcl
 
-# passed into this scirpt w/ -tclargs option to specify
+# passed into this script w/ -tclargs option to specify
 # whether to reuse golden sources or rebuild all from scratch
 # set this variable to 1 to reuse the latest "golden"
 # sources checked into revision control repository

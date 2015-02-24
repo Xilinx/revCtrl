@@ -17,9 +17,11 @@ REUSEGOLDEN = FALSE
 ifeq ($(REUSEGOLDEN), TRUE)
 SETUPUDEPS =  $(RTL) $(XDC) $(IP) $(DSP) $(BD)
 SETUPOPS = -source ../scripts/setup.tcl -log setup.log -jou setup.jou -tclargs reuseGolden
+CIPOPS = -source ../scripts/cip.tcl -log cip.log -jou cip.jou -tclargs reuseGolden
 else
 SETUPDEPS =  $(RTL) $(XDC) $(IP) $(DSP) $(BD) .bd_gen.done .ip.done
 SETUPOPS = -source ../scripts/setup.tcl -log setup.log -jou setup.jou
+CIPOPS = -source ../scripts/cip.tcl -log cip.log -jou cip.jou
 endif
 
 # Common Vivado options
@@ -62,7 +64,7 @@ ip : .ip.done
 # This generates the packaged RTL for bft to be integrated into IPI
 cip : .cip.done
 .cip.done : $(CIP)
-	$(PREFIX) vivado $(VIVADOCOMOPS) -source ../scripts/cip.tcl -log cip.log -jou cip.jou $(POSTFIX)
+	$(PREFIX) vivado $(VIVADOCOMOPS) $(CIPOPS) $(POSTFIX)
 
 # This calls HLS and generates the rgb_mux IP packaged for IPI
 hls : .hls.done

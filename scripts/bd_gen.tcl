@@ -3,11 +3,36 @@ set thisDir [file dirname [info script]]
 # source common utilities
 source -notrace $thisDir/utils.tcl
 
+# passed into this script w/ -tclargs option to specify
+# whether to reuse golden sources or rebuild all from scratch
+# set this variable to 1 to reuse the latest "golden"
+# sources checked into revision control repository
+# and set it to 0 to use the local users "sandbox"
+# which is rebuilt from scratch
+if {[llength $argv] > 0 && "$argv" eq "reuseGolden"} {
+   set reuseGolden 1
+} else {
+   set reuseGolden 0
+}
+
+# these variables point to the root directory location
+# of various source types - change this to point to 
+# any diretory location accessible to the machine
+set repoRoot ../
+set localRoot ./
+if {$reuseGolden} {
+   # point to the golden repo
+   set ipRoot $repoRoot/cip
+} else {
+   # point to the local sandbox repo
+   set ipRoot $localRoot/cip
+}
+
 # Create project
-create_project zynq ./zynq -part xc7z020clg484-1
+create_project zynq $localRoot/zynq -part xc7z020clg484-1
 
 # setup up custom ip repository location
-set_property ip_repo_paths {../cip/bft ../cip/rgb_mux} [current_fileset]
+set_property ip_repo_paths "$ipRoot/bft $ipRoot/rgb_mux} [current_fileset]
 update_ip_catalog
 
 # Set the directory path for the new project
