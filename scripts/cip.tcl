@@ -21,7 +21,7 @@ foreach f [glob ../hdl/bft/bftLib/*.vhdl] {
 }
 
 # Create project
-create_project bft ./bft/ -part xc7z020clg484-1
+create_project -force bft ./bft/ -part xc7z020clg484-1
 
 add_files -norecurse [glob ./cip/bft/*.v*]
 add_files -norecurse [glob ./cip/bft/bftLib/*.vhdl]

@@ -5,7 +5,7 @@ source -notrace $thisDir/utils.tcl
 
 set ipDir ./ip
 
-create_project managed_ip_project $ipDir/managed_ip_project -part xc7z020clg484-1 -ip
+create_project -force managed_ip_project $ipDir/managed_ip_project -part xc7z020clg484-1 -ip
 # Set project properties
 set obj [get_projects]
 set_property "board_part" "xilinx.com:zc702:part0:1.0" $obj

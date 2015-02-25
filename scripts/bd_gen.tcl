@@ -29,7 +29,7 @@ if {$reuseGolden} {
 }
 
 # Create project
-create_project zynq $localRoot/zynq -part xc7z020clg484-1
+create_project -force zynq $localRoot/zynq -part xc7z020clg484-1
 
 # setup up custom ip repository location
 set_property ip_repo_paths "$ipRoot/bft $ipRoot/rgb_mux" [current_fileset]
