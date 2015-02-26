@@ -28,6 +28,8 @@ if {![file exists ./cip/rgb_mux]} {
 # now copy the packaged ip from the solution directory
 set ipPkg ./rgb_mux/solution_zc702/impl/ip/xilinx_com_hls_rgb_mux_2_3.zip
 if {[file exists $ipPkg]} {
+   # TODO - for some reason bd gen tcl does not work if the zip file is not extracted
+   #file copy -force $ipPkg ./cip/rgb_mux
    ## extract the packaged contents to the custom ip dir so it can be used in IPI
    # TODO - not sure why this is not working - investigate $PATH from inside HLS
    #exec "C:/Xilinx/Vivado_HLS/2014.4/msys/bin/unzip -o $ipPkg -d ./cip/rgb_mux/"
