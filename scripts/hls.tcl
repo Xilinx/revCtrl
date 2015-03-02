@@ -32,6 +32,7 @@ if {[file exists $ipPkg]} {
    #file copy -force $ipPkg ./cip/rgb_mux
    ## extract the packaged contents to the custom ip dir so it can be used in IPI
    # TODO - not sure why this is not working - investigate $PATH from inside HLS
+   #exec "unzip -o $ipPkg -d ./cip/rgb_mux/"
    #exec "C:/Xilinx/Vivado_HLS/2014.4/msys/bin/unzip -o $ipPkg -d ./cip/rgb_mux/"
    # copy the contents of the extracted zip file instead
    foreach f {bd constraints doc hdl misc xgui component.xml} {
