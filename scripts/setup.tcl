@@ -74,5 +74,7 @@ set_property SOURCE_SET sources_1 [get_filesets sim_1]
 add_files -fileset sim_1 -norecurse $tbRoot/hdl_zynq/tb.v
 update_compile_order -fileset sim_1
 
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE $thisDir/bit_pre.tcl [get_runs impl_*]
+
 # if everything is successful "touch" a file so make will not it's done
 touch {.setup.done}
