@@ -25,3 +25,18 @@ git pull
 ```
 git checkout <file>
 ```
+
+# To check the status of your repo
+```
+git status
+```
+
+# To write out the changelog to STDOUT
+```
+git log
+```
+
+# To unstage changes that are added although not commited
+```
+git reset
+```
