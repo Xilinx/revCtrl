@@ -31,9 +31,9 @@ git checkout <file>
 git status
 ```
 
-# To write out the changelog to STDOUT
+# To write out the changelog for a <file> to STDOUT
 ```
-git log
+git log <file>
 ```
 
 # To unstage changes that are added although not commited
