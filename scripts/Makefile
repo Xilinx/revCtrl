@@ -41,7 +41,7 @@ POSTFIX = "
 endif
 
 # These are all the compilation targets, starting with "all"
-all : setup compile
+all : setup compile sim
 
 # This setups up the top level project
 setup : .setup.done
@@ -51,6 +51,10 @@ setup : .setup.done
 compile : .compile.done
 .compile.done : .setup.done
 	$(PREFIX) vivado $(VIVADOCOMOPS) -source $(ROOTDIR)/scripts/compile.tcl -log compile.log -jou compile.jou $(POSTFIX)
+
+sim : .sim.done
+.sim.done : .setup.done
+	$(PREFIX) vivado $(VIVADOCOMOPS) -source $(ROOTDIR)/scripts/sim.tcl -log sim.log -jou sim.jou $(POSTFIX)
 
 # This generates the Zynq subystem block diagram
 bd_gen : .bd_gen.done
