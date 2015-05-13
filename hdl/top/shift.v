@@ -23,13 +23,13 @@
 module shift(
     input in,
     input s_in,
-    output out,
+    output reg out,
     input clk,
     input shiftr
     );
     
 //    reg out = 1'b1;
-    reg out;
+//    reg out;
     
     always @(posedge clk)
     begin
