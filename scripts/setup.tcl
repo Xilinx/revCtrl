@@ -17,7 +17,7 @@ if {[llength $argv] > 0 && "$argv" eq "reuseGolden"} {
 
 # these variables point to the root directory location
 # of various source types - change this to point to 
-# any diretory location accessible to the machine
+# any directory location accessible to the machine
 set repoRoot ../
 set localRoot ./
 set hdlRoot $repoRoot/hdl
