@@ -1,4 +1,4 @@
-set VER=2015.1
+set VER=2015.2
 
 call c:\Xilinx\Vivado\%VER%\settings64.bat
 
