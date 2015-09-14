@@ -54,6 +54,7 @@ set obj [get_projects top]
 set_property "board_part" "xilinx.com:zc702:part0:1.0" $obj
 set_property "simulator_language" "Mixed" $obj
 set_property "target_language" "Verilog" $obj
+set_property coreContainer.enable 1 $obj
 
 # setup up custom ip repository location
 set_property ip_repo_paths "$cipRoot/bft $cipRoot/rgb_mux" [current_fileset]
