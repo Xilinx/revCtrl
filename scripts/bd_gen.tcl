@@ -61,6 +61,8 @@ if {$currVer eq "2014.3"} {
    source $thisDir/bd_cip_2015_2.tcl
 } elseif {$currVer eq "2015.3"} {
    source $thisDir/bd_cip_2015_3.tcl
+} elseif {$currVer eq "2015.4"} {
+   source $thisDir/bd_cip_2015_4.tcl
 } else {
    # this script will only work with 2014.2, everything else will fail
    source $thisDir/bd_cip.tcl
