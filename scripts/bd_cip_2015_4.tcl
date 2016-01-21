@@ -44,7 +44,7 @@ if { [get_projects -quiet] eq "" } {
 set design_name zynq_bd
 
 # This script was generated for a remote BD.
-set str_bd_folder c:/junk/revCtrl/work_2015_4
+set str_bd_folder .
 set str_bd_filepath ${str_bd_folder}/${design_name}/${design_name}.bd
 
 # Check if remote design exists on disk
