@@ -26,5 +26,5 @@ wait_on_run axi_iic_0_synth_1
 
 export_simulation -of_objects [get_files axi_iic_0.xci] -force -quiet
 
-# if everything is successful "touch" a file so make will not it's done
+# If successful, "touch" a file so the make utility will know it's done
 touch {.ip.done}

@@ -77,5 +77,5 @@ update_compile_order -fileset sim_1
 
 set_property STEPS.WRITE_BITSTREAM.TCL.PRE "[file normalize "$thisDir/bit_pre.tcl"]" [get_runs impl_*]
 
-# if everything is successful "touch" a file so make will not it's done
+# If successful, "touch" a file so the make utility will know it's done 
 touch {.setup.done}
