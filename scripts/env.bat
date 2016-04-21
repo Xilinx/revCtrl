@@ -1,8 +1,8 @@
-set VER=2015.2
+set VER=2016.1
 
 call c:\Xilinx\Vivado\%VER%\settings64.bat
 
-REM Below are not requred for Vivado - just useful if you want to 
+REM Below are not required for Vivado - just useful if you want to 
 REM use the same shell for editing files and launching flows
 REM http://www.mingw.org/wiki/HOWTO_Set_the_HOME_variable_for_cmd_exe
 
