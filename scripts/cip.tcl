@@ -32,7 +32,7 @@ set_property library bftLib [get_files */core_transform.vhdl]
 update_compile_order -fileset sources_1
 update_compile_order -fileset sim_1
 
-ipx::package_project -root_dir ./cip/bft
+ipx::package_project -root_dir ./cip/bft -library ip -vendor xilinx.com
 
 # if everything is successful "touch" a file so make will not it's done
 touch {.cip.done}
