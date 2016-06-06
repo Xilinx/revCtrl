@@ -56,7 +56,7 @@ set design_name zynq_bd
 
 set run_remote_bd_flow 1
 if { $run_remote_bd_flow == 1 } {
-  set str_bd_folder C:/junk/revCtrl/work_2016_1
+  set str_bd_folder .
   set str_bd_filepath ${str_bd_folder}/${design_name}/${design_name}.bd
 
   # Check if remote design exists on disk
