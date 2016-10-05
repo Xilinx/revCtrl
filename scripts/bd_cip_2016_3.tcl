@@ -157,13 +157,11 @@ proc create_root_design { parentCell } {
   set LEDs_4Bits [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 LEDs_4Bits ]
   set video_in_stream [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 video_in_stream ]
   set_property -dict [ list \
-CONFIG.FREQ_HZ {100000000} \
 CONFIG.HAS_TKEEP {0} \
 CONFIG.HAS_TLAST {1} \
 CONFIG.HAS_TREADY {1} \
 CONFIG.HAS_TSTRB {0} \
 CONFIG.LAYERED_METADATA {undef} \
-CONFIG.PHASE {0.000} \
 CONFIG.TDATA_NUM_BYTES {3} \
 CONFIG.TDEST_WIDTH {0} \
 CONFIG.TID_WIDTH {0} \
@@ -1622,6 +1620,4 @@ levelinfo -pg 1 0 220 600 890 1200 1400 -top 0 -bot 810
 
 create_root_design ""
 
-
-common::send_msg_id "BD_TCL-1000" "WARNING" "This Tcl script was generated from a block design that has not been validated. It is possible that design <$design_name> may result in errors during validation."
 
