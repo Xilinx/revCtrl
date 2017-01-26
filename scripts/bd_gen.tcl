@@ -69,6 +69,8 @@ if {$currVer eq "2014.3"} {
    source $thisDir/bd_cip_2016_2.tcl
 } elseif {$currVer eq "2016.3"} {
    source $thisDir/bd_cip_2016_3.tcl
+} elseif {$currVer eq "2016.4"} {
+   source $thisDir/bd_cip_2016_4.tcl
 } else {
    # this script will only work with 2014.2, everything else will fail
    source $thisDir/bd_cip.tcl
@@ -77,10 +79,14 @@ validate_bd_design
 save_bd_design
 
 # Generate Target
-create_fileset -blockset -define_from zynq_bd zynq_bd
+#create_fileset -blockset -define_from zynq_bd zynq_bd
 generate_target all [get_files */zynq_bd.bd]
-launch_runs zynq_bd_synth_1
-wait_on_run zynq_bd_synth_1 
+create_ip_run [get_files -of_objects [get_fileset sources_1] [lindex [get_files */zynq_bd.bd] 0]]
+launch_runs -jobs 4 [get_runs *_synth_1]
+foreach r [get_runs *_synth_1] {
+   wait_on_run $r
+}
+
 
 # if everything is successful "touch" a file so make will not it's done
 touch {.bd_gen.done}
